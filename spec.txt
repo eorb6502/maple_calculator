@@ -1,0 +1,16 @@
+main 26324
+sub 3681
+attk 1750
+attk_perc 0.54
+crit_per 1.08
+crit_dmg 0.63
+dmg 0.832
+boss 0.42
+weap_const 1.3
+level 1.1
+prop 0.01
+prof 0.9
+fin_dmg 0.625
+def 0.9179
+core 1.2
+skill 2.9
