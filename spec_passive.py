@@ -10,25 +10,10 @@ maple_class={
 }
 
 basicInfo=json_functions.openjson("spec.json")
+specSkill=json_functions.openjson("spec_passive.json")
 characterClass=basicInfo["class"]
 characterLevel=basicInfo["level"]
-basicSpec={}
-if characterClass=="칼리":
-    basicSpec["weapon_multiplier"] = 1.3
-    basicSpec["proficiency"] = 0.9
-    basicSpec["luk"] = 60
-    basicSpec["attack_power"] = 120
-    basicSpec["damage"]=5
-    basicSpec["boss_damage"]=30
-    basicSpec["final_damage"]=62.5
-    basicSpec["ignore_monster_armor"]=0.36
-    basicSpec["armor"]=150
-    basicSpec["critical_rate"]=40
-    basicSpec["critical_damage"]=28
-    basicSpec["max_hp"]=500
-    basicSpec["max_hp_rate"]=15
-    basicSpec["max_mp"]=500
-    basicSpec["max_mp_rate"]=15
+basicSpec=specSkill[characterClass]
 print(basicSpec)
 json_functions.combine_and_save_json(basicInfo, basicSpec, 'spec_basic.json')
 

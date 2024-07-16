@@ -38,7 +38,8 @@ headers = {
 "x-nxopen-api-key": "test_4cf454573b36e0ef7bddfcd133597df43e86736d0e4d6b693c2928ee6b54a1dbefe8d04e6d233bd35cf2fabdeb93fb0d"
 }
 url="https://open.api.nexon.com"
-id="f80bbe45dd55bbd3ceb099cf8da9398c"   #내꺼 f80bbe45dd55bbd3ceb099cf8da9398c
+basicData=json_functions.openjson("spec.json")
+id=basicData["ocid"]  #내꺼 f80bbe45dd55bbd3ceb099cf8da9398c
 ocid="?ocid="+id
 print(ocid)
 get_basic = url + "/maplestory/v1/character/basic" + ocid

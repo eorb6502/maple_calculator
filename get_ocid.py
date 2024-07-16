@@ -8,8 +8,9 @@ headers = {
 characterName = "츠데구"
 urlString = "https://open.api.nexon.com/maplestory/v1/id?character_name=" + characterName
 response_id = requests.get(urlString, headers = headers)
+print(response_id.json())
 urlString = "https://open.api.nexon.com/maplestory/v1/character/basic?ocid=" + response_id.json()["ocid"]
 response_basic = requests.get(urlString, headers=headers)
-print(response_id.json())
+print(response_basic.json())
 dict={"name" : characterName, "ocid" : response_id.json()["ocid"], "class":response_basic.json()["character_class"], "level": response_basic.json()["character_level"]}
 json_functions.makejson(dict, "spec.json")

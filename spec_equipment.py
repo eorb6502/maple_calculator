@@ -45,8 +45,10 @@ def updateSpec(on, oa, ts, ima):
                 "최대 mp": "max_mp",
                 "올스탯": "all_stat",
                 "아이템 드롭률": "item_drop", 
-                "메소 획득량": "meso_drop"
+                "메소 획득량": "meso_drop",
+                "모든 스킬의 재사용 대기시간": "cooldown"
                 }
+    oa=oa[1:]
     if on in ts:
         print(oa)
         if(oa[-1]=="%"):
@@ -68,6 +70,8 @@ def updateSpec(on, oa, ts, ima):
                     ts["dex"]+=int(oa)
                     ts["int"]+=int(oa)
                     ts["luk"]+=int(oa)
+            elif on=="cooldown":
+                ts[on]+=int(oa[0])
             else:
                 if(oa[-1]=="%"):
                     on+="_rate"
@@ -399,7 +403,8 @@ totalStat={	"str": 0,
             "critical_rate": 0,
             "critical_damage": 0,
             "item_drop": 0,
-            "meso_drop": 0
+            "meso_drop": 0,
+            "cooldown": 0
 		}
 ignore_monster_armor=[]
 equipmentData=json_functions.openjson("equipment.json")
@@ -424,7 +429,8 @@ for i in equipmentData:
             for k in options:
                 if k==None:
                     continue
-                optionName, optionAmount=k.lower().split(" : +")
+                print(k)
+                optionName, optionAmount=k.lower().split(" : ")
                 print(optionName, optionAmount)
                 updateSpec(optionName, optionAmount, totalStat, ignore_monster_armor)
             continue
@@ -432,7 +438,7 @@ for i in equipmentData:
             option=equipment[j]
             if equipment[j]==None:
                 continue
-            optionName, optionAmount=option.lower().split(" : +")
+            optionName, optionAmount=option.lower().split(" : ")
             print("소울옵션", optionName, optionAmount)
             updateSpec(optionName, optionAmount, totalStat, ignore_monster_armor)
             continue
@@ -450,4 +456,4 @@ print(totalStat, ignore_monster_armor)
 updateSetEffect(equipmentSet, totalStat, ignore_monster_armor)
 totalStat["ignore_monster_armor"]=calcIgnoreMonstorArmor(ignore_monster_armor)
 print(totalStat, ignore_monster_armor)
-json_functions.combine_and_save_json(specData, totalStat, 'spec_equipment.json')
+json_functions.makejson(totalStat, 'spec_equipment.json')

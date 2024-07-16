@@ -214,15 +214,15 @@
 			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "15",
-			"dex": "9",
-			"int": "10",
-			"luk": "18",
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "16",
-			"magic_power": "8",
-			"armor": "6",
+			"attack_power": "4",
+			"magic_power": "0",
+			"armor": "0",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -235,7 +235,7 @@
 			"max_mp": "0",
 			"attack_power": "45",
 			"magic_power": "45",
-			"armor": "228",
+			"armor": "218",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -1135,10 +1135,10 @@
 			"HP 회복 아이템 및 회복 스킬 효율 : +30%",
 			"STR : +9%"
 		],
-		"에디등급": null,
+		"에디등급": "레어",
 		"에디옵션": [
-			null,
-			null,
+			"LUK : +10",
+			"공격력 : +3",
 			null
 		],
 		"소울옵션": null
