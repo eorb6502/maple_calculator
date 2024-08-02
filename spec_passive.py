@@ -10,7 +10,7 @@ maple_class={
 }
 
 basicInfo=json_functions.openjson("spec.json")
-specSkill=json_functions.openjson("spec_passive.json")
+specSkill=json_functions.openjson("passive_class.json")
 characterClass=basicInfo["class"]
 characterLevel=basicInfo["level"]
 basicSpec=specSkill[characterClass]

@@ -1,0 +1,3762 @@
+{	
+	"공용" : {
+		"로프 커넥트" : {
+			"maxLevel" :"25",
+			"str" : "x",
+			"dex" : "x",
+			"int" : "x",
+			"luk" : "x"
+		},
+		"블링크" : {
+			"maxLevel" :"25",
+			"attack_power" : "x",
+			"magic_power" : "x"
+		},
+		"에르다 노바" : {
+			"maxLevel" : "25",
+			"damage%" : "150+6*x",
+			"attackCount" : "5"
+		},
+		"에르다 샤워" : {
+			"maxLevel" : "25",
+			"damage%" : "450+15*x",
+			"attackCount" : "6"
+		},
+		"에르다 파운틴" : {
+			"maxLevel" : "25",
+			"damage%" : "450+15*x",
+			"attackCount" : "4"
+		},
+		"쓸만한 미스틱 도어" : {
+			"maxLevel" :"25",
+			"str" : "u(x/5)",
+			"dex" : "u(x/5)",
+			"int" : "u(x/5)",
+			"luk" : "u(x/5)"
+		},
+		"쓸만한 샤프 아이즈" : {
+			"maxLevel" :"25",
+			"critical_rate" : "10",
+			"critical_damage" : "8",
+			"str" : "u(x/5)",
+			"dex" : "u(x/5)",
+			"int" : "u(x/5)",
+			"luk" : "u(x/5)"
+		},
+		"쓸만한 하이퍼 바디" : {
+			"maxLevel" :"25",
+			"max_hp_rate" : "40",
+			"max_mp_rate" : "40",
+			"str" : "u(x/5)",
+			"dex" : "u(x/5)",
+			"int" : "u(x/5)",
+			"luk" : "u(x/5)"
+		},
+		"쓸만한 컴뱃 오더스" : {
+			"maxLevel" :"25"
+		},
+		"쓸만한 어드밴스드 블레스" : {
+			"maxLevel" :"25",
+			"max_hp" : "475",
+			"max_mp" : "475",
+			"attack_power" : "20",
+			"magic_power" : "20"
+		},
+		"쓸만한 윈드 부스터" : {
+			"maxLevel" :"25",
+			"str" : "u(x/5)",
+			"dex" : "u(x/5)",
+			"int" : "u(x/5)",
+			"luk" : "u(x/5)"
+		},
+		"쓸만한 홀리 심볼" : {
+			"maxLevel" :"25",
+			"exp" : "20+d(x/2)",
+			"item_drop" : "14+d(x/3)"
+		},
+		"스파이더 인 미러" : {
+			"maxLevel" :"25",
+			"damage%" : "450+18*x",
+			"attackCount" : "15"
+		},
+		"스파이더 인 미러 설치기" : {
+			"maxLevel" :"25",
+			"damage%" : "175+7*x",
+			"attackCount" : "8"
+		},
+		"크레스트 오브 더 솔라" : {
+			"maxLevel" :"25",
+			"damage%" : "750+30*x",
+			"attackCount" : "12"
+		},
+		"크레스트 오브 더 솔라 설치기" : {
+			"maxLevel" :"25",
+			"damage%" : "200+8*x",
+			"attackCount" : "6"
+		}
+	},
+	"히어로": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"콤보 데스폴트": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"cooltime": "25",
+			"damage%": "400+16*x",
+			"attackCount": "14",
+			"mobCount": "15",
+			"x": "2"
+		},
+		"콤보 인스팅트": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "20",
+			"cooltime": "120",
+			"x": "50",
+			"t": "5+d(x/2)",
+			"mobCount": "6",
+			"attackCount": "6",
+			"damage%": "175+6*x",
+			"s": "3"
+		},
+		"소드 일루전": {
+			"maxLevel": "25",
+			"mpCon": "700",
+			"cooltime": "30",
+			"x": "12",
+			"mobCount": "8",
+			"attackCount": "4",
+			"damage%": "125+5*x",
+			"y": "5",
+			"w": "250+10*x",
+			"z": "5",
+			"time": "8",
+			"u": "6"
+		},
+		"블리츠 실드":{
+			"maxLevel": "25",
+			"damage%" : "500+20*x",
+			"attackCount" : "5"
+		}
+	},
+	"팔라딘": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"홀리 유니티": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "30+d(x/2)",
+			"cooltime": "90",
+			"x": "25+d(x/2)",
+			"y": "50+d(x/2)",
+			"w": "1000",
+			"z": "60+d(x/2)",
+			"pairskill": "1",
+			"u": "60+d(x/2)"
+		},
+		"블래스드 해머": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "60",
+			"x": "5",
+			"y": "5",
+			"w": "75",
+			"q": "525+21*x",
+			"z": "4",
+			"s": "8",
+			"v": "30"
+		},
+		"그랜드 크로스": {
+			"maxLevel": "25",
+			"hpCon": "0",
+			"t": "2",
+			"u2": "2",
+			"time": "7",
+			"attackDelay": "180",
+			"subTime": "90",
+			"w": "2200",
+			"attackCount": "12",
+			"mobCount": "12",
+			"cooltime": "180",
+			"damage%": "270+13*x",
+			"s": "490+22*x",
+			"x": "50",
+			"ignoreMobpdpR": "100",
+			"cr": "100",
+			"y": "50",
+			"v": "7",
+			"z": "31",
+			"v2": "6"
+		},
+		"마이티 묠니르": {
+			"maxLevel": "25",
+			"mobCount": "4",
+			"attackCount": "6",
+			"damage%": "200+8*x",
+			"mpCon": "400",
+			"x": "12",
+			"y": "3",
+			"u": "700",
+			"w2": "200",
+			"w": "60",
+			"z": "3",
+			"v": "20",
+			"v2": "50",
+			"q": "570",
+			"q2": "480",
+			"s2": "200",
+			"s": "840",
+			"cooltimeMS": "2500",
+			"subTime": "210",
+			"dot": "6",
+			"prop": "9",
+			"range": "225+9*x",
+			"cr": "50"
+		},
+		"블리츠 실드":{
+			"maxLevel": "25",
+			"damage%" : "500+20*x",
+			"attackCount" : "5"
+		}
+	},
+	"다크나이트": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"다크 스피어": {
+			"maxLevel": "25",
+			"damage%": "325+13*x",
+			"mobCount": "12",
+			"attackCount": "7",
+			"attackDelay": "90",
+			"cooltime": "10",
+			"mpCon": "350",
+			"cr": "100",
+			"ignoreMobpdpR": "50",
+			"w": "10",
+			"w2": "960"
+		},
+		"비홀더 임팩트": {
+			"mpCon": "1000",
+			"cooltime": "20",
+			"damage%": "110+5*x",
+			"attackCount": "6",
+			"mobCount": "10",
+			"x": "3",
+			"maxLevel": "25",
+			"ignoreMobpdpR": "20"
+		},
+		"피어스 사이클론": {
+			"maxLevel": "25",
+			"mpCon": "100",
+			"cooltime": "180",
+			"damage%": "470+19*x",
+			"attackCount": "12",
+			"mobCount": "12",
+			"updatableTime": "4500",
+			"attackDelay": "180",
+			"x": "100",
+			"w": "1",
+			"s": "360+14*x",
+			"z": "5",
+			"q": "15",
+			"y": "12",
+			"w2": "10",
+			"ignoreMobpdpR": "50",
+			"cr": "100",
+			"t": "4.5"
+		},
+		"다크니스 오라": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "400+16*x",
+			"attackCount": "5",
+			"mobCount": "3",
+			"subTime": "1500",
+			"x": "3",
+			"q": "1",
+			"time": "40",
+			"y": "15+d(x/2)",
+			"z": "10000",
+			"w": "4+d(x/5)",
+			"cooltime": "180",
+			"u": "4",
+			"s": "15",
+			"v": "75",
+			"q2": "675+26*x",
+			"u2": "13",
+			"s2": "8",
+			"v2": "3",
+			"w2": "1"
+		},
+		"블리츠 실드":{
+			"maxLevel": "25",
+			"damage%" : "500+20*x",
+			"attackCount" : "5"
+		}
+	},
+	"소울마스터": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"코스모스": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"attackCount": "5",
+			"mobCount": "12",
+			"damage%": "450+18*x",
+			"subTime": "600",
+			"q": "30",
+			"time": "15000",
+			"cooltime": "90",
+			"w": "420",
+			"u": "15"
+		},
+		"엘리시온": {
+			"mpCon": "1000",
+			"time": "40",
+			"maxLevel": "25",
+			"cooltime": "180",
+			"attackCount": "6",
+			"mobCount": "15",
+			"y": "10",
+			"damage%": "520+21*x",
+			"z": "5",
+			"q": "5",
+			"x": "380+15*x",
+			"u": "1500",
+			"v": "15",
+			"v2": "5",
+			"u2": "5",
+			"ignoreMobpdpR": "20"
+		},
+		"소울 이클립스": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "180",
+			"z": "450",
+			"damage%": "450+18*x",
+			"w": "6",
+			"w2": "40",
+			"updatableTime": "60",
+			"time": "40",
+			"x": "1",
+			"q2": "5580",
+			"q": "180",
+			"mobCount": "15",
+			"attackCount": "7",
+			"s": "15",
+			"y": "1250+50*x",
+			"dot": "15",
+			"s2": "5"
+		},
+		"플레어 슬래시": {
+			"maxLevel": "25",
+			"attackCount": "7",
+			"mobCount": "10",
+			"damage%": "550+22*x",
+			"mpCon": "80",
+			"x": "800",
+			"t": "0.8",
+			"cooltime": "12",
+			"y": "900",
+			"z": "400"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"미하일": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"로 아이아스": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "25",
+			"cooltime": "180",
+			"x": "68+d(x/2)",
+			"y": "6+d(x/7)",
+			"w": "6+d(x/7)",
+			"z": "11+d(x/7)",
+			"q2": "39+2*x",
+			"u": "21+3*d(x/7)"
+		},
+		"클라우 솔라스": {
+			"maxLevel": "25",
+			"cooltime": "12",
+			"mpCon": "800",
+			"z": "725+29*x",
+			"w": "825+33*x",
+			"v": "1000+40*x",
+			"mobCount": "12",
+			"attackCount": "12",
+			"time": "10",
+			"q": "6"
+		},
+		"소드 오브 소울 라이트": {
+			"maxLevel": "25",
+			"mpCon": "1200",
+			"time": "35",
+			"cooltime": "180",
+			"indiePadR": "15+d(x/2)",
+			"indieIgnoreMobpdpR": "100",
+			"attackCount": "12",
+			"mobCount": "8",
+			"damage%": "430+18*x",
+			"x": "100",
+			"indieCr": "100",
+			"y": "500",
+			"t": "0.5",
+			"z": "4",
+			"w": "450+18*x",
+			"q": "5",
+			"w2": "8",
+			"q2": "945+37*x",
+			"s": "12",
+			"s2": "6",
+			"subTime": "900",
+			"dot": "50",
+			"dotTime": "10",
+			"dotInterval": "30"
+		},
+		"라이트 오브 커리지": {
+			"mpCon": "1000",
+			"x": "90+7*x",
+			"time": "12",
+			"maxLevel": "25",
+			"w": "7",
+			"cooltime": "90",
+			"y": "25",
+			"z": "10+d(x/2)"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"블래스터": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"벙커 버스터": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "45",
+			"ignoreMobpdpR": "100",
+			"cooltime": "120",
+			"damage%": "200+8*x",
+			"attackCount": "8",
+			"mobCount": "10"
+		},
+		"발칸 펀치": {
+			"maxLevel": "25",
+			"mpCon": "60",
+			"cooltime": "60",
+			"time": "4",
+			"subTime": "90",
+			"damage%": "425+17*x",
+			"attackCount": "8",
+			"mobCount": "10",
+			"w": "500+20*x",
+			"z": "12"
+		},
+		"버닝 브레이커": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "1500+60*x",
+			"attackCount": "15",
+			"mobCount": "12",
+			"cooltime": "100",
+			"x": "1",
+			"time": "5000",
+			"y": "5",
+			"v": "100",
+			"v2": "120",
+			"subTime": "2700",
+			"q": "1200+48*x",
+			"s": "15",
+			"z": "12",
+			"cr": "100",
+			"ignoreMobpdpR": "100",
+			"w": "5",
+			"q2": "-200",
+			"w2": "270"
+		},
+		"애프터이미지 쇼크": {
+			"mpCon": "1000",
+			"cooltime": "120",
+			"time": "100",
+			"y": "49",
+			"q": "90",
+			"t": "0.1",
+			"x": "4",
+			"maxLevel": "25",
+			"w": "450+18*x",
+			"z": "5",
+			"s": "500+20*x",
+			"u": "3",
+			"v": "10"
+		},
+		"레지스탕스 라인 인팬트리" : {
+			"maxLevel" : "25",
+			"damage%" : "215+8*x",
+			"attackCount" : "9"
+		}
+	},
+	"데몬슬레이어": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"데몬 어웨이크닝": {
+			"maxLevel": "25",
+			"damage%": "450",
+			"mobCount": "8",
+			"attackCount": "6",
+			"bdR": "50",
+			"ignoreMobpdpR": "50",
+			"forceCon": "100",
+			"time": "35+x",
+			"cooltime": "120",
+			"x": "8",
+			"y": "3",
+			"z": "6",
+			"w": "600",
+			"q": "700",
+			"q2": "800",
+			"indieCr": "50+d(x/2)"
+		},
+		"요르문간드": {
+			"maxLevel": "25",
+			"forceCon": "60",
+			"hpCon": "2000",
+			"cooltime": "135-d(x/2)",
+			"damage%": "975+39*x",
+			"x": "1080",
+			"time": "10+d(x/5)",
+			"selfDestruction": "1050+42*x",
+			"activeDelay": "1980",
+			"attackCount": "12",
+			"mobCount": "12",
+			"w": "15",
+			"z": "12",
+			"attackDelay": "1080",
+			"cr": "100",
+			"ignoreMobpdpR": "50"
+		},
+		"오르트로스": {
+			"maxLevel": "25",
+			"forceCon": "30",
+			"time": "40+d(x/2)",
+			"cooltime": "120",
+			"x": "2",
+			"damage%": "400+16*x",
+			"attackCount": "12",
+			"mobCount": "10",
+			"w": "900+36*x",
+			"y": "10",
+			"q": "10",
+			"z": "3",
+			"cr": "100",
+			"ignoreMobpdpR": "50",
+			"s": "8",
+			"s2": "12"
+		},
+		"데몬 베인": {
+			"maxLevel": "25",
+			"damage%": "250+11*x",
+			"attackCount": "6",
+			"updatableTime": "2700",
+			"z": "3",
+			"t": "6",
+			"q": "2",
+			"attackDelay": "240",
+			"cooltime": "120",
+			"mobCount": "5",
+			"hpCon": "2000",
+			"forceCon": "60",
+			"x": "625+25*x",
+			"y": "7",
+			"w": "12",
+			"cr": "50",
+			"ignoreMobpdpR": "30",
+			"subTime": "1050",
+			"w2": "6000",
+			"s": "90"
+		},
+		"콜 마스테마" : {
+			"maxLevel" :"25",
+			"damage%" : "500+20*x",
+			"attackCount" : "8"
+		}
+	},
+	"아란": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"부스트 엔드-아드레날린 서지": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "u(x/6)",
+			"u": "6",
+			"x": "12",
+			"y": "600+24*x",
+			"w": "14",
+			"v": "12",
+			"q": "650+26*x",
+			"s": "14",
+			"cooltime": "30"
+		},
+		"브랜디쉬 마하": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "550+22*x",
+			"mobCount": "15",
+			"attackCount": "12",
+			"cooltime": "20",
+			"x": "50",
+			"bdR": "20",
+			"updatableTime": "990",
+			"y": "4"
+		},
+		"파이널 비욘더-백호": {
+			"maxLevel": "25",
+			"mpCon": "200",
+			"damage%": "635+6*x",
+			"attackCount": "7",
+			"mobCount": "10",
+			"ignoreMobpdpR": "50",
+			"cr": "100"
+		},
+		"블리자드 템페스트": {
+			"maxLevel": "25",
+			"mpCon": "1200",
+			"mobCount": "10",
+			"q": "30",
+			"w": "5",
+			"x": "15",
+			"q2": "30",
+			"u": "15",
+			"u2": "600+24*x",
+			"u3": "4",
+			"y": "6",
+			"v": "1",
+			"t": "0.4",
+			"z": "200",
+			"cooltime": "90"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"카이저": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"가디언 오브 노바": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "30+d(x/2)",
+			"cooltime": "120",
+			"damage%": "450+15*x",
+			"range": "50",
+			"attackCount": "4",
+			"mobCount": "10",
+			"x": "250+10*x",
+			"y": "6",
+			"z": "10",
+			"w": "900+35*x",
+			"q2": "2",
+			"q": "10",
+			"u": "10",
+			"s": "225"
+		},
+		"윌 오브 소드 : 스트라이크": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"x": "2160",
+			"u": "2",
+			"cooltime": "30",
+			"damage%": "500+20*x",
+			"attackCount": "4",
+			"w": "700+28*x",
+			"z": "6",
+			"y": "12",
+			"s": "70",
+			"q": "1000+40*x",
+			"q2": "3"
+		},
+		"드라코 슬래셔": {
+			"maxLevel": "25",
+			"mpCon": "60",
+			"attackCount": "10",
+			"mobCount": "8",
+			"damage%": "500+8*x",
+			"cooltime": "7-d(x/15)",
+			"x": "-30",
+			"time": "3",
+			"prop": "100",
+			"y": "6",
+			"u": "8",
+			"w": "2",
+			"z": "500+8*x",
+			"ignoreMobpdpR": "50",
+			"cr": "100"
+		},
+		"드래곤 블레이즈": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "375+15*x",
+			"attackCount": "6",
+			"mobCount": "8",
+			"cooltime": "120",
+			"time": "20",
+			"subTime": "240",
+			"y": "6",
+			"w": "540",
+			"x": "5",
+			"z": "450+18*x",
+			"s": "6",
+			"q": "10",
+			"t": "3.6",
+			"v": "350+14*x",
+			"s2": "3",
+			"u": "6",
+			"v2": "10"
+		},
+		"판테온" : {
+			"maxLevel" : "25",
+			"damage%" : "2000+80*x",
+			"attackCount" : "10"
+		}
+	},
+	"아델": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"루인": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "60",
+			"x": "12",
+			"y": "8",
+			"mobCount": "15",
+			"damage%": "250+10*x",
+			"attackCount": "6",
+			"w": "450+18*x",
+			"z": "9"
+		},
+		"인피니트": {
+			"maxLevel": "25",
+			"damage%": "350+14*x",
+			"attackCount": "2",
+			"cooltime": "180",
+			"mpCon": "1000",
+			"bulletCount": "18",
+			"x": "1140",
+			"y": "30",
+			"prop": "5"
+		},
+		"리스토어": {
+			"maxLevel": "25",
+			"mpRCon": "2",
+			"damage%": "900+36*x",
+			"attackCount": "3",
+			"mobCount": "6",
+			"time": "30",
+			"x": "50+x",
+			"cooltime": "180",
+			"t": "4.5+d(x/5)",
+			"subTime": "3000",
+			"y": "15+x",
+			"z": "2"
+		},
+		"스톰": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"cooltime": "90",
+			"subTime": "300",
+			"mobCount": "7",
+			"damage%": "250+10*x",
+			"attackCount": "2",
+			"z": "1",
+			"time": "14",
+			"x": "2",
+			"w": "600"
+		},
+		"매직 서킷 풀드라이브" : {
+			"maxLevel" : "25",
+			"damage" : "15*x"	
+		}
+	},
+	"제로": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"리미트 브레이크": {
+			"maxLevel": "25",
+			"forceCon": "50",
+			"attackCount": "5",
+			"mobCount": "15",
+			"damage%": "210+8*x",
+			"cooltime": "120",
+			"time": "19+d(x/5)",
+			"indieCooltimeReduce": "200+2*x",
+			"y": "-99",
+			"z": "3",
+			"subTime": "500",
+			"indieBooster": "-2",
+			"w": "10",
+			"q": "200+2*x",
+			"indiePMdR": "30+d(x/5)",
+			"q2": "6",
+			"s": "15",
+			"u": "375+15*x",
+			"s2": "12"
+		},
+		"조인트 어택": {
+			"maxLevel": "25",
+			"forceCon": "50",
+			"cooltime": "120",
+			"q": "1000+40*x",
+			"q2": "8",
+			"v": "950+38*x",
+			"v2": "12",
+			"w": "1200+48*x",
+			"w2": "13",
+			"x": "1000+40*x",
+			"y": "8",
+			"z": "950+38*x",
+			"dotInterval": "12",
+			"u": "1200+48*x",
+			"u2": "13",
+			"s": "1100+44*x",
+			"s2": "15",
+			"ignoreMobpdpR": "100",
+			"mobCount": "12",
+			"dot": "3",
+			"subTime": "2"
+		},
+		"쉐도우 플래시": {
+			"maxLevel": "25",
+			"forceCon": "10",
+			"cooltime": "40",
+			"mobCount": "8",
+			"damage%": "650+26*x",
+			"attackCount": "6",
+			"q": "840+34*x",
+			"w": "5",
+			"z": "25",
+			"v": "15",
+			"x": "545+20*x",
+			"y": "15",
+			"dot": "3",
+			"q2": "770+30*x",
+			"w2": "12",
+			"s": "3"
+		},
+		"에고 웨폰": {
+			"maxLevel": "25",
+			"mobCount": "9",
+			"damage%": "230+9*x",
+			"attackCount": "6",
+			"x": "1",
+			"attackDelay": "120",
+			"subTime": "120",
+			"cooltime": "15",
+			"w": "150",
+			"bulletSpeed": "100",
+			"u": "2",
+			"v": "230+9*x",
+			"s": "9",
+			"z": "4",
+			"y": "3"
+		},
+		"트렌센던트" : {
+			"maxLevel":"25",
+			"final_damage" : "(2+d(x/8))/100"
+		}
+	},
+	"핑크빈": {},
+	"바이퍼": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"라이트닝 폼": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "50+x",
+			"indiePMdR": "20+d(x/5)",
+			"cooltime": "180",
+			"y": "1053062",
+			"damage%": "360+14*x",
+			"attackCount": "10",
+			"mobCount": "10",
+			"cr": "50",
+			"ignoreMobpdpR": "50",
+			"w": "3",
+			"s": "14"
+		},
+		"서펜트 스크류": {
+			"maxLevel": "25",
+			"mpCon": "300",
+			"cooltime": "60",
+			"subTime": "240",
+			"mobCount": "10",
+			"damage%": "360+14*x",
+			"attackCount": "3",
+			"v": "100",
+			"w": "10000",
+			"w2": "40",
+			"q": "3",
+			"u": "10",
+			"u2": "6000",
+			"x": "6",
+			"y": "10"
+		},
+		"퓨리어스 차지": {
+			"maxLevel": "25",
+			"mpCon": "350",
+			"damage%": "600+24*x",
+			"attackCount": "10",
+			"mobCount": "8",
+			"x": "8000",
+			"w": "8",
+			"y": "6",
+			"cooltimeMS": "500",
+			"bdR": "30"
+		},
+		"하울링 피스트": {
+			"maxLevel": "25",
+			"damage%": "425+17*x",
+			"attackCount": "6",
+			"updatableTime": "2100",
+			"cooltime": "90",
+			"mobCount": "8",
+			"mpCon": "1200",
+			"attackDelay": "240",
+			"x": "695+27*x",
+			"y": "14",
+			"w": "15",
+			"s": "14"
+		},
+		"파이렛 플래그" : {
+			"maxLevel" : "25",
+			"direct_stat%" : "10+d(x/2)"
+		}
+	},
+	"캐논마스터": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"빅 휴즈 기간틱 캐논볼": {
+			"maxLevel": "25",
+			"damage%": "840+34*x",
+			"mobCount": "15",
+			"attackCount": "5",
+			"attackDelay": "210",
+			"mpCon": "500",
+			"cooltimeMS": "500",
+			"x": "25000",
+			"q": "25",
+			"y": "3",
+			"w": "25",
+			"z": "50"
+		},
+		"ICBM": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "30",
+			"w": "200",
+			"v": "100",
+			"s": "0",
+			"x": "40",
+			"y": "0",
+			"time": "5000",
+			"dotTime": "5",
+			"q": "800+32*x",
+			"q2": "5",
+			"u": "15",
+			"u2": "15",
+			"z": "500+20*x",
+			"v2": "10",
+			"w2": "60",
+			"range": "1",
+			"time2": "1800",
+			"subTime": "750"
+		},
+		"스페셜 몽키 에스코트": {
+			"maxLevel": "25",
+			"damage%": "300+12*x",
+			"time": "30+d(x/6)",
+			"mpCon": "1000",
+			"cooltime": "90",
+			"subTime": "960",
+			"x": "6",
+			"y": "450+18*x",
+			"w": "7",
+			"s": "12",
+			"attackCount": "4",
+			"mobCount": "3",
+			"ignoreMobpdpR": "100"
+		},
+		"풀 메이커": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "60",
+			"subTime": "360",
+			"x": "1320",
+			"y": "20",
+			"w": "20",
+			"range": "400",
+			"s": "2",
+			"u": "700+28*x",
+			"v": "3",
+			"z": "8",
+			"q": "20",
+			"q2": "5+d(x/2)",
+			"u2": "20",
+			"v2": "15+d(x/2)",
+			"prop": "100"
+		},
+		"파이렛 플래그" : {
+			"maxLevel" : "25",
+			"direct_stat%" : "10+d(x/2)"
+		}
+	},
+	"스트라이커": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"신뇌합일": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "37+d(x/2)",
+			"cooltime": "120",
+			"damage%": "350+10*x",
+			"attackCount": "6",
+			"mobCount": "5",
+			"range": "400",
+			"x": "4",
+			"y": "3",
+			"w": "10",
+			"s": "400+16*x",
+			"q": "7",
+			"indiePMdR": "12+d(x/2)",
+			"z": "6"
+		},
+		"교아탄": {
+			"maxLevel": "25",
+			"damage%": "1000+40*x",
+			"mobCount": "15",
+			"attackCount": "7",
+			"attackDelay": "100",
+			"mpCon": "500",
+			"cooltime": "8",
+			"x": "2",
+			"u": "200"
+		},
+		"창뇌연격": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "120",
+			"time": "60",
+			"x": "12",
+			"y": "3",
+			"subTime": "180",
+			"mobCount": "4",
+			"attackCount": "5",
+			"damage%": "500+20*x",
+			"z": "3",
+			"w": "4",
+			"s": "550+22*x",
+			"u": "7",
+			"v": "7",
+			"q": "700+28*x",
+			"u2": "8",
+			"v2": "6",
+			"q2": "750+30*x",
+			"dot": "510",
+			"w2": "330",
+			"s2": "3"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"은월": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"환혼요호진": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"mobCount": "15",
+			"damage%": "150+6*x",
+			"attackCount": "7",
+			"s": "4",
+			"time": "30",
+			"indiePMdR": "5+d(x/2)",
+			"q2": "15",
+			"q3": "175+7*x",
+			"q4": "10",
+			"u": "60",
+			"x": "1",
+			"y": "100",
+			"w": "990",
+			"updatableTime": "7000",
+			"cooltime": "120",
+			"v": "1",
+			"v2": "4",
+			"v3": "4"
+		},
+		"귀문진": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"mobCount": "15",
+			"damage%": "125+5*x",
+			"attackCount": "10",
+			"q2": "5",
+			"x": "45",
+			"z": "80",
+			"y": "10",
+			"w": "1",
+			"w2": "425+17*x",
+			"w3": "5",
+			"w4": "30",
+			"time": "3000",
+			"q": "540",
+			"cooltime": "120-2*x",
+			"updatableTime": "4000"
+		},
+		"진 귀참": {
+			"maxLevel": "25",
+			"mpCon": "80",
+			"mobCount": "10",
+			"damage%": "400+16*x",
+			"attackCount": "12",
+			"cooltime": "6",
+			"ignoreMobpdpR": "50"
+		},
+		"파쇄 연권": {
+			"maxLevel": "25",
+			"mpCon": "60",
+			"mobCount": "10",
+			"damage%": "250+10*x",
+			"attackCount": "10",
+			"attackDelay": "120",
+			"updatableTime": "1800",
+			"u": "10",
+			"y": "350+14*x",
+			"s": "14",
+			"v": "8",
+			"prop": "50",
+			"w": "50",
+			"w2": "1140",
+			"cooltime": "60",
+			"t": "1.8"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"아크": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"근원의 기억": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "6",
+			"mobCount": "10",
+			"attackDelay": "210",
+			"time": "18",
+			"x": "720",
+			"y": "5904",
+			"w": "6",
+			"cooltime": "120",
+			"updatableTime": "6990",
+			"q": "15",
+			"s": "12",
+			"q2": "825+33*x",
+			"cancelableTime": "1000",
+			"u2": "6"
+		},
+		"인피니티 스펠": {
+			"maxLevel": "25",
+			"hpRCon": "8",
+			"time": "40+d(x/3)",
+			"cooltime": "120",
+			"x": "2+d(x/25)"
+		},
+		"새어 나오는 악몽": {
+			"maxLevel": "25",
+			"attackCount": "12",
+			"mobCount": "10",
+			"damage%": "500+20*x",
+			"cooltime": "10",
+			"x": "1"
+		},
+		"영원히 굶주리는 짐승": {
+			"maxLevel": "25",
+			"hpCon": "500",
+			"damage%": "475+19*x",
+			"cooltime": "120",
+			"attackCount": "12",
+			"mobCount": "12",
+			"x": "600",
+			"t": "0.6",
+			"subTime": "9600",
+			"y": "1710",
+			"updatableTime": "15000",
+			"s": "20",
+			"u": "180",
+			"v": "30"
+		}
+	},
+	"예티": {},
+	"보우마스터": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"애로우 레인": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "40+x",
+			"cooltime": "120",
+			"indieDamR": "15+d(x/2)",
+			"t": "2.5",
+			"x": "5",
+			"w": "7",
+			"z": "10",
+			"q": "700+28*x",
+			"y": "6",
+			"s": "8",
+			"v": "2"
+		},
+		"잔영의 시": {
+			"maxLevel": "25",
+			"mpCon": "800",
+			"damage%": "400+16*x",
+			"attackCount": "3",
+			"subTime": "180",
+			"time": "30",
+			"cooltime": "120",
+			"u": "10",
+			"w": "400+16*x",
+			"z": "3",
+			"y": "360",
+			"q": "1",
+			"s": "3",
+			"x": "3",
+			"q2": "1"
+		},
+		"퀴버 풀버스트": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "40",
+			"cooltime": "120",
+			"x": "2000",
+			"z": "2",
+			"y": "6",
+			"w": "90",
+			"attackCount": "9",
+			"mobCount": "6",
+			"damage%": "250+10*x",
+			"range": "550",
+			"indiePadR": "5+d(x/2)",
+			"u": "5",
+			"u2": "18"
+		},
+		"실루엣 미라주": {
+			"maxLevel": "25",
+			"x": "2",
+			"w": "7500",
+			"t": "7.5",
+			"y": "50",
+			"subTime": "50000",
+			"u": "50",
+			"z": "70",
+			"q": "30+2*x",
+			"cooltimeMS": "1500",
+			"s": "1500",
+			"bulletCount": "5",
+			"damage%": "400+16*x",
+			"attackCount": "3",
+			"v": "80"
+		},
+		"이볼브" : {
+			"maxLevel" : "25",
+			"damage%" : "450+15*x",
+			"attackCount" : "7"
+		}
+	},
+	"신궁": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"트루 스나이핑": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "60",
+			"time": "2",
+			"x": "1",
+			"damage%": "950+30*x",
+			"v": "30",
+			"s": "15",
+			"attackCount": "14",
+			"mobCount": "12",
+			"cr": "100",
+			"y": "15",
+			"z": "20",
+			"w": "100",
+			"u": "155",
+			"ignoreMobpdpR": "100",
+			"s2": "15",
+			"u2": "1",
+			"q": "4",
+			"v2": "1500"
+		},
+		"스플릿 애로우": {
+			"mpCon": "800",
+			"time": "72",
+			"maxLevel": "25",
+			"cooltime": "120",
+			"damage%": "600+24*x",
+			"attackCount": "5",
+			"mobCount": "10",
+			"ignoreMobpdpR": "25"
+		},
+		"차지드 애로우": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"cooltime": "10",
+			"x": "3000",
+			"u": "500+20*x",
+			"u2": "750+30*x",
+			"v": "10",
+			"y": "10",
+			"updatableTime": "10000",
+			"s": "10",
+			"ignoreMobpdpR": "50",
+			"cr": "100"
+		},
+		"리피팅 크로스보우 카트리지": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"cooltime": "120",
+			"time": "60",
+			"x": "8",
+			"y": "150",
+			"w": "375+15*x",
+			"u": "9",
+			"v": "4",
+			"cr": "100",
+			"ignoreMobpdpR": "25"
+		},
+		"이볼브" : {
+			"maxLevel" : "25",
+			"damage%" : "450+15*x",
+			"attackCount" : "7"
+		}
+	},
+	"패스파인더": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"얼티밋 블래스트": {
+			"maxLevel": "25",
+			"cooltime": "120",
+			"forceCon": "200",
+			"x": "25",
+			"time": "1800",
+			"updatableTime": "1740",
+			"u": "15",
+			"v": "400+20*x",
+			"w": "15",
+			"ignoreMobpdpR": "100",
+			"z": "6"
+		},
+		"레이븐 템페스트": {
+			"maxLevel": "25",
+			"forceCon": "300",
+			"damage%": "400+20*x",
+			"mobCount": "12",
+			"attackCount": "5",
+			"attackDelay": "250",
+			"x": "2",
+			"time": "27000",
+			"speed": "200",
+			"cooltime": "120",
+			"u": "27",
+			"v": "20",
+			"u2": "400+20*x",
+			"v2": "6",
+			"z": "10",
+			"y": "12"
+		},
+		"옵시디언 배리어": {
+			"maxLevel": "25",
+			"forceCon": "300",
+			"time": "6+d(x/5)",
+			"y": "20",
+			"cooltime": "120",
+			"subTime": "500",
+			"damage%": "400+12*x",
+			"mobCount": "8",
+			"attackCount": "4"
+		},
+		"렐릭 언바운드": {
+			"maxLevel": "25",
+			"cooltime": "120",
+			"x": "250",
+			"y": "22",
+			"w": "500+20*x",
+			"u": "10",
+			"v": "625+25*x",
+			"q": "10",
+			"s": "8",
+			"range": "4",
+			"prop": "4",
+			"u2": "3",
+			"v2": "6",
+			"q2": "700+28*x",
+			"s2": "5",
+			"w2": "40"
+		},
+		"이볼브" : {
+			"maxLevel" : "25",
+			"damage%" : "450+15*x",
+			"attackCount" : "7"
+		}
+	},
+	"윈드브레이커": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"하울링 게일": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"damage%": "325+13*x",
+			"mobCount": "10",
+			"attackCount": "3",
+			"x": "20",
+			"y": "3",
+			"z": "2",
+			"time": "10000",
+			"s": "10",
+			"attackDelay": "150",
+			"t": "2",
+			"speed": "200",
+			"w": "785+31*x",
+			"w2": "3",
+			"q": "15",
+			"v": "25",
+			"u": "180",
+			"u2": "210",
+			"s2": "375+19*x"
+		},
+		"아이들 윔": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"cooltime": "10",
+			"time": "8",
+			"damage%": "550+22*x",
+			"attackCount": "3",
+			"x": "10",
+			"w": "15",
+			"dot": "500+20*x",
+			"dotTime": "9",
+			"dotInterval": "1"
+		},
+		"윈드 월": {
+			"maxLevel": "25",
+			"time": "45",
+			"y": "0",
+			"mpCon": "1000",
+			"w": "300",
+			"z": "1",
+			"cooltime": "90",
+			"dot": "550+22*x",
+			"s": "50",
+			"q": "5",
+			"q2": "3",
+			"w2": "2"
+		},
+		"볼텍스 스피어": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"mobCount": "10",
+			"attackCount": "6",
+			"attackDelay": "180",
+			"mpCon": "750",
+			"cooltime": "30",
+			"w": "20",
+			"x": "-50",
+			"y": "50",
+			"time": "1"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"와일드헌터": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"재규어 스톰": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "40",
+			"range": "500",
+			"cooltime": "150-x",
+			"attackDelay": "500",
+			"x": "75+d(x/2)",
+			"y": "6+d(x/25)",
+			"z": "3",
+			"padX": "5+2*x",
+			"q": "2+d(x/25)",
+			"w": "180+x",
+			"s": "50",
+			"u": "150",
+			"q2": "300",
+			"w2": "300"
+		},
+		"재규어 맥시멈": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "120",
+			"damage%": "350+13*x",
+			"y": "9",
+			"attackCount": "12",
+			"mobCount": "15",
+			"x": "8000+d(x/10)*1000",
+			"cr": "100",
+			"ignoreMobpdpR": "100",
+			"u": "450+18*x",
+			"w": "4",
+			"v": "15",
+			"q": "3",
+			"prop": "100",
+			"updatableTime": "4200",
+			"s": "8+d(x/10)",
+			"w2": "3000"
+		},
+		"와일드 그레네이드": {
+			"maxLevel": "25",
+			"x": "300",
+			"cooltimeMS": "500",
+			"w": "4500",
+			"t": "4.5",
+			"z": "8",
+			"damage%": "600+24*x",
+			"attackCount": "6",
+			"mobCount": "8"
+		},
+		"와일드 발칸 Type X": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "605+20*x",
+			"attackCount": "7",
+			"mobCount": "8",
+			"attackDelay": "100",
+			"updatableTime": "5000",
+			"t": "5",
+			"cooltime": "120",
+			"x": "100",
+			"w": "-12",
+			"ignoreMobpdpR": "20"
+		},
+		"레지스탕스 라인 인팬트리" : {
+			"maxLevel" : "25",
+			"damage%" : "215+8*x",
+			"attackCount" : "9"
+		}
+	},
+	"메르세데스": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"엘리멘탈 고스트": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"x": "30+x",
+			"y": "300",
+			"z": "90",
+			"time": "60+x",
+			"cooltime": "180",
+			"s": "16444797",
+			"s2": "10",
+			"damage%": "450+15*x",
+			"attackCount": "8",
+			"mobCount": "10"
+		},
+		"실피디아": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"indieDamReduceR": "25",
+			"cooltime": "90",
+			"time": "15+d(x/3)",
+			"w": "650+26*x",
+			"z": "9",
+			"v": "12",
+			"indiePadR": "5+d(x/2)"
+		},
+		"이르칼라의 숨결": {
+			"maxLevel": "25",
+			"mpCon": "50",
+			"damage%": "400+16*x",
+			"attackCount": "12",
+			"mobCount": "10",
+			"attackDelay": "120",
+			"updatableTime": "6000",
+			"t": "0.3",
+			"cooltime": "180",
+			"x": "140",
+			"s": "6",
+			"y": "300"
+		},
+		"로얄 나이츠": {
+			"maxLevel": "25",
+			"cooltime": "180",
+			"mpCon": "1200",
+			"time": "30",
+			"x": "2600",
+			"y": "1600",
+			"w": "180",
+			"u": "350+15*x",
+			"v": "4",
+			"s": "4",
+			"t": "1.4"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"카인": {
+		"가이디드 애로우": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "1",
+			"skill_normal_monster_damage": "20"
+		},
+		"크리티컬 리인포스": {
+			"maxLevel": "25",
+			"cri_rein_rate": "20+x"
+		},
+		"타나토스 디센트": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "35",
+			"indieDamR": "15+x",
+			"damR": "15+x",
+			"x": "35",
+			"y": "40",
+			"w": "1",
+			"u": "3000",
+			"subTime": "3",
+			"cooltime": "180",
+			"mobCount": "6",
+			"damage%": "325+13*x",
+			"attackCount": "3",
+			"q": "15",
+			"z": "15",
+			"w2": "650+26*x",
+			"u2": "9",
+			"s": "300",
+			"v": "25"
+		},
+		"[발현] 드래곤 버스트": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"damage%": "460+17*x",
+			"attackCount": "12",
+			"mobCount": "12",
+			"attackDelay": "180",
+			"x": "100",
+			"y": "15",
+			"q": "5",
+			"updatableTime": "5000",
+			"cooltime": "90",
+			"naDebuffInc": "1",
+			"u": "500",
+			"t": "0.5"
+		},
+		"[처형] 페이탈 블리츠": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"damage%": "340+13*x",
+			"attackCount": "12",
+			"mobCount": "8",
+			"attackDelay": "90",
+			"q": "2",
+			"updatableTime": "2100",
+			"x": "14",
+			"naDebuffCon": "1",
+			"cooltime": "90",
+			"cancelableTime": "30"
+		},
+		"판테온" : {
+			"maxLevel" : "25",
+			"damage%" : "2000+80*x",
+			"attackCount" : "10"
+		}
+	},
+	"캡틴": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"불릿 파티": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"damage%": "300+12*x",
+			"attackCount": "7",
+			"mobCount": "15",
+			"x": "10",
+			"time": "6",
+			"subTime": "120",
+			"cooltime": "75",
+			"y": "6",
+			"BulletCount": "1"
+		},
+		"데드아이": {
+			"maxLevel": "25",
+			"mpCon": "850",
+			"damage%": "452+19*x",
+			"attackCount": "15",
+			"mobCount": "12",
+			"cooltime": "30",
+			"subTime": "480",
+			"attackDelay": "90",
+			"time": "3480",
+			"x": "904+38*x",
+			"cr": "100",
+			"q": "2000",
+			"BulletCount": "1"
+		},
+		"노틸러스 어썰트": {
+			"maxLevel": "25",
+			"mpCon": "1500",
+			"cooltime": "180",
+			"time": "3000",
+			"subTime": "8000",
+			"w": "8",
+			"mobCount": "15",
+			"attackCount": "6",
+			"damage%": "600+24*x",
+			"x": "12",
+			"y": "300+12*x",
+			"q": "7",
+			"s": "36",
+			"BulletCount": "1"
+		},
+		"데스 트리거": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"damage%": "325+13*x",
+			"mobCount": "7",
+			"attackCount": "7",
+			"x": "40",
+			"cooltime": "45",
+			"range": "600",
+			"updatableTime": "2700",
+			"bulletCount": "7",
+			"subTime": "120",
+			"s": "180",
+			"y": "100",
+			"bulletConsume": "1",
+			"q": "500",
+			"t": "0.5"
+		},
+		"파이렛 플래그" : {
+			"maxLevel" : "25",
+			"direct_stat%" : "10+d(x/2)"
+		}
+	},
+	"메카닉": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"멀티플 옵션 : M-FL": {
+			"maxLevel": "25",
+			"damage%": "200+8*x",
+			"time": "75+2*x",
+			"mpCon": "750",
+			"cooltime": "180",
+			"range": "450",
+			"attackCount": "6",
+			"mobCount": "8",
+			"x": "0",
+			"y": "0",
+			"subTime": "1500",
+			"w": "350+10*x",
+			"w2": "8",
+			"q": "12",
+			"s2": "8",
+			"t": "1.5",
+			"v": "3",
+			"v2": "500"
+		},
+		"마이크로 미사일 컨테이너": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "25",
+			"attackCount": "5",
+			"mobCount": "15",
+			"subTime": "30",
+			"damage%": "425+17*x",
+			"attackDelay": "1440",
+			"bulletCount": "30+d(x/3)",
+			"time": "5"
+		},
+		"메탈아머 전탄발사": {
+			"maxLevel": "25",
+			"mpCon": "1500",
+			"cooltime": "180",
+			"damage%": "400+16*x",
+			"updatableTime": "10000",
+			"w": "10",
+			"attackDelay": "180",
+			"attackCount": "11",
+			"mobCount": "15",
+			"x": "6+d(x/25)",
+			"time": "2",
+			"s": "30",
+			"u": "67"
+		},
+		"메카 캐리어": {
+			"maxLevel": "25",
+			"mpCon": "1250",
+			"time": "70",
+			"cooltime": "180",
+			"speed": "20",
+			"range": "1000",
+			"q2": "1001",
+			"s": "250",
+			"s2": "1500",
+			"w": "200",
+			"x": "9",
+			"y": "1",
+			"z": "16",
+			"u": "250+10*x",
+			"v": "4"
+		},
+		"레지스탕스 라인 인팬트리" : {
+			"maxLevel" : "25",
+			"damage%" : "215+8*x",
+			"attackCount" : "9"
+		}
+	},
+	"엔젤릭버스터": {
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"에너지 버스트": {
+			"maxLevel": "25",
+			"mpCon": "600",
+			"damage%": "400+16*x",
+			"cooltime": "120",
+			"time": "30",
+			"attackCount": "15",
+			"mobCount": "15",
+			"updatableTime": "2500",
+			"v": "15",
+			"z": "10"
+		},
+		"스포트라이트": {
+			"maxLevel": "25",
+			"mpCon": "600",
+			"damage%": "800+32*x",
+			"cooltime": "120",
+			"time": "30",
+			"attackCount": "3",
+			"mobCount": "15",
+			"subTime": "720",
+			"u2": "1000",
+			"v2": "270",
+			"w2": "1000",
+			"w": "60+d(x/5)*3",
+			"v": "30+d(x/5)*3",
+			"s": "9+d(x/10)*3",
+			"y": "80",
+			"x": "30",
+			"s2": "2",
+			"z": "990",
+			"q": "35",
+			"q2": "4",
+			"u3": "75"
+		},
+		"마스코트 패밀리어": {
+			"maxLevel": "25",
+			"mpCon": "450",
+			"damage%": "575+23*x",
+			"attackCount": "5",
+			"updatableTime": "1800",
+			"attackDelay": "120",
+			"cooltime": "60",
+			"mobCount": "15",
+			"s": "40",
+			"t": "1.8",
+			"x": "675+27*x",
+			"y": "10",
+			"z": "15",
+			"u2": "7"
+		},
+		"트리니티 퓨전": {
+			"maxLevel": "25",
+			"mpCon": "80",
+			"mobCount": "7",
+			"attackCount": "3",
+			"damage%": "330+x",
+			"w": "5+d(x/2)",
+			"cooltime": "16-d(x/10)",
+			"x": "960",
+			"updatableTime": "4500",
+			"y": "9",
+			"dexX": "10+x"
+		},
+		"판테온" : {
+			"maxLevel" : "25",
+			"damage%" : "2000+80*x",
+			"attackCount" : "10"
+		}
+	},
+	"아크메이지(불,독)": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"도트 퍼니셔": {
+			"maxLevel": "25",
+			"damage%": "400+15*x",
+			"attackCount": "5",
+			"cooltime": "25",
+			"time": "20",
+			"x": "15",
+			"y": "1",
+			"range": "650",
+			"dot": "200+3*x",
+			"dotInterval": "1",
+			"dotTime": "8",
+			"mpCon": "500",
+			"w": "45",
+			"z": "25"
+		},
+		"포이즌 노바": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"cooltime": "25",
+			"damage%": "250+10*x",
+			"attackCount": "12",
+			"dot": "300+12*x",
+			"dotInterval": "1",
+			"dotTime": "10",
+			"w": "2",
+			"z": "225+9*x",
+			"y": "12",
+			"x": "12",
+			"s": "50",
+			"u": "3"
+		},
+		"퓨리 오브 이프리트": {
+			"mpCon": "1000",
+			"cooltime": "75",
+			"damage%": "200+8*x",
+			"x": "600",
+			"t": "0.6",
+			"maxLevel": "25",
+			"attackCount": "6",
+			"mobCount": "12",
+			"y": "3"
+		},
+		"포이즌 체인": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "250+10*x",
+			"mobCount": "2",
+			"attackCount": "4",
+			"u": "17",
+			"cooltime": "25",
+			"x": "3",
+			"y": "20",
+			"z": "5",
+			"v": "5",
+			"q": "150+6*x",
+			"s": "30+x",
+			"w": "9",
+			"w2": "3",
+			"s2": "5"
+		},
+		"언스태이블 메모라이즈" : {
+			"maxLevel" : "25",
+			"int" : "x"
+		}
+	},
+	"아크메이지(썬,콜)": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"아이스 에이지": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "500+20*x",
+			"attackCount": "10",
+			"mobCount": "15",
+			"cooltime": "60",
+			"s": "-25",
+			"v": "-75",
+			"q": "125+5*x",
+			"x": "8",
+			"y": "15",
+			"z": "3"
+		},
+		"썬더 브레이크": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "40",
+			"z": "300",
+			"w": "8",
+			"x": "200",
+			"y": "350",
+			"v": "380+16*x",
+			"q": "12",
+			"s": "15",
+			"u": "290"
+		},
+		"스피릿 오브 스노우": {
+			"mpCon": "1000",
+			"x": "3",
+			"time": "30",
+			"cooltime": "120",
+			"maxLevel": "25",
+			"damage%": "850+34*x",
+			"s": "-25",
+			"v": "-75",
+			"subTime": "9",
+			"z": "3",
+			"mobCount": "10",
+			"attackCount": "9"
+		},
+		"주피터 썬더": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "120",
+			"damage%": "300+12*x",
+			"x": "30",
+			"subTime": "330",
+			"speed": "18",
+			"range": "1200",
+			"w": "60",
+			"time": "40000",
+			"attackCount": "8",
+			"w2": "180",
+			"mobCount": "1",
+			"y": "60",
+			"z": "60",
+			"q": "125",
+			"s2": "420",
+			"u": "3400",
+			"t": "3.4",
+			"s": "200+8*x",
+			"dot": "4",
+			"prop": "2",
+			"v": "5",
+			"v2": "12"
+		},
+		"언스태이블 메모라이즈" : {
+			"maxLevel" : "25",
+			"int" : "x"
+		}
+	},
+	"비숍": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"프레이": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "180",
+			"time": "30+d(x/2)",
+			"x": "1",
+			"y": "2000",
+			"z": "10",
+			"u": "10000",
+			"v": "-3",
+			"q": "5",
+			"q2": "2500",
+			"w": "15+x",
+			"s": "100",
+			"subTime": "2000",
+			"s2": "5",
+			"u2": "10+d(x/6)",
+			"w2": "60"
+		},
+		"엔젤 오브 리브라": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "180",
+			"x": "5",
+			"time": "30+d(x/3)",
+			"y": "10+d(x/5)",
+			"w": "5",
+			"subTime": "4",
+			"z": "500+20*x",
+			"v": "10",
+			"s": "12",
+			"q": "60",
+			"q2": "10",
+			"attackCount": "1250",
+			"damage%": "100",
+			"s2": "5",
+			"u2": "d(x/3)",
+			"w2": "60"
+		},
+		"피스메이커": {
+			"maxLevel": "25",
+			"damage%": "350+14*x",
+			"mobCount": "6",
+			"attackCount": "4",
+			"attackDelay": "350",
+			"mpCon": "350",
+			"cooltime": "10",
+			"hp": "15+x",
+			"y": "350",
+			"w": "12",
+			"dot": "350+14*x",
+			"z": "12",
+			"q": "15",
+			"q2": "5+d(x/5)",
+			"w2": "1",
+			"time": "8"
+		},
+		"디바인 퍼니시먼트": {
+			"maxLevel": "25",
+			"mpCon": "40",
+			"damage%": "235+10*x",
+			"attackCount": "10",
+			"mobCount": "6",
+			"cooltimeMS": "1500",
+			"updatableTime": "12000",
+			"attackDelay": "240",
+			"y": "8",
+			"x": "8500",
+			"t": "8.5",
+			"u": "1000",
+			"w": "0"
+		},
+		"언스태이블 메모라이즈" : {
+			"maxLevel" : "25",
+			"int" : "x"
+		}
+	},
+	"플레임위자드": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"블레이징 오비탈 플레임": {
+			"maxLevel": "25",
+			"mpCon": "250",
+			"mobCount": "12",
+			"damage%": "425+17*x",
+			"attackCount": "6",
+			"cooltime": "5",
+			"attackDelay": "240",
+			"ignoreMobpdpR": "50",
+			"range": "1350"
+		},
+		"플레임 디스차지": {
+			"maxLevel": "25",
+			"cooltime": "20",
+			"x": "2",
+			"y": "6",
+			"mpCon": "500",
+			"damage%": "200+8*x",
+			"z": "25",
+			"w": "12",
+			"w2": "5",
+			"v": "1",
+			"mobCount": "15",
+			"v2": "35",
+			"dotInterval": "250+10*x",
+			"s": "1",
+			"q": "8",
+			"q2": "8",
+			"u": "1",
+			"s2": "2",
+			"u2": "7",
+			"dot": "5"
+		},
+		"인피니티 플레임 서클": {
+			"maxLevel": "25",
+			"mpCon": "75",
+			"damage%": "550+22*x",
+			"mobCount": "12",
+			"attackCount": "8",
+			"x": "10",
+			"y": "12000",
+			"z": "12",
+			"u": "1000",
+			"cooltimeMS": "2500",
+			"updatableTime": "12000",
+			"attackDelay": "120",
+			"cr": "50",
+			"ignoreMobpdpR": "50"
+		},
+		"샐리맨더 미스칩": {
+			"maxLevel": "25",
+			"mpCon": "250",
+			"v": "100",
+			"damage%": "150+6*x",
+			"attackCount": "7",
+			"cooltime": "90",
+			"time": "60",
+			"x": "1",
+			"y": "1",
+			"w": "1",
+			"z": "15+x",
+			"range": "700",
+			"s": "-43",
+			"q": "360",
+			"q2": "600",
+			"u": "12",
+			"u2": "30",
+			"w2": "2",
+			"subTime": "1",
+			"dot": "15",
+			"mobCount": "1"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"배틀메이지": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"유니온 오라": {
+			"maxLevel": "25",
+			"mpCon": "100",
+			"cooltime": "90",
+			"time": "30+d(x/3)",
+			"damage%": "300",
+			"attackCount": "12",
+			"mobCount": "10",
+			"q": "75",
+			"cr": "50",
+			"ignoreMobpdpR": "50",
+			"indieMad": "2*x"
+		},
+		"블랙 매직 알터": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"cooltimeMS": "500",
+			"x": "20000",
+			"v": "20",
+			"y": "4",
+			"damage%": "775+30*x",
+			"time": "40",
+			"mobCount": "10",
+			"attackCount": "4",
+			"subTime": "800",
+			"u": "2",
+			"z": "700",
+			"w": "100"
+		},
+		"그림 리퍼": {
+			"mpCon": "1000",
+			"x": "4000",
+			"w": "4",
+			"time": "30",
+			"cooltime": "90",
+			"maxLevel": "25",
+			"damage%": "800+32*x",
+			"attackCount": "12",
+			"mobCount": "12",
+			"y": "200",
+			"t": "0.2",
+			"z": "2",
+			"s": "3",
+			"subTime": "2000"
+		},
+		"어비셜 라이트닝": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "180",
+			"time": "40",
+			"x": "2",
+			"y": "1",
+			"s": "2",
+			"u": "6",
+			"v": "15",
+			"cr": "100",
+			"ignoreMobpdpR": "20",
+			"t": "0.6",
+			"q": "800+32*x",
+			"w": "8",
+			"u2": "6",
+			"s2": "6",
+			"indieNBDR": "30",
+			"w2": "30"
+		},
+		"레지스탕스 라인 인팬트리" : {
+			"maxLevel" : "25",
+			"damage%" : "215+8*x",
+			"attackCount" : "9"
+		}
+	},
+	"에반": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"엘리멘탈 블래스트": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "775+31*x",
+			"attackCount": "8",
+			"mobCount": "15",
+			"cooltime": "60",
+			"cr": "100",
+			"x": "10",
+			"y": "5"
+		},
+		"드래곤 브레이크": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"mobCount": "12",
+			"damage%": "575+23*x",
+			"attackCount": "7",
+			"cooltime": "20"
+		},
+		"임페리얼 브레스": {
+			"maxLevel": "25",
+			"mobCount": "12",
+			"damage%": "600+24*x",
+			"attackCount": "7",
+			"attackDelay": "820",
+			"time": "4",
+			"subTime": "240"
+		},
+		"조디악 레이": {
+			"maxLevel": "25",
+			"damage%": "475+19*x",
+			"cooltime": "180",
+			"time": "9+d(x/10)",
+			"z": "12",
+			"x": "25",
+			"y": "3",
+			"mpCon": "1000",
+			"attackCount": "8",
+			"mobCount": "12",
+			"ignoreMobpdpR": "100"
+		},
+		"스파이럴 오브 마나": {
+			"maxLevel": "25",
+			"mpCon": "240",
+			"cooltimeMS": "5000-x*50",
+			"damage%": "235+x",
+			"time": "7",
+			"attackDelay": "360",
+			"z": "270",
+			"attackCount": "6",
+			"mobCount": "6",
+			"madX": "5+x",
+			"updatableTime": "1000",
+			"y": "3",
+			"w": "1",
+			"x": "16"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"루미너스": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"진리의 문": {
+			"mpCon": "1000",
+			"x": "4",
+			"time": "25+d(x/2)",
+			"cooltime": "0",
+			"maxLevel": "25",
+			"damage%": "450+18*x",
+			"attackCount": "10",
+			"mobCount": "12"
+		},
+		"퍼니싱 리소네이터": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "450+18*x",
+			"attackCount": "4",
+			"mobCount": "10",
+			"time": "6",
+			"subTime": "210",
+			"cooltime": "30",
+			"w": "315+13*x",
+			"z": "5",
+			"y": "425+17*x",
+			"v": "6",
+			"attackDelay": "990",
+			"cr": "15"
+		},
+		"빛과 어둠의 세례": {
+			"maxLevel": "25",
+			"mpCon": "2000",
+			"time": "30",
+			"cooltime": "45",
+			"damage%": "450+18*x",
+			"x": "12",
+			"range": "550",
+			"attackCount": "7",
+			"cr": "100",
+			"ignoreMobpdpR": "100",
+			"s": "13",
+			"u": "3000",
+			"w": "3"
+		},
+		"리버레이션 오브": {
+			"maxLevel": "25",
+			"mpCon": "1200",
+			"cooltime": "180",
+			"u": "4",
+			"v": "1",
+			"x": "6",
+			"s": "2",
+			"w": "900",
+			"u2": "1",
+			"time": "45",
+			"y": "3",
+			"z": "375+15*x",
+			"q": "4",
+			"q2": "1",
+			"mobCount": "7",
+			"range": "75+3*x",
+			"prop": "10",
+			"subTime": "650+26*x",
+			"dot": "600+24*x",
+			"cr": "100",
+			"v2": "20",
+			"t": "0.9"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"일리움": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"그람홀더": {
+			"maxLevel": "25",
+			"mpCon": "200",
+			"damage%": "500+20*x",
+			"time": "40",
+			"cooltime": "180",
+			"mobCount": "12",
+			"subTime": "1500",
+			"y": "3",
+			"attackCount": "12"
+		},
+		"소울 오브 크리스탈": {
+			"maxLevel": "25",
+			"time": "30",
+			"x": "20000",
+			"q": "20",
+			"y": "2",
+			"z": "50+x",
+			"u": "5+x",
+			"mpCon": "500",
+			"cooltimeMS": "2500",
+			"madX": "5+2*x",
+			"w": "100"
+		},
+		"크리스탈 게이트": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"time": "130+x",
+			"x": "2",
+			"prop": "3",
+			"y": "2",
+			"range": "1100",
+			"subTime": "5000",
+			"u": "5",
+			"z": "2000",
+			"v": "2",
+			"cooltime": "180",
+			"q": "350",
+			"u2": "25",
+			"s": "5+2*x",
+			"t": "1.5",
+			"q2": "450+18*x",
+			"v2": "5",
+			"s2": "3",
+			"w2": "50"
+		},
+		"리액션:스펙트럼": {
+			"maxLevel": "25",
+			"damage%": "1593+63*x",
+			"attackCount": "6",
+			"cooltimeMS": "1000",
+			"mobCount": "15",
+			"bdR": "20"
+		}
+	},
+	"라라": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"큰 기지개": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"u": "5",
+			"cooltime": "60",
+			"mobCount": "1",
+			"bulletCount": "7",
+			"damage%": "600+24*x",
+			"attackCount": "5",
+			"x": "50",
+			"v": "30",
+			"w": "12"
+		},
+		"해 강 산 바람": {
+			"maxLevel": "25",
+			"mpCon": "1200",
+			"cooltime": "180",
+			"damage%": "830+34*x",
+			"attackCount": "10",
+			"mobCount": "10",
+			"x": "3",
+			"u": "1015+41*x",
+			"u2": "10",
+			"v": "15",
+			"v2": "7"
+		},
+		"용솟음치는 정기": {
+			"maxLevel": "25",
+			"mpCon": "80",
+			"attackCount": "8",
+			"mobCount": "10",
+			"damage%": "720+26*x",
+			"cooltime": "20",
+			"updatableTime": "1800",
+			"x": "6"
+		},
+		"산등성이 굽이굽이": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"x": "500",
+			"y": "150",
+			"u": "3",
+			"w": "900",
+			"cooltime": "60",
+			"damage%": "300+12*x",
+			"attackCount": "4",
+			"mobCount": "6",
+			"w2": "20",
+			"time": "30"
+		}
+	},
+	"키네시스": {
+		"오버로드 마나": {
+			"maxLevel": "25",
+			"final_damage": "(5+d(x/10))/100"
+		},
+		"에테리얼 폼": {
+			"maxLevel": "25"
+		},
+		"싸이킥 토네이도": {
+			"maxLevel": "25",
+			"ppCon": "15",
+			"damage%": "750+30*x",
+			"attackCount": "4",
+			"mobCount": "15",
+			"subTime": "250",
+			"x": "90",
+			"y": "1650",
+			"z": "2400",
+			"time": "20",
+			"cooltime": "180",
+			"u": "313+4*x",
+			"w2": "2",
+			"q": "10",
+			"q2": "525+15*x",
+			"s2": "10",
+			"s": "10",
+			"mpCon": "1",
+			"dot": "3"
+		},
+		"얼티메이트-무빙 매터": {
+			"maxLevel": "25",
+			"ppCon": "10",
+			"cooltime": "90",
+			"time": "30",
+			"attackDelay": "390",
+			"x": "3",
+			"y": "15",
+			"z": "2",
+			"w": "75",
+			"damage%": "500+20*x",
+			"mobCount": "10",
+			"attackCount": "5",
+			"u": "700+28*x",
+			"v": "12",
+			"s": "12",
+			"mpCon": "1"
+		},
+		"얼티메이트-싸이킥 불릿": {
+			"maxLevel": "25",
+			"damage%": "550+22*x",
+			"mobCount": "8",
+			"attackCount": "6",
+			"ppCon": "3",
+			"w2": "762",
+			"x": "500+20*x",
+			"y": "3",
+			"z": "8",
+			"s": "4",
+			"u": "1",
+			"ppRecovery": "1",
+			"mpCon": "1"
+		},
+		"로 오브 그라비티": {
+			"maxLevel": "25",
+			"mobCount": "1",
+			"attackCount": "6",
+			"damage%": "200+8*x",
+			"ppCon": "5",
+			"cooltime": "60",
+			"time": "22",
+			"q": "20",
+			"s": "810",
+			"x": "500+20*x",
+			"y": "8",
+			"z": "6",
+			"w": "600+24*x",
+			"u": "15",
+			"v": "10",
+			"prop": "3",
+			"range": "40",
+			"attackDelay": "750"
+		},
+		"이계의 잔상" : {
+			"maxLevel" :"25",
+			"direct_stat" : "3+d(x/2)"
+		}
+	},
+	"나이트로드": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+		"레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"스프레드 스로우": {
+			"maxLevel": "25",
+			"cooltime": "180",
+			"mpCon": "1000",
+			"time": "20+x",
+			"damage%": "379",
+			"u": "290"
+		},
+		"풍마수리검": {
+			"maxLevel": "25",
+			"damage%": "300+12*x",
+			"mobCount": "6",
+			"attackCount": "5",
+			"attackDelay": "100",
+			"mpCon": "800",
+			"cooltime": "25",
+			"subTime": "180",
+			"z": "2",
+			"w": "40",
+			"cancelableTime": "210"
+		},
+		"다크로드의 비전서": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "12",
+			"damage%": "425+17*x",
+			"mobCount": "7",
+			"bulletCount": "5",
+			"x": "7",
+			"subTime": "990",
+			"cooltime": "60",
+			"selfDestruction": "1075+43*x",
+			"w": "10",
+			"z": "12",
+			"bdR": "30"
+		},
+		"스로우 블래스팅": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "90",
+			"cooltime": "180",
+			"x": "68",
+			"subTime": "10000",
+			"u": "10",
+			"w": "4",
+			"s": "2",
+			"z": "475+19*x",
+			"q": "5",
+			"v": "6"
+		},
+		"얼티밋 다크 사이트" :{
+			"maxLevel" : "25",
+			"final_damage" : "(8+d(x/5))/100",
+			"final_damage_flag" : "0"
+		}
+	},
+	"섀도어": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"쉐도우 어썰트": {
+			"maxLevel": "25",
+			"mpCon": "300",
+			"damage%": "720+20*x",
+			"attackCount": "6",
+			"mobCount": "12",
+			"range": "600",
+			"cooltime": "60",
+			"u2": "0",
+			"v2": "270",
+			"w2": "300",
+			"cr": "25",
+			"ignoreMobpdpR": "100",
+			"q2": "175"
+		},
+		"절개": {
+			"maxLevel": "25",
+			"x": "570",
+			"cooltime": "14",
+			"mpCon": "650",
+			"s": "1800",
+			"range": "1300",
+			"w": "675+27*x",
+			"q2": "5",
+			"z": "7",
+			"y": "550+22*x",
+			"q": "5",
+			"v": "10",
+			"cr": "100",
+			"ignoreMobpdpR": "100",
+			"s2": "3",
+			"time": "10",
+			"u2": "20",
+			"t": "1.8"
+		},
+		"소닉 블로우": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "500+20*x",
+			"attackCount": "7",
+			"mobCount": "8",
+			"attackDelay": "100",
+			"updatableTime": "2550",
+			"t": "2.5",
+			"cooltime": "45",
+			"ignoreMobpdpR": "100",
+			"cancelableTime": "500",
+			"x": "15",
+			"y": "3"
+		},
+		"멸귀참영진": {
+			"maxLevel": "25",
+			"mpCon": "1200",
+			"cooltime": "90",
+			"damage%": "425+17*x",
+			"attackCount": "8",
+			"mobCount": "6",
+			"x": "12",
+			"y": "4",
+			"w": "15",
+			"u": "8",
+			"v": "625+25*x",
+			"ignoreMobpdpR": "100",
+			"z": "1000"
+		},
+		"얼티밋 다크 사이트" :{
+			"maxLevel" : "25",
+			"final_damage" : "(8+d(x/5))/100",
+			"final_damage_flag" : "0"
+		}
+	},
+	"듀얼블레이드": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"블레이드 스톰": {
+			"maxLevel": "25",
+			"mpCon": "20",
+			"damage%": "570+13*x",
+			"attackCount": "5",
+			"mobCount": "10",
+			"subTime": "90",
+			"time": "5",
+			"cooltime": "90",
+			"x": "200",
+			"y": "580+23*x",
+			"w": "7",
+			"z": "10",
+			"ignoreMobpdpR": "100"
+		},
+		"카르마 퓨리": {
+			"maxLevel": "25",
+			"mpCon": "500",
+			"mobCount": "12",
+			"attackCount": "7",
+			"damage%": "400+16*x",
+			"cooltime": "10",
+			"w": "5",
+			"subTime": "180",
+			"updatableTime": "1800",
+			"ignoreMobpdpR": "30"
+		},
+		"블레이드 토네이도": {
+			"maxLevel": "25",
+			"mpCon": "750",
+			"mobCount": "10",
+			"attackCount": "7",
+			"damage%": "600+24*x",
+			"cooltime": "12",
+			"x": "400+16*x",
+			"y": "6",
+			"u": "10",
+			"ignoreMobpdpR": "100",
+			"w": "6"
+		},
+		"헌티드 엣지": {
+			"maxLevel": "25",
+			"cooltime": "12",
+			"mpCon": "750",
+			"y": "8",
+			"z": "475+19*x",
+			"u": "6",
+			"v": "3",
+			"w": "500+20*x",
+			"q": "6",
+			"s": "50",
+			"u2": "2",
+			"v2": "435+17*x",
+			"s2": "4",
+			"q2": "5",
+			"ignoreMobpdpR": "30"
+		},
+		"얼티밋 다크 사이트" :{
+			"maxLevel" : "25",
+			"final_damage" : "(8+d(x/5))/100",
+			"final_damage_flag" : "0"
+		}
+	},
+	"나이트워커": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"쉐도우 스피어": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "192-d(x/2)",
+			"time": "57+x",
+			"subTime": "3900",
+			"damage%": "175+8*x",
+			"attackCount": "2",
+			"mobCount": "8",
+			"q": "400+16*x",
+			"y": "6",
+			"z": "12",
+			"prop": "100",
+			"x": "5",
+			"nbdR": "25",
+			"t": "3.9"
+		},
+		"쉐도우 서번트 익스텐드": {
+			"mpCon": "800",
+			"x": "25+x",
+			"time": "30+d(x/2)",
+			"maxLevel": "25",
+			"y": "0",
+			"cooltime": "60",
+			"u": "1500",
+			"t": "1.5",
+			"w": "3"
+		},
+		"쉐도우 바이트": {
+			"maxLevel": "25",
+			"mpCon": "1500",
+			"mobCount": "15",
+			"attackCount": "14",
+			"damage%": "450+18*x",
+			"cooltime": "15",
+			"x": "675+27*x",
+			"y": "2",
+			"w": "8+d(x/3)",
+			"q": "10+d(x/3)",
+			"time": "20",
+			"s": "780",
+			"s2": "1200"
+		},
+		"래피드 스로우": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "90",
+			"damage%": "475+19*x",
+			"attackCount": "5",
+			"subTime": "3000",
+			"w": "3",
+			"updatableTime": "1800",
+			"t": "1.8",
+			"x": "4",
+			"y": "300",
+			"attackDelay": "180",
+			"time": "180",
+			"bulletCount": "3",
+			"z": "10",
+			"u": "850+34*x",
+			"v": "13",
+			"mobCount": "8",
+			"u2": "140+5*x",
+			"v2": "4"
+		},
+		"시그너스 팔랑크스" : {
+			"maxLevel": "25",
+			"damage%" : "450+18*x"
+		}
+	},
+	"팬텀": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"조커": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"cooltime": "180",
+			"time": "6+d(x/25)",
+			"y": "15",
+			"time2": "3",
+			"z": "80",
+			"w": "25",
+			"w2": "30",
+			"q": "40",
+			"q2": "10",
+			"x": "50",
+			"damage%": "350+14*x",
+			"attackCount": "1",
+			"dotInterval": "30",
+			"u": "1+d(x/25)",
+			"v": "5+d(x/10)",
+			"s2": "10+d(x/2)",
+			"u2": "20+d(x/10)*4",
+			"v2": "u(x/5)"
+		},
+		"블랙잭": {
+			"maxLevel": "25",
+			"mpCon": "800",
+			"damage%": "600+24*x",
+			"attackCount": "1",
+			"mobCount": "1",
+			"bulletCount": "3",
+			"cooltime": "15",
+			"x": "33",
+			"z": "6",
+			"w": "800+32*x",
+			"q": "12",
+			"v": "6",
+			"y": "700+28*x",
+			"s": "10",
+			"u": "1",
+			"q2": "21",
+			"dot": "3"
+		},
+		"마크 오브 팬텀": {
+			"maxLevel": "25",
+			"cooltime": "30",
+			"mpCon": "1000",
+			"q": "7",
+			"attackCount": "6",
+			"damage%": "300+12*x",
+			"mobCount": "10",
+			"z": "15",
+			"s": "485+19*x",
+			"x": "7",
+			"y": "7",
+			"s2": "7",
+			"time": "30",
+			"cr": "100",
+			"subTime": "2",
+			"u": "2",
+			"w": "5"
+		},
+		"리프트 브레이크": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"x": "7",
+			"w": "100",
+			"y": "20",
+			"range": "700",
+			"mobCount": "10",
+			"attackCount": "7",
+			"cooltime": "30",
+			"updatableTime": "10000",
+			"damage%": "400+16*x",
+			"q": "750",
+			"q2": "-120",
+			"z": "3480",
+			"t": "3.5"
+		},
+		"프리드의 가호 3중첩" : {
+			"maxLevel": "25",
+			"str" : "25+x",
+			"dex" : "25+x",
+			"luk" : "25+x",
+			"int" : "25+x"
+		},
+		"프리드의 가호 4중첩" : {
+			"maxLevel": "25",
+			"attack_power" : "10+d(x/2)",
+			"magic_power" : "10+d(x/2)"
+		},
+		"프리드의 가호 5중첩" : {
+			"maxLevel": "25",
+			"boss_damage" : "10+d(x/2)"
+		}
+	},
+	"카데나": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"체인아츠:퓨리": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "50+x",
+			"cooltime": "210-x",
+			"x": "10",
+			"y": "250+10*x",
+			"w": "6",
+			"s": "720",
+			"w2": "1"
+		},
+		"A.D 오드넌스": {
+			"mpCon": "1000",
+			"time": "15",
+			"maxLevel": "25",
+			"cooltime": "25",
+			"x": "8",
+			"damage%": "225+9*x",
+			"w": "5",
+			"s": "15",
+			"q": "750+30*x",
+			"u": "8",
+			"u2": "38",
+			"s2": "10"
+		},
+		"체인아츠:메일스트롬": {
+			"maxLevel": "25",
+			"mpCon": "250",
+			"damage%": "300+12*x",
+			"attackCount": "4",
+			"mobCount": "8",
+			"time": "8",
+			"subTime": "90",
+			"attackDelay": "360",
+			"x": "30",
+			"prop": "100",
+			"z": "-30",
+			"s": "6"
+		},
+		"웨폰 버라이어티 피날레": {
+			"mobCount": "7",
+			"maxLevel": "25",
+			"damage%": "250+10*x",
+			"attackCount": "7",
+			"mpCon": "450",
+			"x": "11",
+			"y": "3",
+			"w": "4",
+			"range": "350",
+			"updatableTime": "2100",
+			"s": "4",
+			"subTime": "2",
+			"z": "1"
+		},
+		"판테온" : {
+			"maxLevel" : "25",
+			"damage%" : "2000+80*x",
+			"attackCount" : "10"
+		}
+	},
+	"칼리": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+        "레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"헥스 : 판데모니움": {
+			"maxLevel": "25",
+			"attackCount": "4",
+			"damage%": "325+13*x"
+		},
+		"헥스 : 판데모니움 폭발": {
+			"maxLevel": "25",
+			"attackCount": "50",
+			"damage%": "625+25*x"
+		},
+		"보이드 버스트": {
+			"maxLevel": "25",
+			"damage%": "1000+40*x",
+			"attackCount": "60"
+		},
+		"보이드 버스트 막타": {
+			"maxLevel": "25",
+			"damage%": "1050+42*x",
+			"attackCount": "90"
+		},
+		"아츠 : 아스트라": {
+			"maxLevel": "25",
+			"damage%": "300+12*x",
+			"attackCount": "6",
+			"v2": "400+16*x",
+			"w2": "8"
+		},
+		"아츠 : 아스트라 막타": {
+			"maxLevel": "25",
+			"damage%": "400+16*x",
+			"attackCount": "8"
+		},
+		"레조네이트 : 얼티메이텀": {
+			"maxLevel": "25",
+			"damage%": "225+3*x",
+			"attackCount": "3",
+			"skill_normal_monster_damage%": "150"
+		}
+	},
+	"호영": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+		"레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"선기 : 극대 분신난무": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "30",
+			"subTime": "1500",
+			"t": "1.5",
+			"cooltime": "180",
+			"v2": "10",
+			"w2": "200+8*x",
+			"q2": "4"
+		},
+		"권술 : 산령소환": {
+			"maxLevel": "25",
+			"atGauge2Con": "900",
+			"time": "45+d(x/2)",
+			"mobCount": "12",
+			"damage%": "900+36*x",
+			"attackCount": "8",
+			"x": "3000",
+			"y": "350+14*x",
+			"z": "4",
+			"subTime": "3000",
+			"cooltime": "180",
+			"s": "3"
+		},
+		"선기 : 강림 괴력난신": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"time": "30",
+			"indieDamR": "20+2*x",
+			"mobCount": "10",
+			"damage%": "850+34*x",
+			"attackCount": "8",
+			"x": "12",
+			"y": "3",
+			"w": "1500",
+			"t": "1.5",
+			"u": "15",
+			"v": "1000+40*x",
+			"u2": "15",
+			"v2": "6",
+			"cooltime": "180",
+			"damR": "20+2*x",
+			"q": "30",
+			"s": "20"
+		},
+		"선기 : 천지인 환영": {
+			"maxLevel": "25",
+			"mpCon": "1250",
+			"time": "30",
+			"cooltime": "90",
+			"y": "2",
+			"u": "625+25*x",
+			"v": "6",
+			"w": "4",
+			"q": "5",
+			"v2": "2"
+		}
+	},
+	"제논": {
+		"베놈 버스트": {
+			"maxLevel": "25",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"로디드 다이스": {
+			"maxLevel": "25",
+			"attack_power": "10+x"
+		},
+		"레디 투 다이 1단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(10+d(x/10))/100",
+			"attack_power": "x"
+		},
+		"레디 투 다이 2단계": {
+			"maxLevel": "25",
+			"time": "30",
+			"final_damage": "(30+d(x/5))/100",
+			"attack_power": "x"
+		},
+		"오버 드라이브": {
+			"maxLevel": "25",
+			"pure_weapon_attack_rate": "20+2*x"
+		},
+		"메가 스매셔": {
+			"maxLevel": "25",
+			"mpCon": "1000",
+			"damage%": "300+12*x",
+			"attackCount": "6",
+			"mobCount": "15",
+			"subTime": "120",
+			"time": "6",
+			"y": "3",
+			"z": "3+d(x/10)",
+			"cooltime": "165",
+			"w": "90",
+			"q": "1"
+		},
+		"오버로드 모드": {
+			"maxLevel": "25",
+			"mpCon": "250",
+			"q": "1",
+			"y": "220",
+			"x": "1",
+			"w": "20",
+			"z": "1000",
+			"u": "1",
+			"cooltime": "180",
+			"mobCount": "12",
+			"damage%": "180+7*x",
+			"attackCount": "6",
+			"s": "2"
+		},
+		"홀로그램 그래피티 : 융합": {
+			"mpCon": "1000",
+			"damage%": "250+10*x",
+			"mobCount": "10",
+			"attackCount": "5",
+			"bulletCount": "1",
+			"bulletSpeed": "1",
+			"z": "15",
+			"x": "5+d(x/10)",
+			"y": "1",
+			"time": "30",
+			"cooltime": "90",
+			"maxLevel": "25",
+			"w": "150",
+			"s": "5+d(x/2)",
+			"v2": "1020"
+		},
+		"포톤 레이": {
+			"maxLevel": "25",
+			"mpCon": "150",
+			"range": "2800",
+			"cooltime": "30",
+			"x": "15",
+			"v": "3",
+			"subTime": "390",
+			"s": "60",
+			"y": "15",
+			"w": "930",
+			"z": "930",
+			"q": "60",
+			"time": "20",
+			"u2": "400+16*x",
+			"v2": "4",
+			"u": "350"
+		},
+		"레지스탕스 라인 인팬트리" : {
+			"maxLevel" : "25",
+			"damage%" : "215+8*x",
+			"attackCount" : "9"
+		}
+	},
+	"데몬어벤져": {
+		"오라 웨폰": {
+			"maxLevel": "25",
+			"ignore_monster_armor": "(10+d(x/5))/100",
+			"final_damage": "(u(x/5))/100",
+			"damage%": "500+20*x",
+			"attackCount": "6"
+		},
+		"바디 오브 스틸": {
+			"maxLevel": "25",
+			"str": "x",
+			"max_hp": "50*x"
+		},
+		"데몬 프렌지": {
+			"maxLevel": "25",
+			"hpRCon": "20",
+			"z": "1",
+			"u": "3-d(x/25)",
+			"x": "1",
+			"y": "6000",
+			"q2": "30",
+			"w": "1+d(x/30)",
+			"damage%": "390+15*x",
+			"s2": "5",
+			"mobCount": "10",
+			"attackCount": "3",
+			"s": "30",
+			"q": "20"
+		},
+		"블러드 피스트": {
+			"maxLevel": "25",
+			"hpRCon": "3",
+			"x": "25",
+			"cooltime": "12",
+			"cr": "100",
+			"ignoreMobpdpR": "100",
+			"w": "30",
+			"w2": "500",
+			"damage%": "725+29*x",
+			"attackCount": "12",
+			"mobCount": "8"
+		},
+		"디멘션 소드": {
+			"maxLevel": "25",
+			"damage%": "925+37*x",
+			"time": "40",
+			"x": "3",
+			"hpRCon": "20",
+			"cooltime": "120",
+			"mobCount": "8",
+			"attackCount": "14",
+			"y": "8",
+			"w": "8",
+			"z": "450+18*x",
+			"q": "5",
+			"ignoreMobpdpR": "100"
+		},
+		"레버넌트": {
+			"hpRCon": "25",
+			"time": "15",
+			"cooltime": "120",
+			"q": "100",
+			"s": "10",
+			"subTime": "360",
+			"x": "4000",
+			"v": "4",
+			"maxLevel": "25",
+			"q2": "7",
+			"s2": "1800",
+			"y": "5",
+			"w": "12",
+			"z": "450+18*x",
+			"u": "25",
+			"ignoreMobpdpR": "30",
+			"v2": "1"
+		}
+	}
+}

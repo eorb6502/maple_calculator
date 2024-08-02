@@ -34,9 +34,9 @@ khali["int"] =0
 khali["luk"] =60
 khali["attack_power"] =120
 khali["magic_power"]=0
-khali["damage"]=0
+khali["damage"]=5
 khali["boss_damage"]=30
-khali["final_damage"]=62.5
+khali["final_damage"]=0.625
 khali["ignore_monster_armor"]=0.36
 khali["property"]=0
 khali["armor"]=150
@@ -47,6 +47,8 @@ khali["max_hp_rate"]=15
 khali["max_mp"]=500
 khali["max_mp_rate"]=15
 print(maple_class_dict["칼리"])
-json_functions.makejson(maple_class_dict, "spec_passive.json")
+json_functions.makejson(maple_class_dict, "passive_class.json")
+#아델은 패이스 제외하고 반영
+#호영은 괴이봉인 제외하고 반영
 
 

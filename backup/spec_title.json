@@ -1,0 +1,18 @@
+{
+	"str": 15,
+	"dex": 15,
+	"int": 15,
+	"luk": 15,
+	"max_hp": 750,
+	"max_mp": 750,
+	"boss_damage": 10,
+	"normal_damage": 0,
+	"ignore_monster_armor": 0.09999999999999998,
+	"critical_rate": 0,
+	"attack_power": 15,
+	"magic_power": 15,
+	"starforce": 0,
+	"exp": 10,
+	"arcane_force": 50,
+	"armor": 0
+}

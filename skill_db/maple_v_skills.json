@@ -1,0 +1,4158 @@
+{
+	"히어로": {
+		"5": {
+			"슬래시 블러스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"브랜디쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플래시 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"브레이브 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리프 어택 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어퍼 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"발할라 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"오라 블레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"레이징 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인사이징 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"레이지 업라이징 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"소드 오브 버닝 소울 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"콤보 인스팅트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"콤보 데스폴트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"소드 일루전 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"팔라딘": {
+		"5": {
+			"슬래시 블러스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리프 어택 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어퍼 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"디바인 스윙 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"디바인 스티그마 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"페이지 오더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"디바인 저지먼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"디바인 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블래스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"생츄어리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스마이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"홀리 유니티 강화": {
+				"maxLevel": "30",
+				"final_damage": "75+u(x/2)"
+			},
+			"블래스드 해머 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"그랜드 크로스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"마이티 묠니르 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"다크나이트": {
+		"5": {
+			"슬래시 블러스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리프 어택 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"돌진 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어퍼 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스피어 풀링 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"라만차 스피어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"비홀더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 임페일 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"궁니르 디센트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 신서시스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"다크 스피어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"비홀더 임팩트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"피어스 사이클론 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"다크니스 오라 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"소울마스터": {
+		"5": {
+			"라우드 러쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"사일런트 무브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"코스믹 매터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블레이징 어썰트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"러스터 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"코스믹 버스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_critical_rate": "log20(x)*5",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"솔라 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"루나 디바이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 페네트레이션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"코스믹 샤워 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"솔루나 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"코스모스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"엘리시온 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"소울 이클립스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"플레어 슬래시 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"미하일": {
+		"5": {
+			"파이널 어택 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"샤이닝 피어스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"로얄 가드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"오펜시브 디펜스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 어썰트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤이닝 체이스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"버티컬 샤이닝 체이스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 릴리즈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인스톨 실드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 마제스티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤이닝 크로스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데들리 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"로 아이아스 강화": {
+				"maxLevel": "30",
+				"final_damage": "34+d(x/5)"
+			},
+			"클라우 솔라스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"소드 오브 소울 라이트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"라이트 오브 커리지 강화": {
+				"maxLevel": "30",
+				"damage": "25+u(x/2)"
+			}
+		}
+	},
+	"블래스터": {
+		"5": {
+			"매그넘 펀치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리볼빙 캐논 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리볼빙 캐논 마스터리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"릴리즈 파일 벙커 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"익스플로젼 무브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"더블 팡 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"해머 스매시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리프트 프레스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"매그넘 캐논 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"쇼크 웨이브 펀치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플래시 무브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"허리케인 믹서 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리볼빙 벙커 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"하이퍼 매그넘 펀치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"벙커 버스터 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"발칸 펀치 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"버닝 브레이커 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"애프터이미지 쇼크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"데몬슬레이어": {
+		"5": {
+			"데빌 사이더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데몬 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 이터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 쓰러스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데몬 트레이스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 리벤지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 저지먼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 드로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블러디 레이븐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데모닉 브레스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데몬 익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데몬 임팩트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데빌 크라이 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"메타모포시스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 바인드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서버러스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"데몬 어웨이크닝 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"요르문간드 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"오르트로스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"데몬 베인 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"아란": {
+		"5": {
+			"스매쉬 스윙 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"프로즌 그라운드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파이널 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파이널 토스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"저지먼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아드레날린 부스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아드레날린 맥시멈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"비욘더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"글레이셜 프리즌 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"부스트 엔드-헌터즈 타겟팅 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"하이퍼 부스트 엔드-라스트 스탠드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"부스트 엔드-아드레날린 서지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"브랜디쉬 마하 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"파이널 비욘더-백호 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"블리자드 템페스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"카이저": {
+		"5": {
+			"드래곤슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플레임 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"임팩트 웨이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피어스 러쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"윌 오브 소드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"윙비트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"체인풀링 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"페트리파이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"기가 슬래셔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블루 스트릭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소드 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인퍼널 브레스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"프로미넌스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"가디언 오브 노바 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"윌 오브 소드 : 스트라이크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"드라코 슬래셔 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"드래곤 블레이즈 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"아델": {
+		"5": {
+			"플레인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"원더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"펀토 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"임페일 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"레조넌스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마커 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크리에이션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"게더링 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크로스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"테리토리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"트레드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"디바이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"오더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"그레이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"블로섬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스콜 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"루인 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"인피니트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"리스토어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"final_damage": "u(x/3)"
+			},
+			"스톰 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"제로": {
+		"5": {
+			"문 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쉐도우 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어퍼 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피어스 쓰러스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파워 스텀프 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플래시 어썰터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"프론트 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스핀 커터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스로잉 웨폰 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"롤링 커브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"터닝 드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"롤링 어썰터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"휠 윈드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"윈드 커터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"기가 크래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"윈드 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"점핑 크래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스톰 브레이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어스 브레이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쉐도우 레인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"리미트 브레이크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"final_damage": "36+u(x/3)"
+			},
+			"조인트 어택 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"쉐도우 플래시 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"에고 웨폰 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"핑크빈": {
+		"5": {},
+		"6": {
+			"솔 야누스 강화": {
+				"maxLevel": "30",
+				"exp": "8+2*x+log10(x)*9+log20(x)*10+log30(x)*13",
+				"skill_normal_monster_damage": "log30(x)*30"
+			}
+		}
+	},
+	"바이퍼": {
+		"5": {
+			"써머솔트 킥 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"더블 파이어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"씨 서펜트 버스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서펜트 어썰트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쇼크 웨이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"터닝 킥 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스크류 펀치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"씨 서펜트 인레이지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_critical_rate": "log20(x)*5",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서펜트 어썰트 인레이지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_critical_rate": "log20(x)*5",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피스트 인레이지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"훅 봄버 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"라이트닝 폼 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"서펜트 스크류 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"퓨리어스 차지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"하울링 피스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"캐논마스터": {
+		"5": {
+			"전함 노틸러스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"캐논 스플래셔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"펀칭 캐논 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"기간틱 백스텝 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"슬러그 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"몽키 러쉬붐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"캐논 스파이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"미니 캐논볼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"캐논 점프 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"오크통 룰렛 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"몽키 퓨리어스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"캐논 바주카 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마그네틱 앵커 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서포트 몽키 트윈스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"캐논 버스터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"롤링 캐논 레인보우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"빅 휴즈 기간틱 캐논볼 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"ICBM 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스페셜 몽키 에스코트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"풀 메이커 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"스트라이커": {
+		"5": {
+			"충아 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"섬광 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"회축 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파도 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"해파 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"승천 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"뇌성 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"질풍 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"섬멸 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"벽력 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"해신강림 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"신뇌합일 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"final_damage": "27+u(x/6)"
+			},
+			"교아탄 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"뇌신창격 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"창뇌연격 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"은월": {
+		"5": {
+			"섬권 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파력권 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파쇄철조 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"여우령 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"통백권 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소혼 장막 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"속박술 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"환령 강신 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"폭류권 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"귀참 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"사혼 각인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"분혼 격참 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"정령의 화신 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"환혼요호진 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"귀문진 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"진 귀참 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"파쇄 연권 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"아크": {
+		"5": {
+			"플레인 차지드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"잊혀지지 않는 악몽 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"잊혀지지 않는 흉몽 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스칼렛 차지드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"지워지지 않는 상처 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"멈출 수 없는 충동 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"멈출 수 없는 본능 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다가오는 죽음 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"돌아오는 증오 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"거스트 차지드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"채워지지 않는 굶주림 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어비스 차지드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"걷잡을 수 없는 혼돈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"기어 다니는 공포 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"황홀한 구속 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"끝없는 고통 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"근원의 기억 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"인피니티 스펠 강화": {
+				"maxLevel": "30",
+				"y": "7*x"
+			},
+			"새어 나오는 악몽 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"새어 나오는 흉몽 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"영원히 굶주리는 짐승 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"예티": {
+		"5": {},
+		"6": {
+			"솔 야누스 강화": {
+				"maxLevel": "30",
+				"exp": "8+2*x+log10(x)*9+log20(x)*10+log30(x)*13",
+				"skill_normal_monster_damage": "log30(x)*30"
+			}
+		}
+	},
+	"보우마스터": {
+		"5": {
+			"애로우 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파이널 어택 : 활 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"바람의 시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피닉스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"애로우 플래터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"secondAtomAttackableCountPlus_5th": "log20(x)"
+			},
+			"플레시 미라주 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"secondAtomAttackableCountPlus_5th": "log20(x)"
+			},
+			"폭풍의 시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"언카운터블 애로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"퀴버 카트리지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"윈드 오브 프레이 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"애로우 레인 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"잔영의 시 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"퀴버 풀버스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"실루엣 미라주 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"신궁": {
+		"5": {
+			"애로우 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리트리트 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"파이널 어택 : 석궁 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"볼트 스위프트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"프리져 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피어싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인핸스 피어싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스나이핑 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"인핸스 스나이핑 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"롱 레인지 트루샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"애로우 일루전 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"트루 스나이핑 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스플릿 애로우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"차지드 애로우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"리피팅 크로스보우 카트리지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"패스파인더": {
+		"5": {
+			"카디널 디스차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"에디셔널 디스차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"카디널 블래스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"에디셔널 블래스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"카디널 트랜지션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"레이븐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스플릿 미스텔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"트리플 임팩트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"엣지 오브 레조넌스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"콤보 어썰트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"에인션트 아스트라 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"얼티밋 블래스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"레이븐 템페스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"이볼브 템페스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"옵시디언 배리어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"렐릭 언바운드 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"윈드브레이커": {
+		"5": {
+			"브리즈 애로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"페어리 턴 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"거스트 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"트라이플링 윔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스톰 윔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서리바람의 군무 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"핀포인트 피어스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"천공의 노래 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스파이럴 볼텍스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"몬순 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스톰 브링어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"하울링 게일 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"아이들 윔 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"윈드 월 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"볼텍스 스피어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"와일드헌터": {
+		"5": {
+			"더블 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"트리플 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"와일드 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서먼 재규어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"클로우 컷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크로스 로드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"화이트 히트 러쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어시스턴트 헌팅 유닛 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"소닉붐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"재규어 소울 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"와일드 발칸 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"와일드 발칸 Type-P 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"드릴 컨테이너 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"플래쉬 레인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"램피지 애즈 원 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"재규어 스톰 강화": {
+				"maxLevel": "30"
+			},
+			"재규어 맥시멈 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"와일드 그레네이드 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"와일드 발칸 Type X 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"메르세데스": {
+		"5": {
+			"스피드 듀얼샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"크로스 피어싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"차지 드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파이널 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"하이킥 데몰리션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"롤링 문썰트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스트라이크 듀얼샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리프 토네이도 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"거스트 다이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"유니콘 스파이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"엘리멘탈 나이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"이슈타르의 링 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"레전드리 스피어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"라이트닝 엣지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"래쓰 오브 엔릴 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"엘리멘탈 고스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"실피디아 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"u": "u(x/6)"
+			},
+			"이르칼라의 숨결 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"로얄 나이츠 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"카인": {
+		"5": {
+			"스트라이크 애로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"체이싱 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"스캐터링 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"드래곤 팡 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"리메인 인센스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"샤프트 브레이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"팬텀 블레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"테어링 나이프 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 블레싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"스니키 스나이핑 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"폴링 더스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"체인 시클 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"포이즌 니들 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"드래곤 버스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"페이탈 블리츠 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"타나토스 디센트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"그립 오브 애거니 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"캡틴": {
+		"5": {
+			"써머솔트 킥 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"더블 파이어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"매그넘 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"백스텝샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서먼 크루 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어셈블 크루 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"더블 배럴 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"불릿 스매시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"시즈 봄버 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"래피드 파이어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"헤드 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"퍼실레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"캡틴 디그니티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"배틀쉽 봄버 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"컨티뉴얼 에이밍 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스트레인지 봄 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"불릿 파티 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"데드아이 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"노틸러스 어썰트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"데스 트리거 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"메카닉": {
+		"5": {
+			"드릴 러쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"개틀링 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"로켓 부스터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"어드밴스드 개틀링 샷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"호밍 미사일 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"로봇 런처 : RM7 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"로켓 펀치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마그네틱 필드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"매시브 파이어 : SPLASH 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"IRON 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서포트 웨이버 : H-EX 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"워머신 : 타이탄 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"로봇 팩토리 : RM1 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"매시브 파이어 : SPLASH-F 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"IRON-B 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"디스토션 필드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"멀티플 옵션 : M-FL 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"마이크로 미사일 컨테이너 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"메탈아머 전탄발사 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"메카 캐리어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"엔젤릭버스터": {
+		"5": {
+			"버블 스타 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스팅 익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"핑크 스커드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 시커 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스타 크래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"프라이멀 로어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"트리니티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"피니투라 페투치아 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"소울 레조넌스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"슈퍼 노바 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"에너지 버스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스포트라이트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"마스코트 패밀리어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"트리니티 퓨전 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"아크메이지(불,독)": {
+		"5": {
+			"에너지 볼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플레임 오브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"포이즌 브레스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"이그나이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"포이즌 미스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"포이즌 리젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플레임 헤이즈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"미스트 이럽션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"이프리트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"플레임 스윕 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"메테오 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"파이어 오라 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"메기도 플레임 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"도트 퍼니셔 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"포이즌 노바 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"퓨리 오브 이프리트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"포이즌 체인 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"아크메이지(썬,콜)": {
+		"5": {
+			"에너지 볼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"썬더 볼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"콜드 빔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"칠링 스텝 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"아이스 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"글레이셜 월 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"썬더 스피어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"엘퀴네스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"체인 라이트닝 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블리자드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"프로즌 오브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"라이트닝 스피어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"아이스 에이지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"썬더 브레이크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스피릿 오브 스노우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"주피터 썬더 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"비숍": {
+		"5": {
+			"에너지 볼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"텔레포트 마스터리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"힐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"엔젤릭 터치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(4*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"홀리 애로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤이닝 레이 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"빅뱅 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"바하뮤트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"엔젤레이 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"제네시스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"트라이엄프 페더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"헤븐즈 도어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"파운틴 포 엔젤 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"프레이 강화": {
+				"maxLevel": "30",
+				"final_damage": "u(x/3)",
+				"str": "3*x",
+				"dex": "3*x",
+				"int": "3*x",
+				"luk": "3*x"
+			},
+			"엔젤 오브 리브라 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"피스메이커 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"디바인 퍼니시먼트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"플레임위자드": {
+		"5": {
+			"오비탈 플레임 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"플레임 바이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플레임 볼텍스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"오비탈 익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_critical_rate": "log20(x)*5",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플레임 템페스타 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마엘스트롬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블레이징 익스팅션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인페르노라이즈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"카타클리즘 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"피닉스 드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"블레이징 오비탈 플레임 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"플레임 디스차지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"인피니티 플레임 서클 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"샐리맨더 미스칩 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"배틀메이지": {
+		"5": {
+			"트리플 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_critical_rate": "log20(x)*5",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쿼드 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 체인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"배틀 스퍼트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 라이트닝 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"피니쉬 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 제네시스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"배틀킹 바 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"유니온 오라 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"블랙 매직 알터 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"그림 리퍼 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"어비셜 라이트닝 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"에반": {
+		"5": {
+			"서클 오브 마나 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"드래곤 스파킹 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서클 오브 윈드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"드래곤 스위프트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서클 오브 썬더 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"드래곤 다이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마법 잔해 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"서클 오브 어스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"드래곤 브레스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 포그 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"드래곤 마스터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 오닉스 드래곤 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"엘리멘탈 블래스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"skill_critical_rate": "100"
+			},
+			"드래곤 브레이크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"조디악 레이 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스파이럴 오브 마나 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"루미너스": {
+		"5": {
+			"트윙클 플래쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 폴링 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"실피드 랜서 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"보이드 프레셔 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"스펙트럴 라이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤인 리뎀션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"녹스피어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 사이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"라이트 리플렉션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"모닝 스타폴 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아포칼립스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"앱솔루트 킬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아마겟돈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"진리의 문 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"퍼니싱 리소네이터 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"빛과 어둠의 세례 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"리버레이션 오브 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"일리움": {
+		"5": {
+			"크래프트:자벨린 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"글로리 윙:자벨린 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"커스 마크 완성 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"리액션:디스트럭션Ⅱ 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마키나 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"리액션:도미네이션Ⅱ 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"글로리 윙:모탈 윙비트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크리스탈 스킬:모탈스윙 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크래프트:롱기누스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"롱기누스 존 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데우스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"리요 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"크리스탈 이그니션 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"그람홀더 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"소울 오브 크리스탈 강화": {
+				"maxLevel": "30",
+				"z": "80+u(x/3)",
+				"u": "35+u(x/2)",
+				"strX": "3*x",
+				"dexX": "3*x",
+				"intX": "3*x",
+				"lukX": "3*x"
+			},
+			"크리스탈 게이트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"magic_power": "65+x"
+			}
+		}
+	},
+	"라라": {
+		"5": {
+			"정기 뿌리기 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"잠 깨우기 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"산 꼬마 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"산의 씨앗 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"용맥 분출 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"용맥 흡수 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"넝쿨 타래 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_normal_monster_damage": "log20(x)*10"
+			},
+			"용맥의 자취 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"큰 기지개 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"해 강 산 바람 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"용솟음치는 정기 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"산등성이 굽이굽이 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"키네시스": {
+		"5": {
+			"싸이킥 포스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_normal_monster_damage": "log40(x)*10"
+			},
+			"크래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"매드 크래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"얼티메이트-딥 임팩트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"싸이킥 드레인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"싸이킥 그랩 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"얼티메이트-트레인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"텔레키네시스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"싸이킥 그라운드2 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"얼티메이트-B.P.M 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"에버싸이킥 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"싸이코 메트리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"얼티메이트-메테리얼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"싸이킥 토네이도 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"얼티메이트-무빙 매터 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"얼티메이트-싸이킥 불릿 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"로 오브 그라비티 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"나이트로드": {
+		"5": {
+			"더블 스탭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"슈리켄 버스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"윈드 탈리스만 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마크 오브 어쌔신 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"마크 오브 나이트로드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"슈리켄 챌린지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쇼다운 챌린지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"포 시즌 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"샤프 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"스프레드 스로우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"풍마수리검 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"다크로드의 비전서 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"스로우 블래스팅 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"섀도어": {
+		"5": {
+			"더블 스탭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다크 플레어 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"새비지 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"무스펠 하임 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"메소 익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"엣지 카니발 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"암살 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"크루얼 스탭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"베일 오브 섀도우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"샤프 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"쉐도우 어썰트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"skill_critical_rate": "25",
+				"skill_ignore_monster_armor": "(100)/100"
+			},
+			"절개 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"소닉 블로우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"멸귀참영진 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"듀얼블레이드": {
+		"5": {
+			"더블 스탭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"베놈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"써든레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"샤프 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"토네이도 스핀 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"페이탈 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"슬래시 스톰 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플래시 뱅 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블레이드 어센션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"플라잉 어썰터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블러디 스톰 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"사슬지옥 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_normal_monster_damage": "log20(x)*10",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파이널 컷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블레이드 퓨리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"팬텀 블로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아수라 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_critical_rate": "log40(x)*5"
+			},
+			"히든 블레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"블레이드 스톰 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"카르마 퓨리 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"블레이드 토네이도 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"헌티드 엣지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"나이트워커": {
+		"5": {
+			"럭키 세븐 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"트리플 스로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"쿼드러플 스로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"쉐도우 배트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"래버너스 배트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"스타더스트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"퀸터플 스로우 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"다크니스 오멘 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"쉐도우 스티치 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"도미니언 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"쉐도우 스피어 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"쉐도우 서번트 익스텐드 강화": {
+				"maxLevel": "30",
+				"final_damage": "55+x",
+				"time": "45+u(x/3)"
+			},
+			"쉐도우 바이트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"래피드 스로우 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"팬텀": {
+		"5": {
+			"더블 피어싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"콜 오브 페이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"브리즈 카르트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블랑 카르트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"코트 오브 암즈 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"팬텀 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"얼티밋 드라이브 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"트와일라이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"템페스트 오브 카드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"로즈 카르트 피날레 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"탤런트 오브 팬텀시프 I 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"탤런트 오브 팬텀시프 II 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"탤런트 오브 팬텀시프 III 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"탤런트 오브 팬텀시프 IV 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"조커 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"블랙잭 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"마크 오브 팬텀 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"리프트 브레이크 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"카데나": {
+		"5": {
+			"체인아츠:스트로크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"웨폰 버라이어티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"체인아츠:터프 허슬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 커팅 시미터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 스크래칭 클로 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 슬래싱 나이프 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 스로잉 윙대거 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 슈팅 샷건 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 릴리싱 봄 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 스트라이킹 브릭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"체인아츠:테이크다운 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"서먼 비팅 니들배트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"체인아츠:크러시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"프로페셔널 에이전트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"체인아츠:퓨리 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"A.D 오드넌스 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"체인아츠:메일스트롬 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"웨폰 버라이어티 피날레 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"칼리": {
+		"5": {
+			"아츠 : 크로스 컷 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아츠 : 듀얼 엣지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"보이드 러쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아츠 : 트리플 배쉬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"레조네이트 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"디시빙 블레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"헥스 : 차크람 스윕 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"헥스 : 차크람 스플릿 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"헥스 : 차크람 퓨리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아츠 : 플러리 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"아츠 : 크레센텀 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"보이드 블리츠 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"데스 블로섬 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"헥스 : 판데모니움 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"보이드 버스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"아츠 : 아스트라 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"레조네이트 : 얼티메이텀 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"호영": {
+		"5": {
+			"여의선 : 인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"금고봉 : 인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"토파류 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"지진쇄 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"파초풍 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"멸화염 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"마봉 호로부 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"둔갑 천근석 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"추적 귀화부 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"권술 : 미생강변 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"권술 : 호접지몽 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"권술 : 흡성와류 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"환영 분신부 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"선기 : 분신 둔갑 태을선인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"선기 : 극대 분신난무 강화": {
+				"maxLevel": "30",
+				"w": "440+12*x"
+			},
+			"권술 : 산령소환 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"선기 : 강림 괴력난신 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"선기 : 천지인 환영 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"제논": {
+		"5": {
+			"에너지 스플라인 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"핀포인트 로켓 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"퀵실버 소드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"이온 쓰러스터 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"컴뱃 스위칭 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"다이아그널 체이스 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"필라 스크램블 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"이지스 시스템 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"트라이앵글 포메이션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"블레이드 댄싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"퍼지롭 매스커레이드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"홀로그램 그래피티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"컨파인 인탱글 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"멜트다운 익스플로젼 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			}
+		},
+		"6": {
+			"메가 스매셔 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"오버로드 모드 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"w": "20+u(x/3)",
+				"z": "5*u(x/3)"
+			},
+			"홀로그램 그래피티 : 융합 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"포톤 레이 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			}
+		}
+	},
+	"데몬어벤져": {
+		"5": {
+			"익시드 : 더블 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(7*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"익시드 : 데몬 스트라이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"배츠 스웜 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(5*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"익시드 : 문라이트 슬래시 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인헤일 바이탈러티 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"실드 차지 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(3*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"익시드 : 엑스큐션 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"실드 체이싱 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100",
+				"skill_critical_rate": "log20(x)*5"
+			},
+			"아머 브레이크 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"블러디 임프리즌 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"사우전드 소드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			},
+			"인핸스드 익시드 강화": {
+				"maxLevel": "50",
+				"skill_final_damage": "(2*x)/100",
+				"skill_ignore_monster_armor": "(log40(x)*20)/100"
+			}
+		},
+		"6": {
+			"데몬 프렌지 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"블러드 피스트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"디멘션 소드 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100"
+			},
+			"레버넌트 강화": {
+				"maxLevel": "30",
+				"skill_final_damage": "(10+x+5*log10(x)+5*log20(x)+10*log30(x))/100",
+				"skill_ignore_monster_armor": "(30)/100"
+			}
+		}
+	}
+}
