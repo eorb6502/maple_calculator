@@ -51,12 +51,14 @@ def combine_specs(dict1, dict2):
         else:
             dict1[i]=dict2[i]
 def calc_level_diff(characterLevel, monsterLevel):
+    print(characterLevel, monsterLevel)
     if monsterLevel-4>=characterLevel:
         return max(1-0.025*(monsterLevel-characterLevel),0)
     elif monsterLevel>=characterLevel:
         return 1.1-0.05*(monsterLevel-characterLevel)
     else:
         return min(1.1-0.02*(monsterLevel-characterLevel),1.2)
+    
 def calc_force_diff(map_info, character_force):
     arcane_force, authentic_force=character_force
     if map_info["tag"]=="None":
@@ -76,7 +78,7 @@ def calc_force_diff(map_info, character_force):
             return min(1-0.005*( map_info["force"]-authentic_force), 1.25)
     else:
         print("this should never happen")
-def calc_one_line_dmg(doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor):
+def calc_one_line_dmg(mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor):
     specFinal=json_functions.openjson("./assets/spec_final.json")
     specDoping=spec_doping.calc_spec_w_doping(doping_arr)
     #print(specFinal)
@@ -89,8 +91,8 @@ def calc_one_line_dmg(doping_arr, skill_damage, skill_attack_count, hyper_damage
     damage=1+specFinal["damage"]/100+hyper_damage #하이퍼 스킬 보정
 
 
-    final_damage=(1+specFinal["final_damage"])*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_level_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
-
+    final_damage=(1+specFinal["final_damage"])*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
+    print(calc_level_diff(specFinal["level"], mob_info["level"]), calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])))
     weapon_multiplier=specFinal["weapon_multiplier"]
 
     ignore_monster_armor=1-(1-specFinal["ignore_monster_armor"])*(1-core_ignore_monster_armor)*(1-skill_ignore_monster_armor) #스킬 자체 보정, 코강 보정 추가
@@ -114,9 +116,10 @@ def calc_one_line_dmg(doping_arr, skill_damage, skill_attack_count, hyper_damage
 
     stat_attack_power=stat*attk*weapon_multiplier*damage*final_damage
 
-    normal_damage = class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["normal_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
-    boss_damage =  class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["boss_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
-
-    print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
-
-calc_one_line_dmg([], 6.3, 3, 0, 0, {"level" : 260,"armor" : 0.1, "property" : 0}, {"tag" : "authentic", "force" : 50}, 0,0)
+    #normal_damage = class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["normal_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
+    #boss_damage =  class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["boss_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
+    mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
+    print(mode_damage)
+    #print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
+    return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count)
+print(calc_one_line_dmg("normal_damage",[], 6.3, 3, 0, 0, {"level" : 206,"armor" : 0.1, "property" : 0}, {"tag" : "arcane", "force" : 50}, 0,0))
