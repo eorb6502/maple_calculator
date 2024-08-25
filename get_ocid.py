@@ -12,6 +12,7 @@ def getocid(name, headers):
         "oguildid" : "" 
     }
     characterName = name
+    print(characterName)
     urlString = "https://open.api.nexon.com/maplestory/v1/id?character_name=" + characterName
     response_id = requests.get(urlString, headers = headers).json()
     print(response_id)

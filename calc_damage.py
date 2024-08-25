@@ -118,8 +118,8 @@ def calc_one_line_dmg(mode, doping_arr, skill_damage, skill_attack_count, hyper_
 
     #normal_damage = class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["normal_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     #boss_damage =  class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["boss_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
-    mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
+    mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode+"_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     print(mode_damage)
     #print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
     return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count)
-print(calc_one_line_dmg("normal_damage",[], 6.3, 3, 0, 0, {"level" : 206,"armor" : 0.1, "property" : 0}, {"tag" : "arcane", "force" : 50}, 0,0))
+#print(calc_one_line_dmg("normal",[], 2.9, 8, 0.2, 1.2, {"level" : 260,"armor" : 0.1, "property" : 0}, {"tag" : "authentic", "force" : 30}, 0.2,0))

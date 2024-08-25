@@ -101,7 +101,7 @@ def make_spec_skill(headers):
     #제논의 서플러스 서플라이 올스텟 퍼를 어떻게 적용할 것인가?
     skill0=get0Skill["character_skill"]
     blessLevel=0
-    namearr=["매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "아스완 무녀의 축복"]
+    namearr=["매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
     for i in skill0:
         chk=0
         for j in i:
@@ -470,6 +470,6 @@ def make_spec_skill(headers):
         json_functions.makejson(guild_doping, "./assets/guild_dopings.json")
     print(specSkill)
     json_functions.makejson(specSkill, "./assets/spec_skills.json") 
-make_spec_skill(headers = {
+"""make_spec_skill(headers = {
     "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
-    })
+    })"""

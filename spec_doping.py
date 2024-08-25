@@ -37,6 +37,8 @@ def calc_spec_w_doping(arr):
         "cooldown": 0,
         "starforce": 0
     }
+    if arr== None:
+        return spec_doping
     guild_doping=json_functions.openjson("./assets/guild_dopings.json")
     #print(guild_doping)
     for i in arr:

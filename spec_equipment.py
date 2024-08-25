@@ -479,7 +479,7 @@ def make_spec_equipment():
                 totalStat["attack_power"]+=20 #소울 충전량
                 continue
             for k in equipment[j]:
-                if k=="base_equipment_level" or k=="equipment_level_decrease":
+                if k=="base_equipment_level" or k=="equipment_level_decrease" or k=="exceptional_upgrade":
                     continue
                 if k=="ignore_monster_armor":
                     if int(equipment[j][k])!=0:
