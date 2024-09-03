@@ -1,9 +1,9 @@
 import requests
 import json_functions
 
-def make_spec_basic(headers):
+def make_spec_basic(basicData, headers):
     url="https://open.api.nexon.com"
-    basicData=json_functions.openjson("./assets/spec.json")
+    #basicData=json_functions.openjson("./assets/spec.json")
     id=basicData["ocid"]  #내꺼 f80bbe45dd55bbd3ceb099cf8da9398c
     characterClass, characterLevel=basicData["class"], basicData["level"]
     ocid="?ocid="+id
@@ -23,7 +23,7 @@ def make_spec_basic(headers):
         "max_mp" : 0,
         "critical_rate":5
     }
-    print(response_stat["final_stat"])
+    #print(response_stat["final_stat"])
     #데벤져 가져오기 조금 이상함
     for i in response_stat["final_stat"]:
         statValue=i["stat_value"]
@@ -37,8 +37,9 @@ def make_spec_basic(headers):
             specBasic[i]+=int(int(statValue)*1.15)
     if characterClass=="데몬어벤져":
         specBasic["max_hp"]=90*characterLevel+545
-    print(specBasic)
+    #print(specBasic)
     json_functions.makejson(specBasic, "./assets/spec_basic.json")
+    return specBasic
 
 """make_spec_basic({
     "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"

@@ -1,6 +1,6 @@
 import requests
 import json_functions
-def make_spec_set(headers):
+def make_spec_set(data, headers):
     specDict={
             "공격력" : "attack_power",
             "마력" : "magic_power",
@@ -72,9 +72,9 @@ def make_spec_set(headers):
             "cooldown_rate": 0,
             "petSet": []
         }
-    file_path="./assets/spec.json"
+    #file_path="./assets/spec.json"
     url="https://open.api.nexon.com/maplestory/v1/character/set-effect"
-    data=json_functions.openjson(file_path)
+    #data=json_functions.openjson(file_path)
     ocid="?ocid=" + data["ocid"]
     urlString = url + ocid
     response_set = requests.get(urlString, headers=headers).json()
@@ -116,6 +116,7 @@ def make_spec_set(headers):
     if characterClass=="데몬어벤져":
         specSet["max_hp"]=int(specSet["max_hp"]/2)
     json_functions.makejson(specSet, "./assets/spec_set.json")
+    return specSet
 """make_spec_set(headers = {
     "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
     })"""

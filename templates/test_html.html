@@ -231,6 +231,17 @@
             if (characterName){
                 fetch(`/initialize/${encodeURIComponent(characterName)}`)
                     .then(response => response.json())
+                    .then(data =>{
+                        if (data[0].length===2){
+                            localStorage.setItem('guild_doping', JSON.stringify(data[0][0]))
+                            localStorage.setItem('spec_final', JSON.stringify(data[0][1]))
+                            localStorage.setItem('time', data[1])
+                            alert('데이터 불러오기가 완료되었습니다.')
+                        }
+                        else{
+                            console.error('expected 2 elements.')
+                        }
+                    })
                     .catch(error =>{
                         console.error('error:', error);
                     });
@@ -250,7 +261,8 @@
             const force_type = document.getElementById('force_type').value
             const map_region = document.getElementById('map_region').value
             const map_name = document.getElementById('map_name').value
-
+            const specFinal = localStorage.getItem('spec_final');
+            const guild_doping = localStorage.getItem('guild_doping');
             let selectedItems = [];
             dopings.forEach((doping) => {
                 selectedItems.push(`doping=${doping.value}`);
@@ -284,6 +296,12 @@
             }
             if(map_name){
                 selectedItems.push(`map_name=${map_name}`);
+            }
+            if(specFinal){
+                selectedItems.push(`final=${specFinal}`);
+            }
+            if(guild_doping){
+                selectedItems.push(`guild_doping=${guild_doping}`);
             }
             const queryString = selectedItems.join('&');
             // GET 요청을 보냅니다

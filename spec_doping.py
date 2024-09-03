@@ -1,5 +1,5 @@
 import json_functions
-def calc_spec_w_doping(arr):
+def calc_spec_w_doping(guild_doping, arr):
     spec_doping={	
         "str": 0,
         "str_rate": 0,
@@ -39,7 +39,7 @@ def calc_spec_w_doping(arr):
     }
     if arr== None:
         return spec_doping
-    guild_doping=json_functions.openjson("./assets/guild_dopings.json")
+    #guild_doping=json_functions.openjson("./assets/guild_dopings.json")
     #print(guild_doping)
     for i in arr:
         if i=="보스 킬링 머신":

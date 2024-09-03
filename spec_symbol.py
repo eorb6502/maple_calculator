@@ -2,7 +2,7 @@ import json
 import json_functions
 import requests
 
-def make_spec_symbol(headers):
+def make_spec_symbol(data, headers):
     spec={
         "str_wo_rate" : 0,
         "dex_wo_rate" : 0,
@@ -13,7 +13,7 @@ def make_spec_symbol(headers):
         "authentic_force" : 0,
     }
     url="https://open.api.nexon.com/maplestory/v1/character/"
-    data=json_functions.openjson("./assets/spec.json")
+    #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
     characterLevel=data["level"]
     urlString = url + "symbol-equipment" +ocid
@@ -31,3 +31,4 @@ def make_spec_symbol(headers):
         spec["int_wo_rate"]+=int(i["symbol_int"])
         spec["max_hp_wo_rate"]+=int(i["symbol_hp"])
     json_functions.makejson(spec, "./assets/spec_symbol.json")
+    return spec

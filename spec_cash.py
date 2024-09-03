@@ -12,7 +12,7 @@ def updateDict(dict, arr):
             ot="magic_power"
         dict[ot]+=int(ov)
     return dict
-def make_spec_cash(headers):
+def make_spec_cash(data, headers):
     specCash={
         "str" : 0,\
         "str_rate": 0,\
@@ -44,7 +44,7 @@ def make_spec_cash(headers):
         "starforce" : 0
     }
     url="https://open.api.nexon.com/maplestory/v1/character/"
-    data=json_functions.openjson("./assets/spec.json")
+    #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
     characterClass=data["class"]
     urlString = url + "cashitem-equipment" +ocid
@@ -76,6 +76,7 @@ def make_spec_cash(headers):
     if characterClass=="데몬어벤져":
         specCash["max_hp"]=int(specCash["max_hp"]/2)
     json_functions.makejson(specCash, "./assets/spec_cash.json")
+    return specCash
 
 """
 make_spec_cash(headers = {

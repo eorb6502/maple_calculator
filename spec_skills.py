@@ -8,7 +8,7 @@ def is_float(input_string):
     except ValueError:
         return False
 
-def make_spec_skill(headers):
+def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     maple_class={
         "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논슈터", "스트라이커", "은월", "아크", "예티"], \
         "dex":["보우마스터", "신궁", "패스파인더", "윈드브레이커", "와일드헌터", "메르세데스", "카인", "캡틴", "메카닉", "엔젤릭버스터"], \
@@ -34,14 +34,14 @@ def make_spec_skill(headers):
         "아케인포스" : "arcane_force",
         "획득 경험치" : "exp"
     }
-    spec=json_functions.openjson("./assets/spec.json")
-    petSet=json_functions.openjson("./assets/spec_set.json")["petSet"]
+    #spec=json_functions.openjson("./assets/spec.json")
+    petSet=petSet["petSet"]
     characterLevel=spec["level"]
     ocid=spec["ocid"]
     passive=json_functions.openjson("passive_class.json")
     characterClass=spec["class"]
-    equipmentData=json_functions.openjson("./assets/spec_equipment.json")
-    equipmentRawdata=json_functions.openjson("./assets/equipment.json")
+    #equipmentData=json_functions.openjson("./assets/spec_equipment.json")
+    #equipmentRawdata=json_functions.openjson("./assets/equipment.json")
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"5"
     getVskill=requests.get(url, headers=headers).json()
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"0"
@@ -434,6 +434,7 @@ def make_spec_skill(headers):
             specSkill["critical_damage"]+=2*skillLevel
     print(specSkill)
     #길드
+    guild_doping={}
     if spec["guild"]!=None:
         ogid=spec["oguildid"]
         url="https://open.api.nexon.com/maplestory/v1/guild/basic?oguild_id=" + ogid
@@ -463,13 +464,13 @@ def make_spec_skill(headers):
                 specSkill["attack_power"]+=3+2*i["skill_level"]
                 specSkill["magic_power"]+=3+2*i["skill_level"]
         #print(get_guild["guild_noblesse_skill"])
-        guild_doping={}
         for i in get_guild["guild_noblesse_skill"]:
             guild_doping[i["skill_name"]] = i["skill_level"]
         #print(guild_doping)
         json_functions.makejson(guild_doping, "./assets/guild_dopings.json")
     print(specSkill)
-    json_functions.makejson(specSkill, "./assets/spec_skills.json") 
+    json_functions.makejson(specSkill, "./assets/spec_skills.json")
+    return guild_doping, specSkill
 """make_spec_skill(headers = {
     "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
     })"""

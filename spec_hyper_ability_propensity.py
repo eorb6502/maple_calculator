@@ -1,7 +1,7 @@
 import json
 import requests
 import json_functions
-def make_spec_HAP(headers):
+def make_spec_HAP(data, headers):
     specDict={
         "공격력" : "attack_power",
         "마력" : "magic_power",
@@ -163,3 +163,4 @@ def make_spec_HAP(headers):
     spec["armor"]+=5*int(willingness/5)
     #print(spec)
     json_functions.makejson(spec, "./assets/spec_hyper_ability_propensity.json")
+    return spec

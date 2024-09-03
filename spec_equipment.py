@@ -387,7 +387,7 @@ def updateSetEffect(es, ts, ima):
                 ima.append(10)
 """
 
-def make_spec_equipment():
+def make_spec_equipment(equipmentData, basic):
     equipmentSet={"루타비스 전사" : 0, "루타비스 궁수" : 0, "루타비스 마법사" : 0, "루타비스 도적" : 0, "루타비스 해적" : 0, "앱솔랩스" : 0, "아케인셰이드" : 0, "에테르넬" : 0, "보스" : 0, "여명" : 0, "칠흑" : 0, "광휘" : 0, "마이스터" : 0, "칠요의" : 0}
     totalStat={	"str": 0,
                 "str_rate": 0,
@@ -428,8 +428,8 @@ def make_spec_equipment():
     tempStat=totalStat.copy()
     dumpignore_monster_armor=[]
     ignore_monster_armor=[]
-    equipmentData=json_functions.openjson("./assets/equipment.json")
-    basic=json_functions.openjson("./assets/spec.json")
+    #equipmentData=json_functions.openjson("./assets/equipment.json")
+    #basic=json_functions.openjson("./assets/spec.json")
     characterLevel=basic["level"]
     characterClass=basic["class"]
     totalStat["weapon_basic_attack_power"]=int(equipmentData["무기"]["기본"]["attack_power"])
@@ -505,4 +505,5 @@ def make_spec_equipment():
     if characterClass=="데몬어벤져":
         totalStat["max_hp"]=int(totalStat["max_hp"]/2)
     json_functions.makejson(totalStat, './assets/spec_equipment.json')
+    return totalStat
 """make_spec_equipment()"""

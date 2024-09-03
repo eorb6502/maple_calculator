@@ -2,10 +2,9 @@ import json
 import requests
 import json_functions
 
-def make_equipment_data_and_title(headers):
-    file_path="./assets/spec.json"
+def make_equipment_data_and_title(data, headers):
     url="https://open.api.nexon.com/maplestory/v1/character/item-equipment"
-    data=json_functions.openjson(file_path)
+    #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
     urlString = url + ocid
     response_equip = requests.get(urlString, headers=headers).json()
@@ -414,6 +413,7 @@ def make_equipment_data_and_title(headers):
     equipmentDict["starforce"]+=specTitle["starforce"]
     json_functions.makejson(equipmentDict, "./assets/equipment.json")
     json_functions.makejson(specTitle, "./assets/spec_title.json")
+    return equipmentDict, specTitle
 """make_equipment_data_and_title(headers = {
     "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
     })"""

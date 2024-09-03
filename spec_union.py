@@ -2,7 +2,7 @@ import json
 import json_functions
 import requests
 
-def make_spec_union(headers):
+def make_spec_union(data, headers):
     print("------------------union start------------------")
     specDict={
         "공격력" : "attack_power",
@@ -75,7 +75,7 @@ def make_spec_union(headers):
         "cooldown_rate": 0
     }
     url="https://open.api.nexon.com/maplestory/v1/user/union"
-    data=json_functions.openjson("./assets/spec.json")
+    #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
     characterLevel=data["level"]
     urlString = url + "-raider" +ocid
@@ -212,3 +212,4 @@ def make_spec_union(headers):
             spec["exp"]+=level+int(level/5)
     print(spec)
     json_functions.makejson(spec, "./assets/spec_union.json")
+    return spec

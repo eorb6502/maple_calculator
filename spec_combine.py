@@ -10,18 +10,18 @@ def combine(dict1, dict2):
                 dict1[i]=(1+dict1[i])*(1+dict2[i])-1
             else:
                 dict1[i]+=dict2[i]
-def make_spec_final():
-    characterClass=json_functions.openjson("./assets/spec.json")["class"]
-    specBasic=json_functions.openjson("./assets/spec_basic.json")
-    specEquipment=json_functions.openjson("./assets/spec_equipment.json")
-    specHAP=json_functions.openjson("./assets/spec_hyper_ability_propensity.json")
-    specSkill=json_functions.openjson("./assets/spec_skills.json")
-    specSymbol=json_functions.openjson("./assets/spec_symbol.json")
-    specUnion=json_functions.openjson("./assets/spec_union.json")
-    specTitle=json_functions.openjson("./assets/spec_title.json")
-    specSet=json_functions.openjson("./assets/spec_set.json")
-    specCash=json_functions.openjson("./assets/spec_cash.json")
-    equipmentRawdata=json_functions.openjson("./assets/equipment.json")
+def make_spec_final(spec, specBasic, specEquipment, specHAP, specSkill, specSymbol, specUnion, specTitle, specSet, specCash, equipmentRawdata):
+    characterClass=spec["class"]
+    #specBasic=json_functions.openjson("./assets/spec_basic.json")
+    #specEquipment=json_functions.openjson("./assets/spec_equipment.json")
+    #specHAP=json_functions.openjson("./assets/spec_hyper_ability_propensity.json")
+    #specSkill=json_functions.openjson("./assets/spec_skills.json")
+    #specSymbol=json_functions.openjson("./assets/spec_symbol.json")
+    #specUnion=json_functions.openjson("./assets/spec_union.json")
+    #specTitle=json_functions.openjson("./assets/spec_title.json")
+    #specSet=json_functions.openjson("./assets/spec_set.json")
+    #specCash=json_functions.openjson("./assets/spec_cash.json")
+    #equipmentRawdata=json_functions.openjson("./assets/equipment.json")
     specFinal={}
     combine(specFinal, specUnion)
     combine(specFinal, specEquipment)
@@ -36,3 +36,4 @@ def make_spec_final():
         specSkill["damage"]-=0.1
     #print(specFinal)
     json_functions.makejson(specFinal, "./assets/spec_final.json")
+    return specFinal

@@ -78,9 +78,9 @@ def calc_force_diff(map_info, character_force):
             return min(1-0.005*( map_info["force"]-authentic_force), 1.25)
     else:
         print("this should never happen")
-def calc_one_line_dmg(mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor):
-    specFinal=json_functions.openjson("./assets/spec_final.json")
-    specDoping=spec_doping.calc_spec_w_doping(doping_arr)
+def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor):
+    #specFinal=json_functions.openjson("./assets/spec_final.json")
+    specDoping=spec_doping.calc_spec_w_doping(guild_doping, doping_arr)
     #print(specFinal)
     combine_specs(specFinal, specDoping)
     #print(specFinal)
