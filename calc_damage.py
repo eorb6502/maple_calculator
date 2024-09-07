@@ -73,12 +73,12 @@ def calc_force_diff(map_info, character_force):
         return arcane_arr_final_damage[8]
     elif map_info["tag"]=="authentic":
         if map_info["force"]>=authentic_force:
-            return 1-0.01*( map_info["force"]-authentic_force)
+            return max(1-0.01*( map_info["force"]-authentic_force), 0.05)
         else:
             return min(1-0.005*( map_info["force"]-authentic_force), 1.25)
     else:
         print("this should never happen")
-def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor):
+def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor, skill_final_damage):
     #specFinal=json_functions.openjson("./assets/spec_final.json")
     specDoping=spec_doping.calc_spec_w_doping(guild_doping, doping_arr)
     #print(specFinal)
@@ -91,7 +91,7 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     damage=1+specFinal["damage"]/100+hyper_damage #하이퍼 스킬 보정
 
 
-    final_damage=(1+specFinal["final_damage"])*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
+    final_damage=(1+specFinal["final_damage"])*(1+skill_final_damage)*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
     print(calc_level_diff(specFinal["level"], mob_info["level"]), calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])))
     weapon_multiplier=specFinal["weapon_multiplier"]
 

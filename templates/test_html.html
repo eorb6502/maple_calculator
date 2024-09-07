@@ -53,6 +53,22 @@
             width: 15%;
             margin-bottom: 10px;
         }
+        #name{
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        #data-container {
+            display: grid;
+            grid-template-columns: repeat(3, 5fr);
+            gap: 10px;
+        }
+        #data-container .item{
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
@@ -60,7 +76,16 @@
     <label for="nameInput"> Enter character name:</label>
     <input type="text" id="nameInput" name="nameInput"> <br>
     <button type="button" onclick="submitCharactername()">Submit</button>
+    <h2>Current Character Stat</h2>
+    <label id="name">
 
+    </label>
+    <div class="container" id="data-container">
+
+    </div>
+    <label id="time">
+
+    </label>
     <h2>Select Dopings</h2>
     <form id="checkboxForm">
         <label><input type="checkbox" name="doping" value="보스 킬링 머신"> 보스 킬링 머신</label><br>
@@ -135,6 +160,8 @@
         <input type="text" id="core_ignore_monster_armor" name="core_ignore_monster_armor"> 
         <label for="skill_ignore_monster_armor"> skill ignore armor (ex 0.2):</label>
         <input type="text" id="skill_ignore_monster_armor" name="skill_ignore_monster_armor">
+        <label for="skill_final_damage"> skill_final_damage (ex 쉐파 0.7):</label>
+        <input type="text" id="skill_final_damage" name="skill_final_damage">
     </form>
     <h2>Select mode</h2>
     <form id="dropdownForm">
@@ -154,13 +181,64 @@
     <p id="hp"></p>
     </form> 
     <script>
+        function update_spec(){
+            const json_dict={
+                "str" : "STR",
+                "str_wo_rate" : "STR(% 미적용)",
+                "str_rate" : "STR%",
+                "dex" : "DEX",
+                "dex_wo_rate" : "DEX(% 미적용)",
+                "dex_rate" : "DEX%",
+                "int" : "INT",
+                "int_wo_rate" : "INT(% 미적용)",
+                "int_rate" : "INT%",
+                "luk" : "LUK",
+                "luk_wo_rate" : "LUK(% 미적용)",
+                "luk_rate" : "LUK%",
+                "max_hp" : "최대 HP",
+                "max_hp_wo_rate" : "최대 HP(% 미적용)",
+                "max_hp_rate" : "최대 HP%",
+                "attack_power" : "공격력",
+                "attack_power_wo_rate" : "공격력(% 미적용)",
+                "attack_power_rate" : "공격력%",
+                "magic_power" : "마력",
+                "magic_power_wo_rate" : "마력(% 미적용)",
+                "magic_power_rate" : "마력%",
+                "ignore_monster_armor" : "방무",
+                "boss_damage" : "보공",
+                "damage" : "데미지",
+                "normal_damage" : "일몹뎀",
+                "critical_rate" : "크확",
+                "critical_damage" : "크뎀",
+                "final_damage" : "최종뎀",
+                "buff" : "벞지",
+                "insight" : "내성 무시",
+                "starforce" : "스타포스",
+                "arcane_force" : "아케인포스",
+                "authentic_force" : "어센틱포스"  
+            };
+            const storedData=JSON.parse(localStorage.getItem('spec_final'))
+            const name=document.getElementById('name');
+            name.innerHTML=`이름 : ${storedData["name"]}`;
+            const container = document.getElementById('data-container');
+            container.innerHTML='';
+            for (const key in json_dict){
+                const value = storedData[key];
+                const itemDiv=document.createElement('div');
+                itemDiv.classList.add('item');
+                itemDiv.innerHTML = `<span class="label"> ${json_dict[key]}:<span> ${value}`;
+                container.appendChild(itemDiv);
+            }
+            const time = document.getElementById("time");
+            time.innerHTML=`최종 업데이트 시간 : ${localStorage.getItem('time')}`
+        }
+        update_spec()
         function update_map_region(){
             const force_type = document.getElementById('force_type');
             const map_region = document.getElementById('map_region');
-
             map_region.innerHTML='';
             if (force_type.value === 'arcane'){
-                const options= ['--select--', '소멸의 여로'];
+                const options= ['--select--', '소멸의 여로', '리버스 시티', '츄츄 아일랜드', '얌얌 아일랜드', '레헬른', '아르카나', '모라스', '에스페라', '셀라스', '문브릿지', '고통의 미궁', '리멘'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
@@ -169,7 +247,7 @@
                 })
             }
             else if (force_type.value === 'authentic'){
-                const options= ['--select--', '세르니움', '오디움', '도원경'];
+                const options= ['--select--', '세르니움', '호텔 아르크스', '오디움', '도원경', '아르테리아', '카르시온'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
@@ -197,6 +275,105 @@
                     map_name.appendChild(opt);
                 })
             }
+            else if (map_region.value === '리버스 시티'){
+                const options= ['지하선로1', '지하선로2', '지하선로3', '지하선로4', '지하선로5', '지하선로6', 'T-boy의 연구열차1', 'T-boy의 연구열차2', 'T-boy의 연구열차3', '숨겨진 연구열차', '지하열차1', '지하열차2', '지하열차3', '지상열차1', '지상열차2', '지상열차3', '숨겨진 지하열차', 'M타워2', 'M타워3', 'M타워4', '숨겨진 M타워'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '츄츄 아일랜드'){
+                const options= ['폭포 아래', '격류지대 3', '격류지대 2', '격류지대 1', '츄츄빌리지 입구', '동산 입구', '알록달록 숲지대1', '알록달록 숲지대2', '알록달록 숲지대3', '오색동산 깊은 곳', '길쭉 동글숲1', '길쭉 동글숲2', '몽땅 동글숲1', '몽땅 동글숲2', '츄릅포레스트 깊은 곳', '고래산 초입', '고래산 중턱1', '고래산 정상', '고래산 중턱2', '거대한 꼬리'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '얌얌 아일랜드'){
+                const options= ['머쉬버드 숲1', '머쉬버드 숲2', '머쉬버드 숲3', '머쉬버드 숲4', '머쉬버드 숲5', '머쉬버드 숲6', '일리야드 들판1', '일리야드 들판2', '일리야드 들판3', '일리야드 들판4', '일리야드 들판5', '일리야드 들판6', '펑고스 숲1', '펑고스 숲2', '펑고스 숲3', '펑고스 숲4', '펑고스 숲5', '펑고스 숲6', '숨겨진 머쉬버드 숲', '숨겨진 일리야드 들판', '숨겨진 펑고스 숲'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '레헬른'){
+                const options= ['무법자들의 거리1', '무법자들의 거리2', '무법자들의 거리3', '닭이 뛰노는 곳1', '닭이 뛰노는 곳2', '닭이 뛰노는 곳3', '우승 접시의 거리1', '우승 접시의 거리2', '본색을 드러내는 곳1', '본색을 드러내는 곳2', '본색을 드러내는 곳3', '춤추는 구두 점령지1', '춤추는 구두 점령지2', '악몽의 시계탑 1층', '악몽의 시계탑 2층', '악몽의 시계탑 3층', '악몽의 시계탑 4층', '악몽의 시계탑 5층'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '아르카나'){
+                const options= ['물의 숲', '햇살의 숲', '물과 햇살의 숲', '흙의 숲', '햇살과 흙의 숲', '서리구름의 숲', '번개구름의 숲', '서리와 번개의 숲1', '서리와 번개의 숲2', '맹독의 숲', '폭발의 숲', '맹독과 폭발의 숲1', '맹독과 폭발의 숲2', '동굴 윗길', '동굴 윗길 깊은 곳 1', '동굴 윗길 깊은 곳 2', '동굴 윗길 깊디 깊은 곳', '동굴 아랫길', '동굴 아랫길 깊은 곳 1', '동굴 아랫길 깊은 곳 2', '동굴 아랫길 깊디 깊은 곳', '다섯 갈래 동굴', '다섯 갈래 동굴 윗길', '다섯 갈래 동굴 사잇길', '다섯 갈래 동굴 아랫길', '정령의 나무 밑 동굴'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '모라스'){
+                const options= ['산호 숲으로 가는 길2', '산호 숲으로 가는 길3', '산호 숲으로 가는 길4', '도둑고양이 출몰지', '도둑고양이 출몰지2', '형님들 구역', '형님들 구역2', '형님들 구역3', '그림자가 춤추는 곳2', '그림자가 춤추는 곳3', '그림자가 춤추는 곳4', '폐쇄구역', '폐쇄구역2', '폐쇄구역3', '그날의 트뤼에페2', '그날의 트뤼에페3', '그날의 트뤼에페4'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '에스페라'){
+                const options= ['생명이 시작되는 곳2', '생명이 시작되는 곳3', '생명이 시작되는 곳4', '생명이 시작되는 곳5', '생명이 시작되는 곳6', '생명이 시작되는 곳7', '거울빛에 물든 바다2', '거울빛에 물든 바다3', '거울빛에 물든 바다4', '거울빛에 물든 바다5', '거울빛에 물든 바다6', '거울빛에 물든 바다7', '거울에 비친 빛의 신전2', '거울에 비친 빛의 신전3', '거울에 비친 빛의 신전4'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '셀라스'){
+                const options= ['빛이 마지막으로 닿는 곳 1', '빛이 마지막으로 닿는 곳 2', '빛이 마지막으로 닿는 곳 3', '빛이 마지막으로 닿는 곳 4', '빛이 마지막으로 닿는 곳 5', '빛이 마지막으로 닿는 곳 6', '빛이 마지막으로 닿는 곳 7', '빛이 마지막으로 닿는 곳 8', '빛이 마지막으로 닿는 곳 9', '끝없이 추락하는 심해 1', '끝없이 추락하는 심해 2', '끝없이 추락하는 심해 3', '끝없이 추락하는 심해 4', '끝없이 추락하는 심해 5', '끝없이 추락하는 심해 6', '별이 삼켜진 심해 1', '별이 삼켜진 심해 2', '별이 삼켜진 심해 3', '별이 삼켜진 심해 4', '별이 삼켜진 심해 5', '별이 삼켜진 심해 6'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '문브릿지'){
+                const options= ['사상의 경계1', '사상의 경계2', '사상의 경계3', '사상의 경계4', '사상의 경계5', '사상의 경계6', '미지의 안개1', '미지의 안개2', '미지의 안개3', '미지의 안개4', '미지의 안개5', '미지의 안개6', '공허의 파도1', '공허의 파도2', '공허의 파도3', '공허의 파도4', '공허의 파도5', '공허의 파도6'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '고통의 미궁'){
+                const options= ['고통의 미궁 내부1', '고통의 미궁 내부2', '고통의 미궁 내부3', '고통의 미궁 내부4', '고통의 미궁 내부5', '고통의 미궁 내부6', '고통의 미궁 중심부1', '고통의 미궁 중심부2', '고통의 미궁 중심부3', '고통의 미궁 중심부4', '고통의 미궁 중심부5', '고통의 미궁 중심부6', '고통의 미궁 중심부7', '고통의 미궁 최심부1', '고통의 미궁 최심부2', '고통의 미궁 최심부3', '고통의 미궁 최심부4', '고통의 미궁 최심부5', '고통의 미궁 최심부6'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '리멘'){
+                const options= ['세계의 눈물 하단1', '세계의 눈물 하단2', '세계의 눈물 하단3', '세계의 눈물 중단1', '세계의 눈물 중단2', '세계의 눈물 중단3', '세계의 눈물 중단4', '세계가 끝나는 곳 1-4', '세계가 끝나는 곳 1-5', '세계가 끝나는 곳 1-6', '세계가 끝나는 곳 1-7', '세계가 끝나는 곳 1-8', '세계가 끝나는 곳 1-9', '세계가 끝나는 곳 2-2', '세계가 끝나는 곳 2-3', '세계가 끝나는 곳 2-4', '세계가 끝나는 곳 2-5', '세계가 끝나는 곳 2-6', '세계가 끝나는 곳 2-7', '세계가 끝나는 곳 2-8'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
             else if (map_region.value === '세르니움'){
                 const options= ['해변 암석지대 1', '해변 암석지대 2', '해변 암석지대 3', '해변 암석지대 4', '세르니움 서쪽 성벽 1', '세르니움 서쪽 성벽 2', '세르니움 서쪽 성벽 3', '왕립 도서관 제1구역', '왕립 도서관 제2구역', '왕립 도서관 제3구역', '왕립 도서관 제4구역', '왕립 도서관 제5구역', '왕립 도서관 제6구역', '세르니움 동쪽 성벽 1', '세르니움 동쪽 성벽 2', '세르니움 동쪽 성벽 3', '불타는 왕립 도서관 제1구역', '불타는 왕립 도서관 제2구역', '불타는 왕립 도서관 제3구역', '불타는 왕립 도서관 제4구역', '불타는 왕립 도서관 제5구역', '불타는 왕립 도서관 제6구역', '격전의 서쪽 성벽 1', '격전의 서쪽 성벽 2', '격전의 서쪽 성벽 3', '격전의 서쪽 성벽 4', '격전의 동쪽 성벽 1', '격전의 동쪽 성벽 2', '격전의 동쪽 성벽 3', '격전의 동쪽 성벽 4', '격전의 동쪽 성벽 5', '격전의 동쪽 성벽 6'];
                 options.forEach(option => {
@@ -206,8 +383,17 @@
                     map_name.appendChild(opt);
                 })
             }
+            else if (map_region.value === '호텔 아르크스'){
+                const options= ['무법자들이 지배하는 황야1', '무법자들이 지배하는 황야2', '무법자들이 지배하는 황야3', '무법자들이 지배하는 황야4', '낭만이 저무는 자동차 극장1', '낭만이 저무는 자동차 극장2', '낭만이 저무는 자동차 극장3', '낭만이 저무는 자동차 극장4', '낭만이 저무는 자동차 극장5', '낭만이 저무는 자동차 극장6', '종착지 없는 횡단열차1', '종착지 없는 횡단열차2', '종착지 없는 횡단열차3', '종착지 없는 횡단열차4', '종착지 없는 횡단열차5', '종착지 없는 횡단열차6'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
             else if (map_region.value === '오디움'){
-                const options= ['성문으로 가는 길 3', '성문으로 가는 길 4'];
+                const options= ['성문으로 가는 길 1', '성문으로 가는 길 2', '성문으로 가는 길 3', '성문으로 가는 길 4', '성문으로 가는 길 5', '점령당한 골목 1', '점령당한 골목 2', '점령당한 골목 3', '점령당한 골목 4', '볕 드는 실험실 1', '볕 드는 실험실 2', '볕 드는 실험실 3', '잠긴 문 뒤 실험실 1', '잠긴 문 뒤 실험실 2', '잠긴 문 뒤 실험실 3', '잠긴 문 뒤 실험실 4'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
@@ -216,7 +402,25 @@
                 })
             }
             else if (map_region.value === '도원경'){
-                const options= ['생기가 돌아오는 봄 1', '생기가 돌아오는 봄 2'];
+                const options= ['생기가 돌아오는 봄 1', '생기가 돌아오는 봄 2', '생기가 돌아오는 봄 3', '생기가 돌아오는 봄 4', '생기가 돌아오는 봄 5', '빛이 약한 여름 1', '빛이 약한 여름 2', '빛이 약한 여름 3', '빛이 약한 여름 4', '빛이 약한 여름 5', '색깔이 옅은 가을 1', '색깔이 옅은 가을 2', '색깔이 옅은 가을 3', '색깔이 옅은 가을 4', '색깔이 옅은 가을 5', '참혹한 흔적의 겨울 1', '참혹한 흔적의 겨울 2', '참혹한 흔적의 겨울 3', '참혹한 흔적의 겨울 4', '참혹한 흔적의 겨울 5'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '아르테리아'){
+                const options=  ['북쪽 외곽지역', '외곽 전투지역 1', '서쪽 외곽지역', '남쪽 외곽지역', '외곽 전투지역 2', '동쪽 외곽지역', '최하층 통로 1', '최하층 통로 2', '최하층 통로 3', '최하층 통로 4', '최하층 통로 5', '최하층 통로 6', '최상층 통로 1', '최상층 통로 2', '최상층 통로 3', '최상층 통로 4', '최상층 통로 5', '최상층 통로 6', '최상층 통로 7', '최상층 통로 8'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '카르시온'){
+                const options=  ['거대 산호 군락 1', '거대 산호 군락 2', '거대 산호 군락 3', '잔잔한 해안가 1', '잔잔한 해안가 2', '잔잔한 해안가 3', '휘감기는 숲 1', '휘감기는 숲 2', '휘감기는 숲 3', '어둠이 내리는 나무줄기 1', '어둠이 내리는 나무줄기 2', '어둠이 내리는 나무줄기 3', '숨이 멎어드는 동굴 1', '숨이 멎어드는 동굴 2', '숨이 멎어드는 동굴 3', '숨이 멎어드는 동굴 4', '가라앉은 유적지 1', '가라앉은 유적지 2', '가라앉은 유적지 3', '가라앉은 유적지 4'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
@@ -237,6 +441,11 @@
                             localStorage.setItem('spec_final', JSON.stringify(data[0][1]))
                             localStorage.setItem('time', data[1])
                             alert('데이터 불러오기가 완료되었습니다.')
+                            update_spec()
+                            const old = document.getElementById('old');
+                            const fd = document.getElementById('fd');
+                            old.innerHTML='';
+                            fd.innerHTML='';
                         }
                         else{
                             console.error('expected 2 elements.')
@@ -258,6 +467,7 @@
             const core_reinforce = document.getElementById('core_reinforce').value
             const core_ignore_monster_armor = document.getElementById('core_ignore_monster_armor').value
             const skill_ignore_monster_armor = document.getElementById('skill_ignore_monster_armor').value
+            const skill_final_damage = document.getElementById('skill_final_damage').value
             const force_type = document.getElementById('force_type').value
             const map_region = document.getElementById('map_region').value
             const map_name = document.getElementById('map_name').value
@@ -288,6 +498,9 @@
             if(skill_ignore_monster_armor){
                 selectedItems.push(`skill_igm=${skill_ignore_monster_armor}`);
             }
+            if(skill_final_damage){
+                selectedItems.push(`skill_final_damage=${skill_final_damage}`);
+            }
             if(force_type){
                 selectedItems.push(`map_type=${force_type}`);
             }
@@ -316,13 +529,13 @@
                     fd.innerHTML = '';
                     mob_hp.innerHTML = '';  // 기존 내용을 지웁니다
                     const p0 = document.createElement('p');
-                    p0.textContent = data[0];
+                    p0.textContent = data[0].toLocaleString('ko-KR');
                     old.appendChild(p0)
                     const p1 = document.createElement('p');
-                    p1.textContent = data[1];
+                    p1.textContent = data[1].toLocaleString('ko-KR');
                     fd.appendChild(p1)
                     const p2 = document.createElement('p');
-                    p2.textContent = data[2];
+                    p2.textContent = data[2].toLocaleString('ko-KR');
                     mob_hp.appendChild(p2)
                 })
                 .catch(error => {

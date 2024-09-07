@@ -13,6 +13,7 @@ def make_spec_basic(basicData, headers):
     ###response_propensity=requests.get(get_propensity, headers = headers)
     ###print(response_propensity.json())
     specBasic={
+        "name" : basicData["name"],
         "class" : basicData["class"],
         "level" : basicData["level"],
         "str" : 0,

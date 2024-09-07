@@ -1,11 +1,12 @@
 {
-	"class": "칼리",
-	"level": 273,
+	"name": "단검도둑놈",
+	"class": "섀도어",
+	"level": 277,
 	"str": 4,
 	"dex": 4,
-	"luk": 1590,
+	"luk": 1613,
 	"int": 4,
-	"max_hp": 500,
-	"max_mp": 550,
+	"max_hp": 0,
+	"max_mp": 0,
 	"critical_rate": 5
 }
