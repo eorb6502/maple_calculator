@@ -118,5 +118,5 @@ def make_spec_set(data, headers):
     json_functions.makejson(specSet, "./assets/spec_set.json")
     return specSet
 """make_spec_set(headers = {
-    "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
+    "x-nxopen-api-key": "API-KEY"
     })"""

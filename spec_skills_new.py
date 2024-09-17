@@ -517,6 +517,6 @@ def make_spec_skill(headers):
                 specSkill["attack_power"]+=3+2*i["skill_level"]
                 specSkill["magic_power"]+=3+2*i["skill_level"]
     json_functions.makejson(specSkill, "./assets/spec_skills_new.json") """
-make_spec_skill(headers = {
-    "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
-    })
+"""make_spec_skill(headers = {
+    "x-nxopen-api-key": "API-KEY"
+    })"""

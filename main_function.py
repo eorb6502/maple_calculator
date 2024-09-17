@@ -9,10 +9,14 @@ import spec_symbol
 import spec_union
 import spec_cash
 import spec_combine
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
 def make_spec_final(str):
     headers = {
-        "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
+        "x-nxopen-api-key": api_key
         }
     chk, spec=get_ocid.getocid(str, headers)
     if chk==False:
