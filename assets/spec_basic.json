@@ -1,12 +1,12 @@
 {
-	"name": "단검도둑놈",
-	"class": "섀도어",
-	"level": 277,
+	"name": "츠데구",
+	"class": "칼리",
+	"level": 275,
 	"str": 4,
 	"dex": 4,
-	"luk": 1613,
+	"luk": 1601,
 	"int": 4,
-	"max_hp": 0,
-	"max_mp": 0,
+	"max_hp": 500,
+	"max_mp": 550,
 	"critical_rate": 5
 }

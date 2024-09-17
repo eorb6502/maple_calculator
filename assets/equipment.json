@@ -1,18 +1,18 @@
 {
 	"모자": {
 		"종류": "모자",
-		"이름": "하이네스 어새신보닛",
-		"스타포스 수치": 18,
+		"이름": "앱솔랩스 시프캡",
+		"스타포스 수치": 17,
 		"기본": {
 			"str": "0",
-			"dex": "40",
+			"dex": "45",
 			"int": "0",
-			"luk": "40",
-			"max_hp": "360",
-			"max_mp": "360",
-			"attack_power": "2",
+			"luk": "45",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "3",
 			"magic_power": "0",
-			"armor": "300",
+			"armor": "400",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
@@ -20,48 +20,48 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 150
+			"base_equipment_level": 160
 		},
 		"추옵": {
 			"str": "0",
-			"dex": "20",
-			"int": "0",
-			"luk": "68",
+			"dex": "30",
+			"int": "30",
+			"luk": "60",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
-			"speed": "0",
+			"speed": "4",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
-			"equipment_level_decrease": 25
+			"all_stat": "5",
+			"equipment_level_decrease": 0
 		},
 		"강화": {
 			"str": "0",
 			"dex": "0",
 			"int": "0",
-			"luk": "84",
-			"max_hp": "1440",
+			"luk": "48",
+			"max_hp": "840",
 			"max_mp": "0",
 			"attack_power": "1",
 			"magic_power": "0",
-			"armor": "120",
+			"armor": "60",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
 			"str": "0",
-			"dex": "73",
+			"dex": "66",
 			"int": "0",
-			"luk": "73",
+			"luk": "66",
 			"max_hp": "255",
 			"max_mp": "0",
-			"attack_power": "30",
-			"magic_power": "30",
-			"armor": "608",
+			"attack_power": "21",
+			"magic_power": "21",
+			"armor": "609",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -79,14 +79,14 @@
 		"잠재등급": "유니크",
 		"잠재옵션": [
 			"LUK : +9%",
-			"LUK : +6%",
-			"INT : +6%"
+			"STR : +6%",
+			"올스탯 : +3%"
 		],
-		"에디등급": "에픽",
+		"에디등급": "레어",
 		"에디옵션": [
-			"STR : +14",
 			"공격력 : +10",
-			"LUK : +2%"
+			"이동속도 : +4",
+			"공격력 : +3"
 		],
 		"소울옵션": null
 	},
@@ -115,19 +115,19 @@
 		},
 		"추옵": {
 			"str": "0",
-			"dex": "20",
-			"int": "0",
-			"luk": "52",
+			"dex": "0",
+			"int": "24",
+			"luk": "80",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
 			"magic_power": "0",
-			"armor": "32",
+			"armor": "40",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
+			"all_stat": "5",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
@@ -137,7 +137,7 @@
 			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "19",
+			"attack_power": "17",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
@@ -167,24 +167,24 @@
 			"magic_power": "0",
 			"exceptional_upgrade": 0
 		},
-		"잠재등급": "에픽",
+		"잠재등급": "유니크",
 		"잠재옵션": [
-			"LUK : +6%",
-			"LUK : +6%",
+			"HP 회복 아이템 및 회복 스킬 효율 : +30%",
+			"LUK : +9%",
 			"LUK : +6%"
 		],
 		"에디등급": "레어",
 		"에디옵션": [
-			"DEX : +2%",
-			"공격력 : +3",
-			"공격력 : +10"
+			"공격력 : +10",
+			"최대 MP : +60",
+			"LUK : +6"
 		],
 		"소울옵션": null
 	},
 	"눈장식": {
 		"종류": "눈장식",
 		"이름": "블랙빈 마크",
-		"스타포스 수치": 17,
+		"스타포스 수치": 20,
 		"기본": {
 			"str": "7",
 			"dex": "7",
@@ -205,104 +205,13 @@
 			"base_equipment_level": 135
 		},
 		"추옵": {
-			"str": "24",
-			"dex": "24",
-			"int": "28",
-			"luk": "76",
+			"str": "0",
+			"dex": "0",
+			"int": "52",
+			"luk": "66",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
-			"magic_power": "0",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0",
-			"boss_damage": "0",
-			"damage": "0",
-			"all_stat": "4",
-			"equipment_level_decrease": 0
-		},
-		"강화": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "22",
-			"magic_power": "0",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0"
-		},
-		"스타포스": {
-			"str": "54",
-			"dex": "54",
-			"int": "54",
-			"luk": "54",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "15",
-			"magic_power": "15",
-			"armor": "170",
-			"speed": "0",
-			"jump": "0"
-		},
-		"익셉셔널": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"exceptional_upgrade": 0
-		},
-		"잠재등급": "유니크",
-		"잠재옵션": [
-			"LUK : +9%",
-			"LUK : +6%",
-			"INT : +6%"
-		],
-		"에디등급": "에픽",
-		"에디옵션": [
-			"LUK : +4%",
-			"STR : +2%",
-			"LUK : +2%"
-		],
-		"소울옵션": null
-	},
-	"귀고리": {
-		"종류": "귀고리",
-		"이름": "에스텔라 이어링",
-		"스타포스 수치": 17,
-		"기본": {
-			"str": "7",
-			"dex": "7",
-			"int": "7",
-			"luk": "7",
-			"max_hp": "300",
-			"max_mp": "300",
-			"attack_power": "2",
-			"magic_power": "2",
-			"armor": "100",
-			"speed": "0",
-			"jump": "0",
-			"boss_damage": "0",
-			"ignore_monster_armor": "0",
-			"all_stat": "0",
-			"max_hp_rate": "0",
-			"max_mp_rate": "0",
-			"base_equipment_level": 160
-		},
-		"추옵": {
-			"str": "0",
-			"dex": "25",
-			"int": "0",
-			"luk": "61",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "4",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
@@ -319,22 +228,22 @@
 			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "28",
+			"attack_power": "8",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "66",
-			"dex": "66",
-			"int": "66",
-			"luk": "66",
+			"str": "75",
+			"dex": "75",
+			"int": "75",
+			"luk": "75",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "21",
-			"magic_power": "21",
-			"armor": "142",
+			"attack_power": "45",
+			"magic_power": "45",
+			"armor": "218",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -352,14 +261,105 @@
 		"잠재등급": "유니크",
 		"잠재옵션": [
 			"LUK : +9%",
-			"LUK : +6%",
-			"최대 HP : +6%"
+			"최대 MP : +6%",
+			"LUK : +6%"
 		],
 		"에디등급": "에픽",
 		"에디옵션": [
-			"LUK : +4%",
-			"DEX : +10",
-			"LUK : +2%"
+			"공격력 : +11",
+			"공격력 : +10",
+			"방어력 : +2%"
+		],
+		"소울옵션": null
+	},
+	"귀고리": {
+		"종류": "귀고리",
+		"이름": "하프 이어링",
+		"스타포스 수치": 5,
+		"기본": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "0",
+			"speed": "0",
+			"jump": "0",
+			"boss_damage": "0",
+			"ignore_monster_armor": "0",
+			"all_stat": "0",
+			"max_hp_rate": "0",
+			"max_mp_rate": "0",
+			"base_equipment_level": 75
+		},
+		"추옵": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "420",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "12",
+			"speed": "0",
+			"jump": "0",
+			"boss_damage": "0",
+			"damage": "0",
+			"all_stat": "0",
+			"equipment_level_decrease": 15
+		},
+		"강화": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "10",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "0",
+			"speed": "0",
+			"jump": "0"
+		},
+		"스타포스": {
+			"str": "10",
+			"dex": "10",
+			"int": "10",
+			"luk": "10",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "6",
+			"speed": "0",
+			"jump": "0"
+		},
+		"익셉셔널": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"exceptional_upgrade": 0
+		},
+		"잠재등급": "레전드리",
+		"잠재옵션": [
+			"아이템 드롭률 : +20%",
+			"최대 MP : +9%",
+			"LUK : +9%"
+		],
+		"에디등급": null,
+		"에디옵션": [
+			null,
+			null,
+			null
 		],
 		"소울옵션": null
 	},
@@ -387,37 +387,37 @@
 			"base_equipment_level": 150
 		},
 		"추옵": {
-			"str": "0",
-			"dex": "0",
+			"str": "20",
+			"dex": "20",
 			"int": "0",
-			"luk": "48",
+			"luk": "72",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "7",
+			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
-			"equipment_level_decrease": 25
+			"all_stat": "5",
+			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "0",
-			"dex": "0",
+			"str": "12",
+			"dex": "9",
 			"int": "0",
-			"luk": "56",
-			"max_hp": "960",
+			"luk": "29",
+			"max_hp": "170",
 			"max_mp": "0",
-			"attack_power": "1",
+			"attack_power": "16",
 			"magic_power": "0",
-			"armor": "80",
+			"armor": "31",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "0",
+			"str": "33",
 			"dex": "73",
 			"int": "0",
 			"luk": "73",
@@ -425,7 +425,7 @@
 			"max_mp": "0",
 			"attack_power": "30",
 			"magic_power": "30",
-			"armor": "314",
+			"armor": "247",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -442,15 +442,15 @@
 		},
 		"잠재등급": "유니크",
 		"잠재옵션": [
-			"LUK : +9%",
-			"방어력 : +6%",
-			"LUK : +6%"
+			"올스탯 : +6%",
+			"LUK : +6%",
+			"올스탯 : +3%"
 		],
 		"에디등급": "에픽",
 		"에디옵션": [
 			"LUK : +4%",
-			"INT : +2%",
-			"공격력 : +10"
+			"공격력 : +10",
+			"이동속도 : +6"
 		],
 		"소울옵션": null
 	},
@@ -478,32 +478,32 @@
 			"base_equipment_level": 150
 		},
 		"추옵": {
-			"str": "44",
-			"dex": "20",
+			"str": "16",
+			"dex": "0",
 			"int": "0",
-			"luk": "64",
+			"luk": "56",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "0",
+			"attack_power": "4",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
+			"all_stat": "5",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
 			"str": "0",
 			"dex": "0",
 			"int": "0",
-			"luk": "56",
-			"max_hp": "960",
+			"luk": "70",
+			"max_hp": "1190",
 			"max_mp": "0",
 			"attack_power": "1",
 			"magic_power": "0",
-			"armor": "80",
+			"armor": "105",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -516,7 +516,7 @@
 			"max_mp": "0",
 			"attack_power": "30",
 			"magic_power": "30",
-			"armor": "314",
+			"armor": "358",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -534,31 +534,31 @@
 		"잠재등급": "에픽",
 		"잠재옵션": [
 			"LUK : +6%",
-			"LUK : +12",
-			"최대 HP : +3%"
+			"LUK : +6%",
+			"LUK : +3%"
 		],
 		"에디등급": "에픽",
 		"에디옵션": [
-			"최대 MP : +180",
 			"LUK : +4%",
-			"LUK : +4%"
+			"STR : +10",
+			"공격력 : +10"
 		],
 		"소울옵션": null
 	},
 	"신발": {
 		"종류": "신발",
-		"이름": "아케인셰이드 시프슈즈",
+		"이름": "앱솔랩스 시프슈즈",
 		"스타포스 수치": 17,
 		"기본": {
 			"str": "0",
-			"dex": "40",
+			"dex": "20",
 			"int": "0",
-			"luk": "40",
+			"luk": "20",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "9",
+			"attack_power": "5",
 			"magic_power": "0",
-			"armor": "250",
+			"armor": "150",
 			"speed": "10",
 			"jump": "7",
 			"boss_damage": "0",
@@ -566,23 +566,23 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 200
+			"base_equipment_level": 160
 		},
 		"추옵": {
-			"str": "30",
-			"dex": "0",
-			"int": "36",
-			"luk": "143",
+			"str": "0",
+			"dex": "25",
+			"int": "25",
+			"luk": "54",
 			"max_hp": "0",
-			"max_mp": "0",
+			"max_mp": "2400",
 			"attack_power": "0",
 			"magic_power": "0",
-			"armor": "77",
+			"armor": "0",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "0",
+			"all_stat": "5",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
@@ -600,14 +600,14 @@
 		},
 		"스타포스": {
 			"str": "0",
-			"dex": "70",
+			"dex": "66",
 			"int": "0",
-			"luk": "70",
+			"luk": "66",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "25",
-			"magic_power": "25",
-			"armor": "441",
+			"attack_power": "21",
+			"magic_power": "21",
+			"armor": "313",
 			"speed": "18",
 			"jump": "18"
 		},
@@ -622,34 +622,34 @@
 			"magic_power": "0",
 			"exceptional_upgrade": 0
 		},
-		"잠재등급": "유니크",
+		"잠재등급": "에픽",
 		"잠재옵션": [
-			"<쓸만한 헤이스트> 스킬 사용 가능",
 			"LUK : +6%",
-			"LUK : +6%"
+			"LUK : +6%",
+			"이동속도 : +8"
 		],
 		"에디등급": "레어",
 		"에디옵션": [
 			"공격력 : +10",
-			"이동속도 : +4",
-			null
+			"최대 MP : +60",
+			"공격력 : +3"
 		],
 		"소울옵션": null
 	},
 	"장갑": {
 		"종류": "장갑",
-		"이름": "아케인셰이드 시프글러브",
-		"스타포스 수치": 12,
+		"이름": "앱솔랩스 시프글러브",
+		"스타포스 수치": 17,
 		"기본": {
 			"str": "0",
-			"dex": "40",
+			"dex": "20",
 			"int": "0",
-			"luk": "40",
+			"luk": "20",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "9",
+			"attack_power": "5",
 			"magic_power": "0",
-			"armor": "250",
+			"armor": "150",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
@@ -657,23 +657,23 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 200
+			"base_equipment_level": 160
 		},
 		"추옵": {
-			"str": "30",
-			"dex": "30",
+			"str": "55",
+			"dex": "50",
 			"int": "0",
-			"luk": "66",
+			"luk": "55",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "5",
+			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
+			"all_stat": "5",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
@@ -683,7 +683,7 @@
 			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "24",
+			"attack_power": "16",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
@@ -691,13 +691,13 @@
 		},
 		"스타포스": {
 			"str": "0",
-			"dex": "31",
+			"dex": "66",
 			"int": "0",
-			"luk": "31",
+			"luk": "66",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "4",
-			"magic_power": "0",
+			"attack_power": "28",
+			"magic_power": "21",
 			"armor": "206",
 			"speed": "0",
 			"jump": "0"
@@ -716,31 +716,31 @@
 		"잠재등급": "유니크",
 		"잠재옵션": [
 			"LUK : +9%",
-			"LUK : +6%",
-			"몬스터 처치 시 15% 확률로 95의 MP 회복"
+			"DEX : +9%",
+			"LUK : +6%"
 		],
 		"에디등급": "레어",
 		"에디옵션": [
 			"공격력 : +10",
-			"최대 HP : +60",
-			"방어력 : +60"
+			"이동속도 : +4",
+			"마력 : +3"
 		],
 		"소울옵션": null
 	},
 	"망토": {
 		"종류": "망토",
-		"이름": "아케인셰이드 시프케이프",
-		"스타포스 수치": 11,
+		"이름": "앱솔랩스 시프케이프",
+		"스타포스 수치": 17,
 		"기본": {
-			"str": "35",
-			"dex": "35",
-			"int": "35",
-			"luk": "35",
+			"str": "15",
+			"dex": "15",
+			"int": "15",
+			"luk": "15",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "6",
-			"magic_power": "6",
-			"armor": "450",
+			"attack_power": "2",
+			"magic_power": "2",
+			"armor": "250",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
@@ -748,13 +748,13 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 200
+			"base_equipment_level": 160
 		},
 		"추옵": {
-			"str": "0",
-			"dex": "24",
+			"str": "20",
+			"dex": "54",
 			"int": "0",
-			"luk": "79",
+			"luk": "65",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
@@ -765,7 +765,7 @@
 			"boss_damage": "0",
 			"damage": "0",
 			"all_stat": "6",
-			"equipment_level_decrease": 30
+			"equipment_level_decrease": 0
 		},
 		"강화": {
 			"str": "0",
@@ -781,15 +781,15 @@
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "0",
-			"dex": "28",
-			"int": "0",
-			"luk": "28",
-			"max_hp": "155",
+			"str": "26",
+			"dex": "66",
+			"int": "26",
+			"luk": "66",
+			"max_hp": "255",
 			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"armor": "383",
+			"attack_power": "21",
+			"magic_power": "21",
+			"armor": "441",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -807,20 +807,20 @@
 		"잠재등급": "에픽",
 		"잠재옵션": [
 			"LUK : +6%",
-			"올스탯 : +5",
-			"최대 MP : +120"
+			"LUK : +3%",
+			"LUK : +3%"
 		],
 		"에디등급": "레어",
 		"에디옵션": [
 			"공격력 : +10",
-			"최대 HP : +60",
-			"방어력 : +60"
+			"공격력 : +3",
+			"이동속도 : +4"
 		],
 		"소울옵션": null
 	},
 	"보조무기": {
-		"종류": "단검용 검집",
-		"이름": "슬래싱 섀도우",
+		"종류": "헥스시커",
+		"이름": "인피니트 헥스시커",
 		"스타포스 수치": 0,
 		"기본": {
 			"str": "0",
@@ -898,21 +898,21 @@
 		"잠재등급": "레전드리",
 		"잠재옵션": [
 			"보스 몬스터 공격 시 데미지 : +40%",
-			"공격력 : +9%",
+			"공격력 : +12%",
 			"몬스터 방어율 무시 : +30%"
 		],
-		"에디등급": "레전드리",
+		"에디등급": "에픽",
 		"에디옵션": [
-			"캐릭터 기준 9레벨 당 INT : +2",
-			"공격력 : +9%",
-			"데미지 : +9%"
+			"공격력 : +6%",
+			"LUK : +12",
+			"올스탯 : +5"
 		],
 		"소울옵션": null
 	},
 	"무기": {
-		"종류": "단검",
-		"이름": "아케인셰이드 대거",
-		"스타포스 수치": 17,
+		"종류": "차크람",
+		"이름": "아케인셰이드 차크람",
+		"스타포스 수치": 18,
 		"기본": {
 			"str": "0",
 			"dex": "100",
@@ -933,20 +933,20 @@
 			"base_equipment_level": 200
 		},
 		"추옵": {
-			"str": "0",
-			"dex": "66",
-			"int": "0",
-			"luk": "0",
+			"str": "30",
+			"dex": "48",
+			"int": "24",
+			"luk": "54",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "133",
+			"attack_power": "170",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
-			"boss_damage": "10",
+			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
+			"all_stat": "0",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
@@ -964,12 +964,12 @@
 		},
 		"스타포스": {
 			"str": "0",
-			"dex": "70",
+			"dex": "85",
 			"int": "0",
-			"luk": "70",
+			"luk": "85",
 			"max_hp": "255",
 			"max_mp": "255",
-			"attack_power": "159",
+			"attack_power": "173",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
@@ -988,17 +988,17 @@
 		},
 		"잠재등급": "레전드리",
 		"잠재옵션": [
-			"보스 몬스터 공격 시 데미지 : +35%",
+			"보스 몬스터 공격 시 데미지 : +40%",
 			"공격력 : +9%",
-			"보스 몬스터 공격 시 데미지 : +30%"
+			"몬스터 방어율 무시 : +30%"
 		],
 		"에디등급": "유니크",
 		"에디옵션": [
 			"공격력 : +9%",
-			"공격력 : +6%",
-			"몬스터 방어율 무시 : +3%"
+			"STR : +6%",
+			"공격력 : +6%"
 		],
-		"소울옵션": "공격력 : +3%"
+		"소울옵션": "보스 몬스터 공격 시 데미지 : +7%"
 	},
 	"반지1": {
 		"종류": "반지",
@@ -1079,14 +1079,14 @@
 		},
 		"잠재등급": "레전드리",
 		"잠재옵션": [
-			"메소 획득량 : +20%",
+			"올스탯 : +9%",
 			"LUK : +9%",
-			"올스탯 : +6%"
+			"최대 HP : +9%"
 		],
 		"에디등급": "레어",
 		"에디옵션": [
-			"공격력 : +10",
-			"INT : +6",
+			"DEX : +2%",
+			"DEX : +6",
 			null
 		],
 		"소울옵션": null
@@ -1171,109 +1171,18 @@
 		"잠재등급": "레전드리",
 		"잠재옵션": [
 			"아이템 드롭률 : +20%",
-			"HP 회복 아이템 및 회복 스킬 효율 : +30%",
-			"최대 MP : +9%"
+			"DEX : +9%",
+			"STR : +9%"
 		],
-		"에디등급": null,
+		"에디등급": "레어",
 		"에디옵션": [
-			null,
-			null,
+			"LUK : +10",
+			"공격력 : +3",
 			null
 		],
 		"소울옵션": null
 	},
 	"반지3": {
-		"종류": "반지",
-		"이름": "글로리온 링 : 슈프림",
-		"스타포스 수치": 0,
-		"기본": {
-			"str": "40",
-			"dex": "40",
-			"int": "40",
-			"luk": "40",
-			"max_hp": "4000",
-			"max_mp": "4000",
-			"attack_power": "25",
-			"magic_power": "25",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0",
-			"boss_damage": "0",
-			"ignore_monster_armor": "0",
-			"all_stat": "0",
-			"max_hp_rate": "0",
-			"max_mp_rate": "0",
-			"base_equipment_level": 120
-		},
-		"추옵": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0",
-			"boss_damage": "0",
-			"damage": "0",
-			"all_stat": "0",
-			"equipment_level_decrease": 0
-		},
-		"강화": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0"
-		},
-		"스타포스": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"armor": "0",
-			"speed": "0",
-			"jump": "0"
-		},
-		"익셉셔널": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
-			"exceptional_upgrade": 0
-		},
-		"잠재등급": "레전드리",
-		"잠재옵션": [
-			"아이템 드롭률 : +20%",
-			"LUK : +9%",
-			"LUK : +9%"
-		],
-		"에디등급": "레어",
-		"에디옵션": [
-			"공격력 : +10",
-			"DEX : +6",
-			"공격력 : +3"
-		],
-		"소울옵션": null
-	},
-	"반지4": {
 		"종류": "반지",
 		"이름": "카오스 링",
 		"스타포스 수치": 0,
@@ -1314,13 +1223,13 @@
 			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "-2",
-			"dex": "0",
-			"int": "-2",
-			"luk": "0",
-			"max_hp": "-100",
-			"max_mp": "-100",
-			"attack_power": "5",
+			"str": "4",
+			"dex": "3",
+			"int": "2",
+			"luk": "5",
+			"max_hp": "-50",
+			"max_mp": "0",
+			"attack_power": "3",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
@@ -1353,30 +1262,30 @@
 		"잠재등급": "레전드리",
 		"잠재옵션": [
 			"아이템 드롭률 : +20%",
-			"HP 회복 아이템 및 회복 스킬 효율 : +30%",
-			"STR : +9%"
+			"STR : +9%",
+			"LUK : +9%"
 		],
-		"에디등급": null,
+		"에디등급": "레어",
 		"에디옵션": [
-			null,
-			null,
+			"DEX : +2%",
+			"최대 HP : +60",
 			null
 		],
 		"소울옵션": null
 	},
-	"펜던트": {
-		"종류": "펜던트",
-		"이름": "준비된 정령의 펜던트",
-		"스타포스 수치": 0,
+	"반지4": {
+		"종류": "반지",
+		"이름": "여명의 가디언 엔젤 링",
+		"스타포스 수치": 17,
 		"기본": {
-			"str": "0",
-			"dex": "0",
-			"int": "0",
-			"luk": "0",
-			"max_hp": "0",
-			"max_mp": "0",
-			"attack_power": "0",
-			"magic_power": "0",
+			"str": "5",
+			"dex": "5",
+			"int": "5",
+			"luk": "5",
+			"max_hp": "200",
+			"max_mp": "200",
+			"attack_power": "2",
+			"magic_power": "2",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
@@ -1385,7 +1294,7 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 0
+			"base_equipment_level": 160
 		},
 		"추옵": {
 			"str": "0",
@@ -1399,6 +1308,97 @@
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
+			"boss_damage": "0",
+			"damage": "0",
+			"all_stat": "0",
+			"equipment_level_decrease": 0
+		},
+		"강화": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "8",
+			"magic_power": "0",
+			"armor": "0",
+			"speed": "0",
+			"jump": "0"
+		},
+		"스타포스": {
+			"str": "66",
+			"dex": "66",
+			"int": "66",
+			"luk": "66",
+			"max_hp": "255",
+			"max_mp": "0",
+			"attack_power": "21",
+			"magic_power": "21",
+			"armor": "18",
+			"speed": "0",
+			"jump": "0"
+		},
+		"익셉셔널": {
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"exceptional_upgrade": 0
+		},
+		"잠재등급": "유니크",
+		"잠재옵션": [
+			"LUK : +9%",
+			"LUK : +6%",
+			"LUK : +6%"
+		],
+		"에디등급": "레어",
+		"에디옵션": [
+			"공격력 : +10",
+			"STR : +6",
+			"이동속도 : +4"
+		],
+		"소울옵션": null
+	},
+	"펜던트": {
+		"종류": "펜던트",
+		"이름": "매커네이터 펜던트",
+		"스타포스 수치": 0,
+		"기본": {
+			"str": "10",
+			"dex": "10",
+			"int": "10",
+			"luk": "10",
+			"max_hp": "250",
+			"max_mp": "250",
+			"attack_power": "1",
+			"magic_power": "1",
+			"armor": "100",
+			"speed": "0",
+			"jump": "0",
+			"boss_damage": "0",
+			"ignore_monster_armor": "0",
+			"all_stat": "0",
+			"max_hp_rate": "0",
+			"max_mp_rate": "0",
+			"base_equipment_level": 120
+		},
+		"추옵": {
+			"str": "0",
+			"dex": "0",
+			"int": "35",
+			"luk": "0",
+			"max_hp": "1440",
+			"max_mp": "1440",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "0",
+			"speed": "0",
+			"jump": "4",
 			"boss_damage": "0",
 			"damage": "0",
 			"all_stat": "0",
@@ -1457,17 +1457,17 @@
 	},
 	"훈장": {
 		"종류": "훈장",
-		"이름": "신의 컨트롤 보유자",
+		"이름": "HYPER BURNING",
 		"스타포스 수치": 0,
 		"기본": {
-			"str": "8",
-			"dex": "8",
-			"int": "8",
-			"luk": "8",
+			"str": "6",
+			"dex": "6",
+			"int": "6",
+			"luk": "6",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "8",
-			"magic_power": "8",
+			"attack_power": "6",
+			"magic_power": "6",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0",
@@ -1476,7 +1476,7 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 100
+			"base_equipment_level": 200
 		},
 		"추옵": {
 			"str": "0",
@@ -1548,13 +1548,13 @@
 	},
 	"벨트": {
 		"종류": "벨트",
-		"이름": "분노한 자쿰의 벨트",
-		"스타포스 수치": 17,
+		"이름": "골든 클로버 벨트",
+		"스타포스 수치": 18,
 		"기본": {
-			"str": "18",
-			"dex": "18",
-			"int": "18",
-			"luk": "18",
+			"str": "15",
+			"dex": "15",
+			"int": "15",
+			"luk": "15",
 			"max_hp": "150",
 			"max_mp": "150",
 			"attack_power": "1",
@@ -1567,48 +1567,48 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 150
+			"base_equipment_level": 140
 		},
 		"추옵": {
 			"str": "0",
 			"dex": "24",
-			"int": "0",
-			"luk": "56",
+			"int": "20",
+			"luk": "84",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
-			"jump": "4",
+			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
 			"all_stat": "6",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "3",
-			"dex": "4",
-			"int": "7",
-			"luk": "9",
-			"max_hp": "50",
-			"max_mp": "70",
-			"attack_power": "10",
-			"magic_power": "3",
-			"armor": "4",
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "0",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "0",
 			"speed": "0",
-			"jump": "3"
+			"jump": "0"
 		},
 		"스타포스": {
-			"str": "62",
-			"dex": "62",
-			"int": "62",
-			"luk": "62",
+			"str": "67",
+			"dex": "67",
+			"int": "67",
+			"luk": "67",
 			"max_hp": "255",
 			"max_mp": "0",
-			"attack_power": "19",
-			"magic_power": "19",
-			"armor": "214",
+			"attack_power": "27",
+			"magic_power": "27",
+			"armor": "224",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -1625,32 +1625,32 @@
 		},
 		"잠재등급": "유니크",
 		"잠재옵션": [
-			"DEX : +9%",
 			"LUK : +9%",
+			"방어력 : +6%",
 			"LUK : +6%"
 		],
-		"에디등급": "에픽",
+		"에디등급": "레어",
 		"에디옵션": [
-			"LUK : +4%",
 			"공격력 : +10",
-			"DEX : +10"
+			"방어력 : +60",
+			"공격력 : +3"
 		],
 		"소울옵션": null
 	},
 	"어깨장식": {
 		"종류": "어깨장식",
-		"이름": "아케인셰이드 시프숄더",
+		"이름": "앱솔랩스 시프숄더",
 		"스타포스 수치": 17,
 		"기본": {
-			"str": "35",
-			"dex": "35",
-			"int": "35",
-			"luk": "35",
+			"str": "14",
+			"dex": "14",
+			"int": "14",
+			"luk": "14",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "20",
-			"magic_power": "20",
-			"armor": "300",
+			"attack_power": "10",
+			"magic_power": "10",
+			"armor": "100",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
@@ -1658,7 +1658,7 @@
 			"all_stat": "0",
 			"max_hp_rate": "0",
 			"max_mp_rate": "0",
-			"base_equipment_level": 200
+			"base_equipment_level": 160
 		},
 		"추옵": {
 			"str": "0",
@@ -1678,28 +1678,28 @@
 			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "1",
+			"str": "0",
 			"dex": "0",
-			"int": "8",
-			"luk": "2",
-			"max_hp": "0",
+			"int": "0",
+			"luk": "14",
+			"max_hp": "240",
 			"max_mp": "0",
-			"attack_power": "5",
-			"magic_power": "2",
-			"armor": "4",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "20",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "30",
-			"dex": "70",
-			"int": "30",
-			"luk": "70",
+			"str": "26",
+			"dex": "66",
+			"int": "26",
+			"luk": "66",
 			"max_hp": "255",
 			"max_mp": "0",
-			"attack_power": "25",
-			"magic_power": "25",
-			"armor": "406",
+			"attack_power": "21",
+			"magic_power": "21",
+			"armor": "170",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -1714,17 +1714,17 @@
 			"magic_power": "0",
 			"exceptional_upgrade": 0
 		},
-		"잠재등급": "유니크",
+		"잠재등급": "에픽",
 		"잠재옵션": [
-			"올스탯 : +6%",
-			"DEX : +9%",
-			"LUK : +6%"
+			"LUK : +6%",
+			"LUK : +3%",
+			"최대 MP : +120"
 		],
-		"에디등급": "에픽",
+		"에디등급": "레어",
 		"에디옵션": [
-			"공격력 : +11",
-			"DEX : +10",
-			"최대 HP : +100"
+			"공격력 : +10",
+			"최대 MP : +60",
+			"방어력 : +60"
 		],
 		"소울옵션": null
 	},
@@ -1753,16 +1753,16 @@
 		},
 		"추옵": {
 			"str": "0",
-			"dex": "0",
+			"dex": "24",
 			"int": "20",
-			"luk": "68",
+			"luk": "44",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
-			"magic_power": "0",
+			"magic_power": "6",
 			"armor": "0",
 			"speed": "0",
-			"jump": "5",
+			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
 			"all_stat": "6",
@@ -1822,7 +1822,7 @@
 	"기계 심장": {
 		"종류": "기계 심장",
 		"이름": "페어리 하트",
-		"스타포스 수치": 8,
+		"스타포스 수치": 0,
 		"기본": {
 			"str": "0",
 			"dex": "0",
@@ -1860,23 +1860,23 @@
 			"equipment_level_decrease": 0
 		},
 		"강화": {
-			"str": "30",
-			"dex": "30",
-			"int": "30",
-			"luk": "30",
+			"str": "15",
+			"dex": "15",
+			"int": "15",
+			"luk": "15",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "90",
+			"attack_power": "45",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "19",
-			"dex": "19",
-			"int": "19",
-			"luk": "19",
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "0",
@@ -1896,17 +1896,17 @@
 			"magic_power": "0",
 			"exceptional_upgrade": 0
 		},
-		"잠재등급": "유니크",
+		"잠재등급": "에픽",
 		"잠재옵션": [
-			"LUK : +9%",
-			"LUK : +9%",
-			"DEX : +6%"
+			"LUK : +6%",
+			"LUK : +3%",
+			null
 		],
 		"에디등급": "레어",
 		"에디옵션": [
-			"공격력 : +10",
-			"STR : +6",
-			"STR : +6"
+			"이동속도 : +5",
+			"이동속도 : +3",
+			null
 		],
 		"소울옵션": null
 	},
@@ -2003,7 +2003,7 @@
 	},
 	"엠블렘": {
 		"종류": "엠블렘",
-		"이름": "골드 메이플리프 엠블렘",
+		"이름": "골드 체이서 엠블렘",
 		"스타포스 수치": 0,
 		"기본": {
 			"str": "10",
@@ -2080,48 +2080,48 @@
 		},
 		"잠재등급": "레전드리",
 		"잠재옵션": [
-			"공격력 : +12%",
-			"LUK : +12%",
-			"공격력 : +9%"
+			"데미지 : +12%",
+			"공격력 : +9%",
+			"올스탯 : +6%"
 		],
 		"에디등급": "유니크",
 		"에디옵션": [
-			"공격력 : +9%",
-			"공격력 : +6%",
-			"최대 MP : +5%"
+			"DEX : +9%",
+			"LUK : +6%",
+			"공격력 : +6%"
 		],
 		"소울옵션": null
 	},
 	"펜던트2": {
 		"종류": "펜던트",
-		"이름": "데이브레이크 펜던트",
-		"스타포스 수치": 17,
+		"이름": "카오스 혼테일의 목걸이",
+		"스타포스 수치": 0,
 		"기본": {
-			"str": "8",
-			"dex": "8",
-			"int": "8",
-			"luk": "8",
+			"str": "10",
+			"dex": "10",
+			"int": "10",
+			"luk": "10",
 			"max_hp": "0",
 			"max_mp": "0",
 			"attack_power": "2",
 			"magic_power": "2",
-			"armor": "100",
+			"armor": "140",
 			"speed": "0",
 			"jump": "0",
 			"boss_damage": "0",
 			"ignore_monster_armor": "0",
 			"all_stat": "0",
-			"max_hp_rate": "0",
-			"max_mp_rate": "0",
-			"base_equipment_level": 140
+			"max_hp_rate": "10",
+			"max_mp_rate": "10",
+			"base_equipment_level": 120
 		},
 		"추옵": {
-			"str": "0",
-			"dex": "20",
+			"str": "4",
+			"dex": "4",
 			"int": "0",
-			"luk": "68",
-			"max_hp": "2520",
-			"max_mp": "0",
+			"luk": "0",
+			"max_hp": "0",
+			"max_mp": "1080",
 			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
@@ -2129,7 +2129,7 @@
 			"jump": "0",
 			"boss_damage": "0",
 			"damage": "0",
-			"all_stat": "6",
+			"all_stat": "0",
 			"equipment_level_decrease": 0
 		},
 		"강화": {
@@ -2139,22 +2139,22 @@
 			"luk": "0",
 			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "25",
+			"attack_power": "0",
 			"magic_power": "0",
 			"armor": "0",
 			"speed": "0",
 			"jump": "0"
 		},
 		"스타포스": {
-			"str": "58",
-			"dex": "58",
-			"int": "58",
-			"luk": "58",
-			"max_hp": "255",
+			"str": "0",
+			"dex": "0",
+			"int": "0",
+			"luk": "0",
+			"max_hp": "0",
 			"max_mp": "0",
-			"attack_power": "17",
-			"magic_power": "17",
-			"armor": "142",
+			"attack_power": "0",
+			"magic_power": "0",
+			"armor": "0",
 			"speed": "0",
 			"jump": "0"
 		},
@@ -2169,19 +2169,19 @@
 			"magic_power": "0",
 			"exceptional_upgrade": 0
 		},
-		"잠재등급": "레전드리",
+		"잠재등급": "레어",
 		"잠재옵션": [
-			"LUK : +12%",
-			"올스탯 : +6%",
-			"LUK : +9%"
+			null,
+			null,
+			null
 		],
-		"에디등급": "에픽",
+		"에디등급": null,
 		"에디옵션": [
-			"DEX : +14",
-			"공격력 : +10",
-			"공격력 : +10"
+			null,
+			null,
+			null
 		],
 		"소울옵션": null
 	},
-	"starforce": 221
+	"starforce": 216
 }

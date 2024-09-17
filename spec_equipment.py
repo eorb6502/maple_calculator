@@ -441,9 +441,9 @@ def make_spec_equipment(equipmentData, basic):
             continue
         equipment=equipmentData[i]
         #카혼목, 도미 api 오류 해결되면 변경할 것
-        if(equipment["이름"]=="카오스 혼테일의 목걸이" or equipment["이름"]=="도미네이터 펜던트"):
-            totalStat["max_hp_rate"]+=10
-            totalStat["max_mp_rate"]+=10
+        #if(equipment["이름"]=="카오스 혼테일의 목걸이" or equipment["이름"]=="도미네이터 펜던트"):
+        #    totalStat["max_hp_rate"]+=10
+        #    totalStat["max_mp_rate"]+=10
         if equipment["이름"]=="어비스 헌터스 링":
             totalStat["normal_damage"]+=20
         if equipment["이름"]=="어드벤쳐 딥다크 크리티컬링":

@@ -4,11 +4,14 @@ def updateDict(dict, arr):
     for j in arr:
         ot=j["option_type"].lower()
         ov=j["option_value"]
-        if ot.find("최대")!=-1:
+        if ot=="이동속도" or ot=="점프력":
+            print(ot)
+            continue
+        elif ot.find("최대")!=-1:
             ot="max_"+ot.split()[-1]
-        if ot=="공격력":
+        elif ot=="공격력":
             ot="attack_power"
-        if ot=="마력":
+        elif ot=="마력":
             ot="magic_power"
         dict[ot]+=int(ov)
     return dict

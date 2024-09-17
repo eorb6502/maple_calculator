@@ -10,7 +10,7 @@ def is_float(input_string):
 
 def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     maple_class={
-        "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논슈터", "스트라이커", "은월", "아크", "예티"], \
+        "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논마스터", "스트라이커", "은월", "아크", "예티"], \
         "dex":["보우마스터", "신궁", "패스파인더", "윈드브레이커", "와일드헌터", "메르세데스", "카인", "캡틴", "메카닉", "엔젤릭버스터"], \
         "int":["아크메이지(불,독)", "아크메이지(썬,콜)", "비숍", "플레임위자드", "배틀메이지", "에반", "루미너스", "일리움", "라라", "키네시스"], \
         "luk":["나이트로드", "섀도어", "듀얼블레이드", "나이트워커", "팬텀", "카데나", "칼리", "호영"]
@@ -101,7 +101,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     #제논의 서플러스 서플라이 올스텟 퍼를 어떻게 적용할 것인가?
     skill0=get0Skill["character_skill"]
     blessLevel=0
-    namearr=["매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
+    namearr=["초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
     for i in skill0:
         chk=0
         for j in i:
@@ -127,6 +127,25 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
                 tmp=int(effect.split("%")[0][-2])*0.1
                 #print(tmp)
                 specSkill["attack_power"]+=int(min(0.2*equipmentData["weapon_basic_attack_power"], tmp*equipmentData["magic_power_wo_weapon"]))
+        elif name=="초감각": #키네시스
+            specSkill["critical_rate"]+=4+level
+        elif name=="리졸브 타임": #제로 (제로 쓸컴뱃 1퍼 제외)
+            specSkill["final_damage"]=(specSkill["final_damage"]+1)*(1+0.05*level)-1
+            specSkill["critical_rate"]+=level*4
+            specSkill["str"]+=10*level
+            specSkill["max_hp_rate"]+=3*level
+        elif name=="되찾은 기억": #아란
+            specSkill["attack_power_rate"]+=5
+        elif name=="왕의 자격": #메르세데스
+            specSkill["normal_damage"]+=10
+        elif name=="계승된 의지": #에반
+            specSkill["magic_power"]+=10
+            specSkill["str"]+=10
+            specSkill["dex"]+=10
+            specSkill["int"]+=10
+            specSkill["luk"]+=10
+        elif name=="파워 오브 라이트": #루미너스
+            specSkill["int"]+=20
         elif name=="엘리멘탈 하모니": #시그너스
             if characterClass=="스트라이커" or characterClass=="소울마스터":
                 specSkill["str"]+=int(characterLevel/2)
@@ -183,19 +202,17 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
                     specSkill["max_hp"]+=starforce*162
             else:
                 print("this can't happen!!!!")
-        elif name == "트루 석세서":
+        elif name == "트루 석세서": #엔버
             specSkill["proficiency"]+=0.1
-        elif name=="패이스":
-            specSkill["critical_damage"]+=level
+        elif name=="패이스": #아델
+            if level==10:
+                specSkill["critical_damage"]+=10
+            else:
+                specSkill["critical_damage"]+=1
             specSkill["attack_power_rate"]+=level
-        elif name=="괴이봉인":
+        elif name=="괴이봉인": #호영
             specSkill["final_damage"]=((specSkill["final_damage"]+1)*(1+0.01*level)-1)
             specSkill["attack_power_rate"]+=level
-        elif name=="리졸브 타임":
-            specSkill["final_damage"]=((specSkill["final_damage"]+1)*(1+0.05*level)-1)
-            specSkill["critical_rate"]+=level*4
-            specSkill["str"]+=10*level
-            specSkill["max_hp_rate"]+=3*level
         elif name == "정령의 축복" or name=="여제의 축복":
             blessLevel=max(blessLevel, level)
         elif name == "연합의 의지":
@@ -324,7 +341,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     url="https://open.api.nexon.com/maplestory/v1/character/hexamatrix-stat?ocid="+ocid
     get_hexa=requests.get(url, headers=headers).json()
     hexaDict=json_functions.openjson("hexa.json")
-    print(get_hexa)
+    print("6차", get_hexa)
     characterIndex=0
 
     if characterClass=="제논":
@@ -333,6 +350,45 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
         characterIndex=2
     if len(get_hexa["character_hexa_stat_core"])>=1:
         hexaStat=get_hexa["character_hexa_stat_core"][0]
+        #print(hexaStat)
+        hexaTag=["main_stat_name", "sub_stat_name_1", "sub_stat_name_2"]
+        for i in hexaTag:
+            mainsub=i.split("_")[0]
+            print(mainsub, hexaStat[i], hexaStat[i.replace("name", "level")])
+            amount=hexaDict[mainsub][hexaStat[i]][hexaStat[i.replace("name", "level")]]
+            stat=hexaStat[i]
+            print(stat, amount)
+            if stat=="크리티컬 데미지 증가":
+                specSkill["critical_damage"]+=amount
+            elif stat=="보스 데미지 증가":
+                specSkill["boss_damage"]+=amount
+            elif stat=="데미지 증가":
+                specSkill["damage"]+=amount
+            elif stat=="몬스터 방어율 무시":
+                specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.01*amount)
+            elif stat=="공격력 증가":
+                specSkill["attack_power"]+=amount
+            elif stat=="마력 증가":
+                specSkill["magic_power"]+=amount
+            elif stat=="주력 스탯 증가":
+                amount=amount[characterIndex]
+                if characterIndex==1:
+                    specSkill["str"]+=amount
+                    specSkill["dex"]+=amount
+                    specSkill["int"]+=amount
+                    specSkill["luk"]+=amount
+                elif characterIndex==2:
+                    specSkill["max_hp"]+=amount
+                else:
+                    for i in maple_class:
+                        if characterClass in maple_class[i]:
+                            mainStat=i
+                            break
+                    specSkill[mainStat]+=amount
+            else:
+                print("this naver shouldn't happen")
+    if get_hexa["character_hexa_stat_core_2"]!=None and len(get_hexa["character_hexa_stat_core_2"])>=1: #hexa1이랑 hexa2가 없을때 리턴하는 값이 다름
+        hexaStat=get_hexa["character_hexa_stat_core_2"][0]
         #print(hexaStat)
         hexaTag=["main_stat_name", "sub_stat_name_1", "sub_stat_name_2"]
         for i in hexaTag:
@@ -415,7 +471,10 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
         if skillName=="데들리 인스팅트":
             specSkill["critical_rate"]+=5+5*skillLevel
         if skillName=="아이언 윌":
-            specSkill["max_hp_rate"]+=5+5*skillLevel
+            if characterClass=="카이저":
+                specSkill["max_hp_rate"]+=5*skillLevel
+            else:
+                specSkill["max_hp_rate"]+=5+5*skillLevel
         if skillName=="전투의 흐름":
             specSkill["damage"]+=4*(1+skillLevel)
         if skillName=="이네이트 기프트":
@@ -432,6 +491,9 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
             specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.01*(2*skillLevel))
         if skillName=="판단":
             specSkill["critical_damage"]+=2*skillLevel
+        if skillName=="노블레스":
+            specSkill["damage"]+=skillLevel
+            specSkill["boss_damage"]+=2*skillLevel
     print(specSkill)
     #길드
     guild_doping={}
@@ -471,6 +533,3 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     print(specSkill)
     json_functions.makejson(specSkill, "./assets/spec_skills.json")
     return guild_doping, specSkill
-"""make_spec_skill(headers = {
-    "x-nxopen-api-key": "test_5d1d2bbf3be59f1d5bf961c60a1937b5f5c7d6a8133966a63f38c7ebc5bd3a08efe8d04e6d233bd35cf2fabdeb93fb0d"
-    })"""
