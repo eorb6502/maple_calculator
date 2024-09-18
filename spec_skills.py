@@ -97,7 +97,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                     specSkill[effect]+=effect_val
             else:
                 specSkill[effect]=effect_val
-    print(specSkill)
+    #print(specSkill)
     if characterClass=="아크메이지(불,독)" or characterClass=="아크메이지(썬,콜)" or characterClass=="비숍" or characterClass=="플레임위자드" or characterClass=="에반":
         if equipmentRawdata["무기"]["종류"]=="완드":
             specSkill["critical_rate"]+=5
@@ -107,7 +107,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         specSkill["attack_power"]+=15
     #print(basicSpec)
     #0차
-    print(specSkill)
+    #print(specSkill)
     skill0=get0Skill["character_skill"]
     blessLevel=0
     namearr=["서플러스 서플라이", "히든 피스","여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
@@ -122,13 +122,13 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
             continue
         name, level, effect=i["skill_name"], i["skill_level"], i["skill_effect"]
         if name in petSet:
-            print(name, effect)
+            #print(name, effect)
             effect=int(effect.split("증가")[0].split()[-1])
             specSkill["attack_power"]+=effect
             specSkill["magic_power"]+=effect
             continue
         if name not in namearr:
-            print("no name in arr" + name)
+            print("no name in arr " + name)
             continue
         if name=="매직 서킷":
             if characterClass=="일리움":
@@ -182,10 +182,10 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
             specSkill["magic_power_rate"]+=10
         elif name=="컨버전 스타포스":
             starforce=equipmentData["starforce"]
-            print(starforce)
+            #print(starforce)
             if characterClass=="제논":
                 amount=min(int(starforce/10)*7, 70)
-                print(amount)
+                #print(amount)
                 specSkill["str"]+=amount
                 specSkill["dex"]+=amount
                 specSkill["luk"]+=amount
@@ -283,7 +283,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                 "일반 몬스터 사냥 시 경험치 획득량" : "exp"
             }
             for i in effectLines:
-                print(i)
+                #print(i)
                 mayakStat=[]
                 for j in effect_dict:
                     if i.find(j)!=-1:
@@ -295,12 +295,12 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                     mayakStat.append("magic_power")
                 if mayakStat[0]=="max_hp":
                     mayakStat.append("max_hp")
-                print(mayakStat)
+                #print(mayakStat)
                 amount = i.split(" 증가")[0].split()[-1]
                 if amount[-1]=="%":
                     amount = amount[:-1]
                 amount=int(amount)
-                print(amount)
+                #print(amount)
                 for mayak in mayakStat:
                     if mayak=="ignore_monster_armor":
                         specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.01*amount)
@@ -360,7 +360,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     url="https://open.api.nexon.com/maplestory/v1/character/hexamatrix-stat?ocid="+ocid
     get_hexa=requests.get(url, headers=headers).json()
     hexaDict=json_functions.openjson("hexa.json")
-    print("6차", get_hexa)
+    #print("6차", get_hexa)
     characterIndex=0
 
     if characterClass=="제논":
@@ -373,10 +373,10 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         hexaTag=["main_stat_name", "sub_stat_name_1", "sub_stat_name_2"]
         for i in hexaTag:
             mainsub=i.split("_")[0]
-            print(mainsub, hexaStat[i], hexaStat[i.replace("name", "level")])
+            #print(mainsub, hexaStat[i], hexaStat[i.replace("name", "level")])
             amount=hexaDict[mainsub][hexaStat[i]][hexaStat[i.replace("name", "level")]]
             stat=hexaStat[i]
-            print(stat, amount)
+            #print(stat, amount)
             if stat=="크리티컬 데미지 증가":
                 specSkill["critical_damage"]+=amount
             elif stat=="보스 데미지 증가":
@@ -412,10 +412,10 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         hexaTag=["main_stat_name", "sub_stat_name_1", "sub_stat_name_2"]
         for i in hexaTag:
             mainsub=i.split("_")[0]
-            print(mainsub, hexaStat[i], hexaStat[i.replace("name", "level")])
+            #print(mainsub, hexaStat[i], hexaStat[i.replace("name", "level")])
             amount=hexaDict[mainsub][hexaStat[i]][hexaStat[i.replace("name", "level")]]
             stat=hexaStat[i]
-            print(stat, amount)
+            #print(stat, amount)
             if stat=="크리티컬 데미지 증가":
                 specSkill["critical_damage"]+=amount
             elif stat=="보스 데미지 증가":
@@ -445,7 +445,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                     specSkill[mainStat]+=amount
             else:
                 print("this naver shouldn't happen")
-    print(specSkill)
+    #print(specSkill)
     #stat=
     #amount=hexaDict["main"][hexaStat["main_stat_name"]][hexaStat["main_stat_level"]-1]
     #링크
@@ -456,7 +456,9 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     print(links)
     for i in links:
         skillName, skillLevel=i["skill_name"], i["skill_level"]
-        print(skillName, skillLevel)
+        #print(skillName, skillLevel)
+        if skillName==None:
+            continue
         if skillName.find("임피리컬 널리지")!=-1:
             specSkill["damage"]+=3*(int((skillLevel+1)/2))
             specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.03*(int((skillLevel+1)/2)))
@@ -513,7 +515,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         if skillName=="노블레스":
             specSkill["damage"]+=skillLevel
             specSkill["boss_damage"]+=2*skillLevel
-    print(specSkill)
+    #print(specSkill)
     #길드
     guild_doping={}
     if spec["guild"]!=None:
@@ -533,7 +535,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                 specSkill["attack_power"]+=2+2*i["skill_level"]
                 specSkill["magic_power"]+=2+2*i["skill_level"]
             if i["skill_name"]=="팔방미인":
-                print(4+12*i["skill_level"])
+                #print(4+12*i["skill_level"])
                 specSkill["str"]+=4+12*i["skill_level"]
                 specSkill["dex"]+=4+12*i["skill_level"]
                 specSkill["int"]+=4+12*i["skill_level"]

@@ -35,8 +35,9 @@ def make_spec_final(spec, specBasic, specEquipment, specHAP, specSkill, specSymb
     if (characterClass=="히어로" or characterClass=="팔라딘" or characterClass=="소울마스터")and (equipmentRawdata["무기"]["종류"].find("한손")!=-1):
         specFinal["weapon_multiplier"]-=0.1
     #print(specFinal)
-    specFinal["ignore_monster_armor"]=round(specFinal["ignore_monster_armor"]*100, 2)
-    specFinal["final_damage"]=round(specFinal["final_damage"]*100, 2)
+    specFinal["ignore_monster_armor"]=f"{(specFinal["ignore_monster_armor"]*100):.2f}"
+    specFinal["final_damage"]=f"{(specFinal["final_damage"]*100):.2f}"
+    print("-----final-----")
     print(specFinal)
     json_functions.makejson(specFinal, "./assets/spec_final.json")
     return specFinal

@@ -31,4 +31,5 @@ def make_spec_symbol(data, headers):
         spec["int_wo_rate"]+=int(i["symbol_int"])
         spec["max_hp_wo_rate"]+=int(i["symbol_hp"])
     json_functions.makejson(spec, "./assets/spec_symbol.json")
+    print(spec)
     return spec

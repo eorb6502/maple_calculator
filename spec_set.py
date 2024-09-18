@@ -80,7 +80,7 @@ def make_spec_set(data, headers):
     response_set = requests.get(urlString, headers=headers).json()
     characterClass=data["class"]
     for i in response_set["set_effect"]:
-        print(i)
+        #print(i)
         set_cnt=i["total_set_count"]
         for j in i["set_effect_info"]:
             #print(j)
@@ -90,7 +90,7 @@ def make_spec_set(data, headers):
                 specSet["petSet"].append(petSkill)
                 continue
             setOption=setOption.lower().split(", ")
-            print(setOption)
+            #print(setOption)
             for k in setOption:
                 statName, statAmount = k.split(" : +")
                 #print(statName, statAmount)
@@ -116,6 +116,7 @@ def make_spec_set(data, headers):
     if characterClass=="데몬어벤져":
         specSet["max_hp"]=int(specSet["max_hp"]/2)
     json_functions.makejson(specSet, "./assets/spec_set.json")
+    print(specSet)
     return specSet
 """make_spec_set(headers = {
     "x-nxopen-api-key": "API-KEY"

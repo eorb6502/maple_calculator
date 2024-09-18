@@ -51,8 +51,6 @@ def updateSpec(on, oa, ts, ima, level):
                 "모든 스킬의 재사용 대기시간": "cooldown"
                 }
     oa=oa[1:]
-    if on=="공격력":
-        print(on, oa)
     if on in ts:
         #print(oa)
         if(oa[-1]=="%"):
@@ -486,8 +484,6 @@ def make_spec_equipment(equipmentData, basic):
                         ignore_monster_armor.append(int(equipment[j][k]))
                 else:
                     totalStat[k]+=int(equipment[j][k])
-                    if k=="attack_power" and int(equipment[j][k])>0:
-                        print(i, equipment[j][k])
                     if i=="무기":
                         tempStat[k]+=int(equipment[j][k])
     #print(equipmentSet)
@@ -497,7 +493,7 @@ def make_spec_equipment(equipmentData, basic):
     totalStat["attack_power_wo_weapon"]=totalStat["attack_power"]-tempStat["attack_power"]
     totalStat["magic_power_wo_weapon"]=totalStat["magic_power"]-tempStat["magic_power"]
     totalStat["ignore_monster_armor"]=calcIgnoreMonstorArmor(ignore_monster_armor)
-    print(totalStat)
+    #print(totalStat)
     totalStat["str_rate"]+=totalStat["all_stat"]
     totalStat["dex_rate"]+=totalStat["all_stat"]
     totalStat["luk_rate"]+=totalStat["all_stat"]
@@ -505,5 +501,7 @@ def make_spec_equipment(equipmentData, basic):
     if characterClass=="데몬어벤져":
         totalStat["max_hp"]=int(totalStat["max_hp"]/2)
     json_functions.makejson(totalStat, './assets/spec_equipment.json')
+    print("-----equipment-----")
+    print(totalStat)
     return totalStat
 """make_spec_equipment()"""

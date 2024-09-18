@@ -3,7 +3,7 @@ import json_functions
 import requests
 
 def make_spec_union(data, headers):
-    print("------------------union start------------------")
+    #print("------------------union start------------------")
     specDict={
         "공격력" : "attack_power",
         "마력" : "magic_power",
@@ -123,7 +123,7 @@ def make_spec_union(data, headers):
                 if statName=="str" or statName=="dex" or statName=="int" or statName=="luk" or statName=="max_hp" or statName=="max_mp":
                     statName+="_wo_rate"
                 spec[statName]+=float(statAmount)
-    print(spec)
+    #print(spec)
     occupied_effects=[]
     for i in response_raider["union_occupied_stat"]:
         occupied_effects.append(i.lower())
@@ -144,7 +144,7 @@ def make_spec_union(data, headers):
             spec[statName]=1-(1-spec[statName])*(1-0.01*float(statAmount))
         else:
             spec[statName]+=float(statAmount)
-    print(spec)
+    #print(spec)
     #아티팩트
     artifactLevel={
         "올스탯 증가" : 0,
@@ -162,8 +162,6 @@ def make_spec_union(data, headers):
     }
     urlString = url + "-artifact" +ocid
     response_artifact= requests.get(urlString, headers=headers).json()
-    for i in response_artifact:
-        print(i, response_artifact[i])
     #print(response_artifact["union_artifact_effect"])
     for i in response_artifact["union_artifact_crystal"]:
         if i["validity_flag"]=='1':
@@ -177,10 +175,10 @@ def make_spec_union(data, headers):
     for i in artifactLevel:
         if artifactLevel[i]>=10:
             artifactLevel[i]=10
-    print(artifactLevel)
+    #print(artifactLevel)
     for i in artifactLevel:
         level=artifactLevel[i]
-        print(i)
+        #print(i)
         if i=="올스탯 증가":
             spec["str"]+=15*level
             spec["dex"]+=15*level

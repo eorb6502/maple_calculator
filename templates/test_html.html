@@ -550,6 +550,7 @@
                             }
                             else{
                                 alert(data[0][2])
+                                console.log(data[0][2])
                             }
                         }
                         else{
@@ -563,6 +564,10 @@
             
         }
         function submitForm() {
+            if (localStorage.getItem("spec_final")===null){
+                alert("스펙을 가져와주세요.")
+                return
+            }
             // 체크된 항목을 가져옵니다
             const mode = document.getElementById('mode').value
             const dopings = document.querySelectorAll('input[name="doping"]:checked');

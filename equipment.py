@@ -413,6 +413,8 @@ def make_equipment_data_and_title(data, headers):
     equipmentDict["starforce"]+=specTitle["starforce"]
     json_functions.makejson(equipmentDict, "./assets/equipment.json")
     json_functions.makejson(specTitle, "./assets/spec_title.json")
+    print("-----title-----")
+    print(specTitle)
     return equipmentDict, specTitle
 """make_equipment_data_and_title(headers = {
     "x-nxopen-api-key": "API-KEY"

@@ -1,12 +1,12 @@
 {
-	"name": "빡규빡빡규",
-	"class": "은월",
-	"level": 220,
-	"str": 1285,
+	"name": "차뀨츄",
+	"class": "키네시스",
+	"level": 10,
+	"str": 4,
 	"dex": 4,
 	"luk": 4,
-	"int": 4,
-	"max_hp": 0,
+	"int": 59,
+	"max_hp": 180,
 	"max_mp": 0,
 	"critical_rate": 5
 }

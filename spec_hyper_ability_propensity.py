@@ -100,7 +100,8 @@ def make_spec_HAP(data, headers):
                 spec[j]+=statIncrease
             else:
                 spec[j]=1-(1-spec[j])*(1-0.01*statIncrease)
-    #print(spec)
+    print("-----hyper-----")
+    print(spec)
 
     #어빌리티
     urlString = url + "ability" +ocid
@@ -145,7 +146,8 @@ def make_spec_HAP(data, headers):
                 if statAmount[-1]=="%":
                     statAmount=statAmount[:-1]
                 spec[statName]+=int(statAmount)
-
+    print("-----ability-----")
+    print(spec)
     #성향
     urlString = url + "propensity" +ocid
     response_propensity= requests.get(urlString, headers=headers).json()
@@ -161,6 +163,7 @@ def make_spec_HAP(data, headers):
     spec["insight"]+=0.5*int(insight/10)
     spec["max_hp"]+=100*int(willingness/5)
     spec["armor"]+=5*int(willingness/5)
-    #print(spec)
+    print("-----propensity-----")
+    print(spec)
     json_functions.makejson(spec, "./assets/spec_hyper_ability_propensity.json")
     return spec

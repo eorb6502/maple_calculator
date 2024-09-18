@@ -5,7 +5,7 @@ def updateDict(dict, arr):
         ot=j["option_type"].lower()
         ov=j["option_value"]
         if ot=="이동속도" or ot=="점프력":
-            print(ot)
+            #print(ot)
             continue
         elif ot.find("최대")!=-1:
             ot="max_"+ot.split()[-1]
@@ -57,25 +57,22 @@ def make_spec_cash(data, headers):
     for i in response_cash["cash_item_equipment_base"]:
         """if i["date_expire"]==None:
             continue"""
-        print(i["cash_item_option"])
+        #print(i["cash_item_option"])
         specCash=updateDict(specCash, i["cash_item_option"])
-    print()
-    for i in response_pet:
-        print(i, response_pet[i])
     for i in range(1, 4):
         i="pet_"+str(i)
         if response_pet[i+"_name"]==None:
             continue
         petEquipment=i+"_equipment"
-        print(petEquipment)
+        #print(petEquipment)
         if response_pet[petEquipment]["item_name"]==None:
             continue
         peos=response_pet[petEquipment]["item_option"]
         if len(peos)==0:
             continue
-        print(peos)
+        #print(peos)
         specCash=updateDict(specCash, peos)
-    print(specCash)
+    #print(specCash)
     if characterClass=="데몬어벤져":
         specCash["max_hp"]=int(specCash["max_hp"]/2)
     json_functions.makejson(specCash, "./assets/spec_cash.json")

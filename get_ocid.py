@@ -19,13 +19,13 @@ def getocid(name, headers):
     print(characterName)
     urlString = "https://open.api.nexon.com/maplestory/v1/id?character_name=" + characterName
     response_id = requests.get(urlString, headers = headers).json()
-    print(response_id)
+    #print(response_id)
     errorCode=0
     if "error" in response_id:
         return 1, {}
     urlString = "https://open.api.nexon.com/maplestory/v1/character/basic?ocid=" + response_id["ocid"]
     response_basic = requests.get(urlString, headers=headers).json()
-    print(response_basic)
+    #print(response_basic)
     if "error" in response_basic:
         return 2, {}
     dict["name"]=characterName
@@ -36,9 +36,9 @@ def getocid(name, headers):
     dict["guild"]=response_basic["character_guild_name"]
     if dict["guild"]!=None:
         url="https://open.api.nexon.com/maplestory/v1/guild/id?guild_name="+response_basic["character_guild_name"] + "&world_name=" + response_basic["world_name"]
-        print(url)
+        #print(url)
         get_guild=requests.get(url, headers=headers).json()
-        print(get_guild)
+        #print(get_guild)
         dict["oguildid"]=get_guild["oguild_id"]
     json_functions.makejson(dict, "./assets/spec.json")
     return errorCode, dict
