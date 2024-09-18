@@ -85,6 +85,8 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
             specSkill["critical_rate"]+=5
     if characterClass=="히어로" and (equipmentRawdata["무기"]["종류"]=="두손도끼" or equipmentRawdata["무기"]["종류"]=="한손도끼"):
         specSkill["damage"]+=5
+    if characterClass=="섀도어" and equipmentRawdata["보조무기"]["종류"]=="방패":
+        specSkill["attack_power"]+=15
     #print(basicSpec)
     for i in basicSpec:
         if i in specSkill:
@@ -101,7 +103,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     #제논의 서플러스 서플라이 올스텟 퍼를 어떻게 적용할 것인가?
     skill0=get0Skill["character_skill"]
     blessLevel=0
-    namearr=["초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
+    namearr=["여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
     for i in skill0:
         chk=0
         for j in i:
@@ -127,6 +129,9 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
                 tmp=int(effect.split("%")[0][-2])*0.1
                 #print(tmp)
                 specSkill["attack_power"]+=int(min(0.2*equipmentData["weapon_basic_attack_power"], tmp*equipmentData["magic_power_wo_weapon"]))
+        elif name=="여제의 외침": #미하일
+            specSkill["max_hp_rate"]+=20
+            specSkill["max_mp_rate"]+=20
         elif name=="초감각": #키네시스
             specSkill["critical_rate"]+=4+level
         elif name=="리졸브 타임": #제로 (제로 쓸컴뱃 1퍼 제외)
@@ -247,51 +252,50 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
             specSkill["max_mp"]+=200
         elif name=="하이 덱스터러티":
             specSkill["dex"]+=40
-        else:
+        else: #마약
             if effect == None or effect.find("증가")==-1 :
                 continue
             effectLines=effect.split("\n")
+            effect_dict={"공격력" : "attack_power",
+                "보스 몬스터 공격 시 데미지" : "boss_damage",
+                "몬스터 방어율 무시" : "ignore_monster_armor",
+                "올스탯" : "all_stat",
+                "HP" : "max_hp",
+                "버프 지속 시간" : "buff",
+                "크리티컬 확률" : "critical_rate",
+                "일반 몬스터 공격 시 데미지" : "noraml_damage",
+                "아케인 포스": "arcane_force",
+                "일반 몬스터 사냥 시 경험치 획득량" : "exp"
+            }
             for i in effectLines:
                 print(i)
-                te=i.split("증가")[0].strip()
-                te=te.replace("/", ", ").split(", ")
-                for j in range(0, len(te)):
-                    tmp=te[j].split(" ")[-1]
-                    if not tmp[-1].isnumeric():
-                        tmp=tmp[:-1]
-                    #print(tmp)
-                    if not is_float(tmp):
-                        te[j]+=" "+te[-1].split(" ")[-1]
-                rate_check=0
-                for j in te:
-                    amount=j.split()[-1]
-                    value=j.split(" "+amount)[0]
-                    if not amount[-1].isnumeric():
-                        if amount[-1]=="%":
-                            rate_check=1
-                        amount=amount[:-1]
-                    amount=float(amount)
-                    if value not in specDict and value != "올스탯":
-                        continue
-                    if value != "올스탯":
-                        value=specDict[value]
-                    if rate_check==1 and (value=="attack_power" or value=="magic_power" or value=="str" or value=="dex" or value=="int" or value=="luk" or value=="max_hp" or value=="max_mp"):
-                        value+="_rate"
-                    if value=="ignore_monster_armor":
-                        specSkill[value]=1-(1-specSkill[value])*(1-0.01*amount)
-                    elif value=="올스탯":
-                        if rate_check==1:
-                            specSkill["str_rate"]+=amount
-                            specSkill["dex_rate"]+=amount
-                            specSkill["int_rate"]+=amount
-                            specSkill["luk_rate"]+=amount
-                        else:
-                            specSkill["str"]+=amount
-                            specSkill["dex"]+=amount
-                            specSkill["int"]+=amount
-                            specSkill["luk"]+=amount
+                mayakStat=[]
+                for j in effect_dict:
+                    if i.find(j)!=-1:
+                        mayakStat.append(effect_dict[j])
+                        break
+                if len(mayakStat)==0:
+                    continue
+                if mayakStat[0]=="attack_power":
+                    mayakStat.append("magic_power")
+                if mayakStat[0]=="max_hp":
+                    mayakStat.append("max_hp")
+                print(mayakStat)
+                amount = i.split(" 증가")[0].split()[-1]
+                if amount[-1]=="%":
+                    amount = amount[:-1]
+                amount=int(amount)
+                print(amount)
+                for mayak in mayakStat:
+                    if mayak=="ignore_monster_armor":
+                        specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.01*amount)
+                    elif mayak=="all_stat":
+                        specSkill["str"]+=amount
+                        specSkill["dex"]+=amount
+                        specSkill["int"]+=amount
+                        specSkill["luk"]+=amount
                     else:
-                        specSkill[value]+=amount
+                        specSkill[mayak]+=amount
                 #print(te)
     specSkill["attack_power"]+=blessLevel
     specSkill["magic_power"]+=blessLevel
