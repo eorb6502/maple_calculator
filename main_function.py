@@ -19,8 +19,11 @@ def make_spec_final(str, combat_flag):
         "x-nxopen-api-key": api_key
         }
     chk, spec=get_ocid.getocid(str, headers)
-    if chk==False:
-        print(chk)
+    if chk!=0:
+        if chk==1:
+            return {}, {}, "존재하지 않는 닉네임"
+        else:
+            return {}, {}, "API로 데이터를 불러올 수 없는 닉네임 (장기간 미접속 등)"
     else:
         specBasic=spec_basic.make_spec_basic(spec, headers, combat_flag)
         equipmentDict, specTitle = equipment.make_equipment_data_and_title(spec, headers)
@@ -32,7 +35,7 @@ def make_spec_final(str, combat_flag):
         specUnion = spec_union.make_spec_union(spec, headers)
         specCash = spec_cash.make_spec_cash(spec, headers)
         specFinal = spec_combine.make_spec_final(spec, specBasic, specEquipment, specHAP, specSkill, specSymbol, specUnion, specTitle, specSet, specCash, equipmentDict)
-        return guild_doping, specFinal
+        return guild_doping, specFinal, ""
         
 """
 import requests

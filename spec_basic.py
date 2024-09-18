@@ -4,7 +4,7 @@ import json_functions
 def make_spec_basic(basicData, headers, combat_flag):
     url="https://open.api.nexon.com"
     #basicData=json_functions.openjson("./assets/spec.json")
-    id=basicData["ocid"]  #내꺼 f80bbe45dd55bbd3ceb099cf8da9398c
+    id=basicData["ocid"]  
     characterClass, characterLevel=basicData["class"], basicData["level"]
     ocid="?ocid="+id
     get_stat = url + "/maplestory/v1/character/stat" + ocid

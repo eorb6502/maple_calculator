@@ -157,6 +157,14 @@ def calc_spec_w_doping(guild_doping, arr):
             spec_doping["critical_damage"]+=3
         elif i=="고급 무기 제련":
             spec_doping["critical_damage"]+=5
+        elif i=="세이람의 영약":
+            spec_doping["max_hp"]+=1750
+            spec_doping["max_mp"]+=1750
+            spec_doping["attack_power_rate"]+=10
+            spec_doping["magic_power_rate"]+=10
+            spec_doping["boss_damage"]+=10
+            spec_doping["critical_damage"]+=16
+            spec_doping["critical_rate"]+=20
         else:
             print(i+" is not implemented yet")
     return spec_doping

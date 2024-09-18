@@ -1204,7 +1204,7 @@
     "제논" : {
         "기본" : {
             "proficiency" : 0.2,
-            "weapon_multiplier" : 1.5
+            "weapon_multiplier" : 1.3125
         },
         "인클라인 파워" : {
             "attack_power" : 30

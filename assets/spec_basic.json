@@ -1,12 +1,12 @@
 {
-	"name": "츠데구",
-	"class": "칼리",
-	"level": 275,
-	"str": 4,
+	"name": "빡규빡빡규",
+	"class": "은월",
+	"level": 220,
+	"str": 1285,
 	"dex": 4,
-	"luk": 1615,
+	"luk": 4,
 	"int": 4,
-	"max_hp": 500,
-	"max_mp": 550,
+	"max_hp": 0,
+	"max_mp": 0,
 	"critical_rate": 5
 }

@@ -78,10 +78,11 @@ def calc_force_diff(map_info, character_force):
             return min(1-0.005*( map_info["force"]-authentic_force), 1.25)
     else:
         print("this should never happen")
-def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor, skill_final_damage):
+def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, skill_attack_count, hyper_damage, core_reinforce, mob_info, map_info, core_ignore_monster_armor, skill_ignore_monster_armor, skill_final_damage, skill_normal_monster_damage):
+    specFinal["normal_damage"]+=100*skill_normal_monster_damage
     #specFinal=json_functions.openjson("./assets/spec_final.json")
     specDoping=spec_doping.calc_spec_w_doping(guild_doping, doping_arr)
-    #print(specFinal)
+    print(specFinal)
     combine_specs(specFinal, specDoping)
     #print(specFinal)
     stat=calc_stats(specFinal)*0.01
@@ -91,11 +92,11 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     damage=1+specFinal["damage"]/100+hyper_damage #하이퍼 스킬 보정
 
 
-    final_damage=(1+specFinal["final_damage"])*(1+skill_final_damage)*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
+    final_damage=(1+0.01*specFinal["final_damage"])*(1+skill_final_damage)*(1+core_reinforce)*calc_level_diff(specFinal["level"], mob_info["level"])*calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])) #코강, 레벨, 심볼 보정 추가
     print(calc_level_diff(specFinal["level"], mob_info["level"]), calc_force_diff(map_info, (specFinal["arcane_force"], specFinal["authentic_force"])))
     weapon_multiplier=specFinal["weapon_multiplier"]
 
-    ignore_monster_armor=1-(1-specFinal["ignore_monster_armor"])*(1-core_ignore_monster_armor)*(1-skill_ignore_monster_armor) #스킬 자체 보정, 코강 보정 추가
+    ignore_monster_armor=1-(1-0.01*specFinal["ignore_monster_armor"])*(1-core_ignore_monster_armor)*(1-skill_ignore_monster_armor) #스킬 자체 보정, 코강 보정 추가
 
     monster_armor_multiplier=1-mob_info["armor"]*(1-ignore_monster_armor) # 몬스터 방어율 보정
 
@@ -104,14 +105,14 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     property = 1-mob_info["property"]*(1-specFinal["insight"]) ##몹 반감 보정
 
     class_multiplier=1 ###제논, 법사 보정 해야됨
-    if specFinal["class"]=="제논":
+    """if specFinal["class"]=="제논":
         class_multiplier=0.875
     elif specFinal["class"]=="아크메이지(불,독)" or specFinal["class"]=="아크메이지(썬,콜)" or specFinal["class"]=="비숍" or specFinal["class"]=="플레임위자드":
-        class_multiplier=1.2
+        class_multiplier=1.2"""
     
     critical = 1+min(specFinal["critical_rate"]/100, 1)*(0.35+specFinal["critical_damage"]/100) #계산용 크확 100퍼
 
-    print(specFinal["normal_damage"]/100, stat, attk, damage, final_damage, weapon_multiplier, ignore_monster_armor, monster_armor_multiplier, proficiency, property, critical)
+    print(specFinal["normal_damage"], stat, attk, damage, final_damage, weapon_multiplier, ignore_monster_armor, monster_armor_multiplier, proficiency, property, critical)
     skill_percentage=skill_damage * skill_attack_count
 
     stat_attack_power=stat*attk*weapon_multiplier*damage*final_damage
@@ -121,5 +122,5 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode+"_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     print(mode_damage)
     #print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
-    return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count)
+    return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count), specFinal
 #print(calc_one_line_dmg("normal",[], 2.9, 8, 0.2, 1.2, {"level" : 260,"armor" : 0.1, "property" : 0}, {"tag" : "authentic", "force" : 30}, 0.2,0))

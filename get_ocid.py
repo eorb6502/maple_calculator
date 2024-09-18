@@ -1,5 +1,9 @@
 import requests
 import json_functions
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
 def getocid(name, headers):
     dict={
@@ -16,12 +20,14 @@ def getocid(name, headers):
     urlString = "https://open.api.nexon.com/maplestory/v1/id?character_name=" + characterName
     response_id = requests.get(urlString, headers = headers).json()
     print(response_id)
-    errorCode=True
+    errorCode=0
     if "error" in response_id:
-        errorCode=False
-        return errorCode, {}
+        return 1, {}
     urlString = "https://open.api.nexon.com/maplestory/v1/character/basic?ocid=" + response_id["ocid"]
     response_basic = requests.get(urlString, headers=headers).json()
+    print(response_basic)
+    if "error" in response_basic:
+        return 2, {}
     dict["name"]=characterName
     dict["ocid"]=response_id["ocid"]
     dict["class"]=response_basic["character_class"]
@@ -37,4 +43,7 @@ def getocid(name, headers):
     json_functions.makejson(dict, "./assets/spec.json")
     return errorCode, dict
     
-    
+"""headers = {
+    "x-nxopen-api-key": api_key
+    }
+getocid("따랑햄", headers)"""
