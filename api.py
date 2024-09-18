@@ -7,6 +7,7 @@ from typing import List
 from fastapi import FastAPI, Query, Request
 from fastapi.templating import Jinja2Templates
 from datetime import datetime
+import pytz
 
 api = FastAPI()
 templates= Jinja2Templates(directory="templates")
@@ -18,8 +19,10 @@ def get_index(request: Request):
 @api.get('/initialize/')
 def return_spec_final(characterName: str="츠데구", combat_flag: int=0):
     #main_function.make_spec_final(characterName)
-    now=datetime.now()
-    return main_function.make_spec_final(characterName, combat_flag), now.strftime('%Y-%m-%d %H:%M:%S')
+    now=datetime.now(pytz.utc)
+    kr_timezone=pytz.timezone('Asia/Seoul')
+    kr_time=now.astimezone(kr_timezone)
+    return main_function.make_spec_final(characterName, combat_flag), kr_time.strftime('%Y-%m-%d %H:%M:%S')
 
 @api.get('/calculate/')
 def calculate_dmg(final: str=None, guild_doping: str=None, mode: str = "normal", doping: List[str] = Query(None), dmg: float=0, attack_count : int=1, hyper_damage : float=0, core_reinforce : float=0, map_type : str="arcane", map_region : str="소멸의 여로", map_name : str="풍화된 기쁨의 땅", core_igm : float = 0, skill_igm : float = 0, skill_final_damage : float = 0, skill_normal_damage : float =0):
