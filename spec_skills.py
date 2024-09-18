@@ -8,7 +8,7 @@ def is_float(input_string):
     except ValueError:
         return False
 
-def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
+def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, combat_flag):
     maple_class={
         "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논마스터", "스트라이커", "은월", "아크", "예티"], \
         "dex":["보우마스터", "신궁", "패스파인더", "윈드브레이커", "와일드헌터", "메르세데스", "카인", "캡틴", "메카닉", "엔젤릭버스터"], \
@@ -78,8 +78,26 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
         "exp": 0,
         "starforce" : 0
     }
-    #1~4차 패시브
-    basicSpec=passive[characterClass]
+    #1~4차 특이사항
+    #basicSpec=passive[characterClass]
+    skillDB = json_functions.openjson("skillDB.json")
+    for i in skillDB[characterClass]:
+        skill_effect_dict=skillDB[characterClass][i]
+        for effect in skill_effect_dict:
+            effect_val=skill_effect_dict[effect]
+            if type(skill_effect_dict[effect])==list:
+                effect_val=skill_effect_dict[effect][combat_flag]
+            #print(effect)
+            if effect in specSkill:
+                if effect=="ignore_monster_armor":
+                    specSkill[effect]=1-(1-specSkill[effect])*(1-effect_val)
+                elif effect=="final_damage":
+                    specSkill[effect]=(1+specSkill[effect])*(1+effect_val)-1
+                else:
+                    specSkill[effect]+=effect_val
+            else:
+                specSkill[effect]=effect_val
+    print(specSkill)
     if characterClass=="아크메이지(불,독)" or characterClass=="아크메이지(썬,콜)" or characterClass=="비숍" or characterClass=="플레임위자드" or characterClass=="에반":
         if equipmentRawdata["무기"]["종류"]=="완드":
             specSkill["critical_rate"]+=5
@@ -88,22 +106,12 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
     if characterClass=="섀도어" and equipmentRawdata["보조무기"]["종류"]=="방패":
         specSkill["attack_power"]+=15
     #print(basicSpec)
-    for i in basicSpec:
-        if i in specSkill:
-            if i=="ignore_monster_armor":
-                specSkill[i]=1-(1-specSkill[i])*(1-basicSpec[i])
-            elif i=="final_damage":
-                specSkill[i]=(1+specSkill[i])*(1+basicSpec[i])-1
-            else:
-                specSkill[i]+=basicSpec[i]
-        else:
-            specSkill[i]=basicSpec[i]
     #0차
     print(specSkill)
-    #제논의 서플러스 서플라이 올스텟 퍼를 어떻게 적용할 것인가?
     skill0=get0Skill["character_skill"]
     blessLevel=0
-    namearr=["여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
+    namearr=["서플러스 서플라이", "히든 피스","여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
+    namearr.append("고브의 선물") #마약버프 추가 (이벤트 시 마다 생긴)
     for i in skill0:
         chk=0
         for j in i:
@@ -151,6 +159,13 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
             specSkill["luk"]+=10
         elif name=="파워 오브 라이트": #루미너스
             specSkill["int"]+=20
+        elif name=="히든 피스": #메카닉
+            specSkill["damage"]+=10
+        elif name=="서플러스 서플라이": #제논
+            specSkill["str_rate"]+=20
+            specSkill["dex_rate"]+=20
+            specSkill["int_rate"]+=20
+            specSkill["luk_rate"]+=20
         elif name=="엘리멘탈 하모니": #시그너스
             if characterClass=="스트라이커" or characterClass=="소울마스터":
                 specSkill["str"]+=int(characterLevel/2)
@@ -263,7 +278,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers):
                 "HP" : "max_hp",
                 "버프 지속 시간" : "buff",
                 "크리티컬 확률" : "critical_rate",
-                "일반 몬스터 공격 시 데미지" : "noraml_damage",
+                "일반 몬스터 공격 시 데미지" : "normal_damage",
                 "아케인 포스": "arcane_force",
                 "일반 몬스터 사냥 시 경험치 획득량" : "exp"
             }

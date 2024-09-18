@@ -70,12 +70,17 @@
             border: 1px solid #ddd;
             border-radius: 3px;
         }
+        .input-box { 
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <h2>Insert Character name</h2>
     <label for="nameInput"> Enter character name:</label>
-    <input type="text" id="nameInput" name="nameInput"> <br>
+    <input type="text" id="nameInput" name="nameInput">
+    <label for="combatOrders"> 쓸컴뱃 사용 체크 (사용시 체크)</label>
+    <input type="checkbox" id="combatOrders" name="combatOrders"> <br>
     <button type="button" onclick="submitCharactername()">Submit</button>
     <h2>Current Character Stat</h2>
     <label id="name">
@@ -129,6 +134,11 @@
         <label><input type="checkbox" name="doping" value="무기 제련"> 무기 제련</label><br>
         <label><input type="checkbox" name="doping" value="고급 무기 제련"> 고급 무기 제련</label><br>  
     </form>
+    <h2>Change spec</h2>
+    <div id="equipment-container">
+    <button onclick="addInputField()">Add Input Field</button>
+    </div>
+    <button onclick="submit_equipment()"> Submit</button>
     <h2>Select Map</h2>
     <form id="dropdownForm">
     <label for="force_type"> Select force type:</label>
@@ -182,6 +192,68 @@
     <p id="hp"></p>
     </form> 
     <script>
+        let formCounter=0;
+        function addInputField(){
+            formCounter++;
+            const newInputBox = document.createElement('div');
+            newInputBox.classList.add('input-box');
+            newInputBox.innerHTML=`
+                <div id="spec-container${formCounter}">
+                    <label for="input${formCounter}"> 옵션 선택 :</label>
+                    <select id="option-type${formCounter}" name="option-type${formCounter}" onchange="load_optionform(${formCounter})">
+                        <option value="none">---select---</option>
+                        <option value="starforce">스타포스</option>
+                        <option value="chuu">추옵</option>
+                    </select>
+                </div>
+            `;
+            document.getElementById('equipment-container').appendChild(newInputBox)
+        }
+        function load_optionform(cnt){
+            const option_name = document.getElementById("option-type" + cnt.toString()).value
+            const existingForm = document.getElementById(`extra-options${cnt}`);
+            if (existingForm) {
+                existingForm.remove(); // 기존 폼 삭제
+            }
+            if (option_name==="starforce"){
+                const cacheHTML=document.getElementById('spec-container'+cnt.toString()).innerHTML
+                const addHTML=`
+                <div id="extra-options${cnt}">
+                    <label>부위</label>
+                    <select id="equipment-type${formCounter}" name="equipment-type${formCounter}">
+                        <option value="none">---select---</option>
+                        <option value="모자">모자</option>
+                        <option value="얼굴장식">얼굴장식</option>
+                        <option value="눈장식">눈장식</option>
+                        <option value="귀고리">귀고리</option>
+                        <option value="상의">상의</option>
+                        <option value="하의">하의</option>
+                        <option value="신발">신발</option>
+                        <option value="장갑">장갑</option>
+                        <option value="망토">망토</option>
+                        <option value="보조무기">보조무기</option>
+                        <option value="무기">무기</option>
+                        <option value="반지1">반지1</option>
+                        <option value="반지2">반지2</option>
+                        <option value="반지3">반지3</option>
+                        <option value="반지4">반지4</option>
+                        <option value="펜던트1">펜던트1</option>
+                        <option value="펜던트2">펜턴트2</option>
+                        <option value="벨트">벨트</option>
+                        <option value="어깨장식">어깨장식</option>
+                        <option value="포켓 아이템">포켓 아이템</option>
+                        <option value="기계 심장">기계 심장</option>
+                    </select>
+                    <label for="starforce_amt${cnt}"> 스타포스</label>
+                    <input type="text" id="starforce_amt${cnt}" name="starforce_amt${cnt}">
+                    </div>
+                `
+                document.getElementById('spec-container'+cnt.toString()).insertAdjacentHTML('beforeend', addHTML)
+            }
+            else if (option_name==="chuu"){
+                console.log(cnt+1)
+            }
+        }
         function update_spec(){
             const json_dict={
                 "str" : "STR",
@@ -205,15 +277,15 @@
                 "magic_power" : "마력",
                 "magic_power_wo_rate" : "마력(% 미적용)",
                 "magic_power_rate" : "마력%",
-                "ignore_monster_armor" : "방무",
-                "boss_damage" : "보공",
-                "damage" : "데미지",
-                "normal_damage" : "일몹뎀",
-                "critical_rate" : "크확",
-                "critical_damage" : "크뎀",
-                "final_damage" : "최종뎀",
-                "buff" : "벞지",
-                "insight" : "내성 무시",
+                "ignore_monster_armor" : "방무(%)",
+                "boss_damage" : "보공(%)",
+                "damage" : "데미지(%)",
+                "normal_damage" : "일몹뎀(%)",
+                "critical_rate" : "크확(%)",
+                "critical_damage" : "크뎀(%)",
+                "final_damage" : "최종뎀(%)",
+                "buff" : "벞지(%)",
+                "insight" : "내성 무시(%)",
                 "starforce" : "스타포스",
                 "arcane_force" : "아케인포스",
                 "authentic_force" : "어센틱포스"  
@@ -432,9 +504,18 @@
             map_name.disabled=false;
         }
         function submitCharactername(){
-            const characterName=document.getElementById('nameInput').value
+            let selectedItems=[];
+            const characterName=document.getElementById('nameInput').value;
+            const isChecked = document.getElementById('combatOrders').checked ? 1 : 0;
+            if(characterName){
+                selectedItems.push(`characterName=${characterName}`);
+            }
+            if(isChecked){
+                selectedItems.push(`combat_flag=${isChecked}`);
+            }
+            const queryString=selectedItems.join('&')
             if (characterName){
-                fetch(`/initialize/${encodeURIComponent(characterName)}`)
+                fetch(`/initialize/?${queryString}`)
                     .then(response => response.json())
                     .then(data =>{
                         if (data[0].length===2){

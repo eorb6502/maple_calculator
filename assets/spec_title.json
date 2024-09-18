@@ -1,0 +1,18 @@
+{
+	"str": 0,
+	"dex": 0,
+	"int": 0,
+	"luk": 0,
+	"max_hp": 0,
+	"max_mp": 0,
+	"boss_damage": 0,
+	"normal_damage": 0,
+	"ignore_monster_armor": 0,
+	"critical_rate": 0,
+	"attack_power": 0,
+	"magic_power": 0,
+	"starforce": 0,
+	"exp": 0,
+	"arcane_force": 0,
+	"armor": 0
+}

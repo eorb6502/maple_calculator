@@ -14,7 +14,7 @@ import os
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
-def make_spec_final(str):
+def make_spec_final(str, combat_flag):
     headers = {
         "x-nxopen-api-key": api_key
         }
@@ -22,12 +22,12 @@ def make_spec_final(str):
     if chk==False:
         print(chk)
     else:
-        specBasic=spec_basic.make_spec_basic(spec, headers)
+        specBasic=spec_basic.make_spec_basic(spec, headers, combat_flag)
         equipmentDict, specTitle = equipment.make_equipment_data_and_title(spec, headers)
         specEquipment=spec_equipment.make_spec_equipment(equipmentDict, spec)
         specHAP = spec_hyper_ability_propensity.make_spec_HAP(spec, headers)
         specSet= spec_set.make_spec_set(spec, headers)
-        guild_doping, specSkill = spec_skills.make_spec_skill(spec, specSet, specEquipment, equipmentDict, headers)
+        guild_doping, specSkill = spec_skills.make_spec_skill(spec, specSet, specEquipment, equipmentDict, headers, combat_flag)
         specSymbol = spec_symbol.make_spec_symbol(spec, headers)
         specUnion = spec_union.make_spec_union(spec, headers)
         specCash = spec_cash.make_spec_cash(spec, headers)

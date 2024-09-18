@@ -1,0 +1,2182 @@
+{
+    "히어로" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.44
+        },
+        "콤보 어택" : {
+            "attack_power" : 20
+        },
+        "웨폰 마스터리" : {
+            "proficiency" : 0.5,
+            "final_damage" : 0.1,
+            "critical_rate" : 15
+        },
+        "웨폰 액셀레이션" : {
+            "str" : 20
+        },
+        "스피릿 블레이드" : {
+            "attack_power" : 30
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "찬스 어택" : {
+            "critical_rate" : 20
+        },
+        "컴뱃 마스터리" : {
+            "ignore_monster_armor" : [0.5, 0.51]
+        },
+        "어드밴스드 파이널 어택" : {
+            "attack_power" : [30, 31]
+        },
+        "어드밴스드 콤보" : {
+            "final_damage" : [1.2, 1.3],
+            "proficiency" : 0.2,
+            "boss_damage" : 20
+        }
+    },
+    "팔라딘" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.34
+        },
+        "웨폰 액셀레이션" : {
+            "str" : 20
+        },
+        "웨폰 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "노블 디맨드" : {
+            "ignore_monster_armor" : 0.5
+        },
+        "파라쇼크 가드" : {
+            "attack_power" : 20
+        },
+        "실드 마스터리" : {
+            "attack_power" : 10
+        },
+        "블레싱 아머" : {
+            "attack_power" : 20
+        },
+        "디바인 블레싱" : {
+            "final_damage" : 0.21
+        },
+        "팔라딘 엑스퍼트" : {
+            "proficiency" : 0.21,
+            "critical_rate" : 42,
+            "critical_damage" : 20,
+            "ignore_monster_armor" : 0.31,
+            "final_damage" : 0.42
+        },
+        "어드밴스드 홀리 차지" : {
+            "attack_power" : 60
+        }
+    },
+    "다크나이트" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.49
+        },
+        "웨폰 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "웨폰 액셀레이션" : {
+            "attack_power" : 20
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "크로스 오버 체인(패시브)" : {
+            "final_damage" : 0.5
+        },
+        "크로스 오버 체인(버프)" : {
+            "final_damage" : 0.2
+        },
+        "비홀더스 버프" : {
+            "attack_power" : 40,
+            "critical_rate" : 10
+        },
+        "로드 오브 다크니스" : {
+            "critical_rate" : 30,
+            "critical_damage" : 8
+        },
+        "다크 레조넌스" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "어드밴스드 웨폰 마스터리" : {
+            "attack_power" : [30, 31],
+            "critical_damage" : 15,
+            "proficiency" : [0.2, 0.21]
+        }
+    },
+    "보우마스터" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.3
+        },
+        "크리티컬 샷" : {
+            "critical_rate" : 40
+        },
+        "보우 액셀레이션" : {
+            "dex" : 40
+        },
+        "소울 애로우" : {
+            "attack_power" : 30
+        },
+        "보우 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "익스트림 아쳐리 : 활" : {
+            "attack_power" : 40,
+            "final_damage" : 0.3
+        },
+        "마크맨쉽" : {
+            "attack_power_rate" : 25,
+            "ignore_monster_armor" : 0.25
+        },
+        "어드밴스드 퀴버" : {
+            "final_damage" : 0.06
+        },
+        "샤프 아이즈" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [15, 16]
+        },
+        "보우 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [60, 62],
+            "critical_damage" : 16
+        },
+        "어드밴스드 파이널 어택" : {
+            "attack_power" : [20, 21]
+        },
+        "아머 피어싱" : {
+            "ignore_monster_armor" : 0.4
+        },
+        "일루전 스탭" : {
+            "dex" : [80, 82]
+        }
+    },
+    "신궁" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.35
+        },
+        "크리티컬 샷" : {
+            "critical_rate" : 40
+        },
+        "크로스보우 액셀레이션" : {
+            "dex" : 20
+        },
+        "소울 애로우 : 석궁" : {
+            "attack_power" : 30
+        },
+        "크로스보우 마스터리" : {
+            "proficiency" : 0.5,
+            "final_damage" : 0.2
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "익스트림 아쳐리 : 석궁" : {
+            "critical_damage" : 20
+        },
+        "마크맨쉽" : {
+            "damage" : 15,
+            "ignore_monster_armor" : 0.25
+        },
+        "어드밴스드 인핸스 애로우" : {
+            "final_damage" : 0.08,
+            "ignore_monster_armor" : 0.2
+        },
+        "애로우 일루전" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "샤프 아이즈" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [15, 16]
+        },
+        "크로스보우 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 15
+        },
+        "일루전 스탭" : {
+            "dex" : [80, 82]
+        },
+        "어디셔널 볼트" : {
+            "final_damage" : [0.15, 0.16]
+        },
+        "라스트맨 스탠딩" : {
+            "final_damage" : [0.1, 0.11]
+        }
+    },
+    "패스파인더" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.3
+        },
+        "크리티컬 샷" : {
+            "critical_rate" : 40
+        },
+        "에인션트 보우 액셀레이션" : {
+            "dex" : 20
+        },
+        "에인션트 보우 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 30
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "에인션트 가이던스(발동)" : {
+            "final_damage" : 0.08
+        },
+        "에인션트 가이던스(패시브)" : {
+            "final_damage" : 0.2
+        },
+        "에센스 오브 아처" : {
+            "critical_rate" : 10,
+            "damage" : 10,
+            "ignore_monster_armor" : 0.3
+        },
+        "샤프 아이즈" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [15, 16]
+        },
+        "일루전 스탭" : {
+            "dex" : [80, 82]
+        },
+        "에디셔널 트랜지션" : {
+            "attack_power_rate" : [20, 21]
+        },
+        "에인션트 보우 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [60, 62],
+            "critical_damage" : [10, 11]
+        }
+    },
+    "비숍" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "매직 액셀레이션" : {
+            "int" : 20
+        },
+        "스펠 마스터리" : {
+            "proficiency" : 0.5,
+            "magic_power" : 10
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "매직 크리티컬" : {
+            "critical_rate" : 30,
+            "critical_damage" : 13
+        },
+        "홀리 포커스" : {
+            "critical_rate" : 40,
+            "proficiency" : 0.2
+        },
+        "블레싱 하모니" : {
+            "final_damage" : 0.04
+        },
+        "어드밴스드 블레스" : {
+            "attack_power" : [30, 31],
+            "magic_power" : [30, 31],
+            "max_hp" : [750, 775],
+            "max_mp" : [750, 775]
+        },
+        "마스터 매직" : {
+            "magic_power" : [30, 33],
+            "buff" : [50, 55]
+        },
+        "아케인 에임" : {
+            "ignore_monster_armor" : [0.2, 0.21],
+            "damage" : 40
+        },
+        "벤전스 오브 엔젤" : {
+            "magic_power" : 50,
+            "final_damage" : 0.3,
+            "ignore_monster_armor" : 0.2
+        }
+    },
+    "아크메이지(썬,콜)" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "매직 액셀레이션" : {
+            "int" : 20
+        },
+        "스펠 마스터리" : {
+            "proficiency" : 0.5,
+            "magic_power" : 10,
+            "critical_rate" : 5
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "엘리멘탈 리셋" : {
+            "final_damage" : 0.4
+        },
+        "매직 크리티컬" : {
+            "critical_rate" : 30,
+            "critical_damage" : 13
+        },
+        "엘리먼트 앰플리피케이션" : {
+            "damage" : 50
+        },
+        "엘퀴네스" : {
+            "proficiency" : [0.2, 0.21]
+        },
+        "마스터 매직" : {
+            "magic_power" : [30, 33],
+            "buff" : [50, 55]
+        },
+        "아케인 에임" : {
+            "ignore_monster_armor" : [0.2, 0.21],
+            "damage" : 40
+        }
+    },
+    "아크메이지(불,독)" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "매직 액셀레이션" : {
+            "int" : 20
+        },
+        "스펠 마스터리" : {
+            "proficiency" : 0.5,
+            "magic_power" : 10,
+            "critical_rate" : 5
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "메디테이션" : {
+            "magic_power" : 30
+        },
+        "엘리멘탈 리셋" : {
+            "final_damage" : 0.4
+        },
+        "엘리먼트 앰플리피케이션" : {
+            "damage" : 50
+        },
+        "매직 크리티컬" : {
+            "critical_rate" : 30,
+            "critical_damage" : 13
+        },
+        "이프리트" : {
+            "proficiency" : [0.2, 0.21]
+        },
+        "마스터 매직" : {
+            "magic_power" : [30, 33],
+            "buff" : [50, 55]
+        },
+        "아케인 에임" : {
+            "ignore_monster_armor" : [0.2, 0.21],
+            "damage" : 40
+        }
+    },
+    "나이트로드" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.75
+        },
+        "님블 바디" : {
+            "luk" : 20
+        },
+        "자벨린 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "자벨린 액셀레이션" : {
+            "luk" : 20
+        },
+        "크리티컬 스로우" : {
+            "critical_damage" : 5,
+            "critical_rate" : 50
+        },
+        "피지컬 트레이닝" : {
+            "dex" : 30,
+            "luk" : 30
+        },
+        "스피릿 자벨린" : {
+            "attack_power" : 10
+        },
+        "숙련된 표창술" : {
+            "final_damage" : 0.25,
+            "critical_rate" : 20
+        },
+        "아드레날린" : {
+            "critical_damage" : 10
+        },
+        "퍼지 에어리어" : {
+            "boss_damage" : [10, 11]
+        },
+        "다크 세레니티" : {
+            "attack_power" : 20,
+            "ignore_monster_armor" : [0.3, 0.31],
+            "final_damage" : 0.08
+        },
+        "자벨린 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 10
+        },
+        "블리딩 톡신" : {
+            "attack_power" : 50
+        }
+    },
+    "섀도어" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "님블 바디" : {
+            "luk" : 20
+        },
+        "크리티컬 엣지": {
+            "critical_damage" : 5,
+            "critical_rate" : 25
+        },
+        "스틸" : {
+            "attack_power" : 30
+        },
+        "대거 액셀레이션" : {
+            "luk" : 20
+        },
+        "카르마" : {
+            "attack_power" : 30
+        },
+        "대거 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "dex" : 30,
+            "luk" : 30
+        },
+        "그리드" : {
+            "attack_power" : 25
+        },
+        "크루얼 스탭" : {
+            "final_damage" : 0.25
+        },
+        "블러디 파킷" : {
+            "luk" : [10, 11],
+            "critical_damage" : [20, 31]
+        },
+        "섀도어 인스팅트" : {
+            "attack_power" : [50, 52],
+            "final_damage" : [0.15, 0.16],
+            "ignore_monster_armor" : [0.2, 0.21]
+        },
+        "대거 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [40, 41],
+            "critical_damage" : 15
+        }
+    },
+    "듀얼블레이더" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "이도류 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "이도 액셀레이션" : {
+            "luk" : 20
+        },
+        "피지컬 트레이닝" : {
+            "dex" : 30,
+            "luk" : 30
+        },
+        "카르마" : {
+            "attack_power" : 30
+        },
+        "파이널 컷" : {
+            "final_damage" : [0.4, 0.41]
+        },
+        "쏜즈 이펙트" : {
+            "attack_power" : [30, 31]
+        },
+        "샤프니스" : {
+            "critical_rate" : [35, 38],
+            "critical_damage" : [13, 14]
+        },
+        "이도류 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "final_damage" : 0.2
+        }
+    },
+    "캡틴" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.5
+        },
+        "크리티컬 로어" : {
+            "critical_rate" : 20,
+            "critical_damage" : 5
+        },
+        "인피닛 불릿" : {
+            "attack_power" : 10
+        },
+        "건 액셀레이션" : {
+            "dex" : 20
+        },
+        "건 마스터리" : {
+            "proficiency" : 0.5,
+            "critical_rate" : 10
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "할로포인트 불릿" : {
+            "attack_power" : 60
+        },
+        "풀메탈 자켓" : {
+            "final_damage" : 0.2,
+            "critical_rate" : 30,
+            "ignore_monster_armor" : 0.2
+        },
+        "컨티뉴얼 에이밍" : {
+            "critical_damage" : [20, 21]
+        },
+        "오펜스 폼" : {
+            "damage" : [15, 16]
+        },
+        "크루 커맨더십" : {
+            "critical_damage" : [30, 31],
+            "attack_power" : [45, 48],
+            "critical_rate" : 10
+        },
+        "캡틴 디그니티" : {
+            "proficiency" : [0.2, 0.21],
+            "final_damage" : 0.08,
+            "attack_power" : [30, 31]
+        }
+    },
+    "바이퍼" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.7
+        },
+        "크리티컬 로어" : {
+            "critical_rate" : 20,
+            "critical_damage" : 5
+        },
+        "너클 액셀레이션" : {
+            "str" : 20
+        },
+        "너클 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "멘탈 클리어리티" : {
+            "attack_power" : 30
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "크리티컬 레이지" : {
+            "attack_power" : 30,
+            "critical_damage" : 10,
+            "critical_rate" : 15
+        },
+        "바이퍼지션" : {
+            "attack_power_rate" : 15,
+            "proficiency" : [0.2, 0.21],
+            "final_damage" : 0.13
+        },
+        "오펜스 폼" : {
+            "damage" : [25, 27]
+        },
+        "가드 크러쉬" : {
+            "ignore_monster_armor" : [0.4, 0.41],
+            "final_damage" : 0.1,
+            "attack_power" : [30, 32]
+        },
+        "스티뮬레이트" : {
+            "boss_damage" : 20
+        },
+        "서펜트 스피릿" : {
+            "critical_damage" : 15
+        }
+    },
+    "캐논마스터" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.5
+        },
+        "빌드업 캐논" : {
+            "attack_power" : 20
+        },
+        "크리티컬 파이어" : {
+            "critical_rate" : 20,
+            "critical_damage" : 5
+        },
+        "캐논 액셀레이션" : {
+            "str" : 20
+        },
+        "캐논 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "파이렛 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "오크통 룰렛" : {
+            "final_damage" : 0.1,
+            "critical_damage" : 10,
+            "critical_rate" : 20
+        },
+        "리인포스 캐논" : {
+            "final_damage" : 0.05,
+            "attack_power" : 40
+        },
+        "반격의 슈터" : {
+            "final_damage" : 0.05
+        },
+        "오버버닝 캐논" : {
+            "final_damage" : [0.3, 0.31],
+            "ignore_monster_armor" : 0.2,
+            "proficiency" : [0.2, 0.21]
+        },
+        "하이퍼 몽키 스펠" : {
+            "max_hp" : [1000, 1030],
+            "max_mp" : [1000, 1030],
+            "str" : [60, 61],
+            "dex" : [60, 61],
+            "int" : [60, 61],
+            "luk" : [60, 61]
+        },
+        "파이렛 스피릿" : {
+            "boss_damage" : [40, 41]
+        },
+        "벅 샷" : {
+            "final_damage" : 0.35
+        }
+    },
+    "소울마스터" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.34
+        },
+        "엘리멘트 : 소울" : {
+            "ignore_monster_armor" : 0.1,
+            "attack_power" : 20
+        },
+        "소울 가디언" : {
+            "max_hp" : 1500
+        },
+        "소울 블레싱" : {
+            "attack_power" : 15
+        },
+        "님블 핑거" : {
+            "str" : 20
+        },
+        "이너 트러스트" : {
+            "attack_power" : 20
+        },
+        "소드 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "str" : 40,
+            "dex" : 20
+        },
+        "소울 블레싱 II" : {
+            "attack_power" : 15
+        },
+        "이너 샤우트" : {
+            "attack_power" : 30,
+            "str" : 40
+        },
+        "소울 블레싱 III" : {
+            "final_damage" : 0.1
+        },
+        "소울 플레지" : {
+            "str" : [30, 31],
+            "dex" : [30, 31],
+            "int" : [30, 31],
+            "luk" : [30, 31],
+            "critical_rate" : 10
+        },
+        "소드 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [50, 51],
+            "critical_damage" : 12
+        },
+        "언포시어블" : {
+            "ignore_monster_armor" : [0.3, 0.32],
+            "boss_damage" : [15, 16]
+        },
+        "라이징 선" : {
+            "final_damage" : 0.25
+        },
+        "썬 문" : {
+            "final_damage" : 0.8,
+            "critical_rate" : 35
+        }
+    },
+    "윈드브레이커" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.3
+        },
+        "엘리멘트 : 스톰" : {
+            "damage" : 10
+        },
+        "위스퍼 오브 더 윈드" : {
+            "attack_power" : 20
+        },
+        "실프스 에이드" : {
+            "attack_power" : 20,
+            "critical_rate" : 10
+        },
+        "보우 액셀레이션" : {
+            "dex" : 20
+        },
+        "보우 마스터리" : {
+            "proficiency" : 0.5,
+            "final_damage" : 0.1
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "알바트로스" : {
+            "attack_power" : 20,
+            "max_hp" : 1500,
+            "critical_rate" : 10
+        },
+        "세컨드 윈드" : {
+            "attack_power" : 15
+        },
+        "샤프 아이즈" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [15, 16]
+        },
+        "윈드 블레싱" : {
+            "attack_power_rate" : [10, 11],
+            "dex_rate" : 15,
+            "max_hp_rate" : 20
+        },
+        "보우 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "final_damage" : [0.35, 0.36],
+            "critical_damage" : 20,
+            "boss_damage" : [40, 41]
+        },
+        "알바트로스 맥시멈" : {
+            "attack_power" : [30, 31],
+            "damage" : 25,
+            "ignore_monster_armor" : 0.15,
+            "critical_rate" : 15
+        }
+    },
+    "플레임위자드" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "타고난 재능" : {
+            "max_mp_rate" : 20
+        },
+        "북 오브 파이어" : {
+            "magic_power" : 20,
+            "critical_rate" : 5
+        },
+        "주문 연마" : {
+            "magic_power" : 10,
+            "proficiency" : 0.5
+        },
+        "해방된 마력" : {
+            "final_damage" : 0.25
+        },
+        "약점 분석" : {
+            "critical_rate" : 30,
+            "critical_damage" : 20
+        },
+        "번뜩이는 깨달음" : {
+            "int" : 60
+        },
+        "스피릿 오브 플레임" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "엘리멘트 : 플레임 IV" : {
+            "magic_power" : [40, 41]
+        },
+        "마법의 진리" : {
+            "magic_power" : [20, 21],
+            "final_damage" : [0.5, 0.53],
+            "proficiency" : [0.2, 0.21]
+        }
+    },
+    "나이트워커" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.75
+        },
+        "스로잉 마스터리" : {
+            "proficiency" : 0.5,
+            "damage" : 30
+        },
+        "스로잉 액셀레이션" : {
+            "luk" : 20
+        },
+        "크리티컬 스로우" : {
+            "critical_rate" : 35,
+            "critical_damage" : 10
+        },
+        "피지컬 트레이닝" : {
+            "luk" : 60
+        },
+        "쉐도우 모멘텀" : {
+            "final_damage" : 0.2
+        },
+        "스피릿 스로잉" : {
+            "attack_power" : 10
+        },
+        "아드레날린" : {
+            "critical_damage" : 10
+        },
+        "스로잉 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : [10, 11]
+        },
+        "다크니스 블레싱" : {
+            "attack_power" : [30, 31],
+            "ignore_monster_armor" : [0.15, 0.16],
+            "final_damage" : 0.08
+        }
+    },
+    "스트라이커" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.7
+        },
+        "너클 액셀레이션" : {
+            "str" : 20
+        },
+        "너클 마스터리" : {
+            "proficiency" : 0.5,
+            "final_damage" : 0.05
+        },
+        "단련" : {
+            "str" : 60,
+            "critical_rate" : 15,
+            "critical_damage" : 5
+        },
+        "뇌백" : {
+            "attack_power" : 20
+        },
+        "극갑" : {
+            "damage" : 5,
+            "critical_rate" : 10
+        },
+        "연쇄" : {
+            "final_damage" : 0.18
+        },
+        "뇌제" : {
+            "attack_power" : 30,
+            "critical_damage" : 10
+        },
+        "태풍" : {
+            "damage" : 15
+        },
+        "너클 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "final_damage" : 0.15,
+            "critical_damage" : 15
+        },
+        "자극" : {
+            "max_hp_rate" : [20, 21]
+        },
+        "뇌신" : {
+            "critical_damage" : 15,
+            "critical_rate" : 10,
+            "ignore_monster_armor" : 0.45,
+            "damage" : 15
+        }
+    },
+    "미하일" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.24
+        },
+        "로얄 가드" : {
+            "attack_power" : 45
+        },
+        "소울 실드" : {
+            "max_hp_rate" : 20
+        },
+        "인커리지" : {
+            "attack_power" : 30
+        },
+        "소드 액셀레이션" : {
+            "str" : 20
+        },
+        "소드 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 20,
+            "final_damage" : 0.15
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "소울 링크" : {
+            "damage" : 5
+        },
+        "로얄 오쓰" : {
+            "str" : 60,
+            "critical_rate" : 20,
+            "final_damage" : 0.25
+        },
+        "어드밴스드 소울 실드" : {
+            "max_hp_rate" : [20, 22]
+        },
+        "어드밴스드 소드 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 20,
+            "critical_rate" : 15
+        },
+        "어드밴스드 파이널 어택" : {
+            "attack_power" : [30, 31]
+        },
+        "컴뱃 마스터리" : {
+            "ignore_monster_armor" : [0.4, 0.42]
+        }
+    },
+    "블래스터" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.7
+        },
+        "인듀어런스 실드" : {
+            "max_hp_rate" : 20
+        },
+        "건틀렛 마스터리" : {
+            "proficiency" : 0.5,
+            "critical_rate" : 30,
+            "attack_power" : 20,
+            "final_damage" : 0.05
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "차지 마스터리" : {
+            "damage" : 20
+        },
+        "콤비네이션 트레이닝" : {
+            "attack_power_rate" : 15,
+            "final_damage" : [0.6, 0.7],
+            "critical_rate" : 30,
+            "attack_power" : [40, 42]
+        },
+        "건틀렛 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "critical_damage" : [20, 21],
+            "boss_damage" : [20, 21]
+        },
+        "어드밴스드 차지 마스터리" : {
+            "ignore_monster_armor" : [0.35, 0.38]
+        }
+    },
+    "배틀메이지" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "아트 오브 스태프" : {
+            "magic_power" : 20,
+            "critical_rate" : 15
+        },
+        "스태프 마스터리" : {
+            "proficiency" : 0.5,
+            "magic_power" : 30,
+            "critical_rate" : 20
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "오디너리 컨버전" : {
+            "max_hp_rate" : 150
+        },
+        "배틀 마스터리" : {
+            "final_damage" : 0.25,
+            "critical_damage" : 15
+        },
+        "다크 오라" : {
+            "magic_power_rate" : 15
+        },
+        "배틀 레이지" : {
+            "max_hp_rate" : [30, 31],
+            "max_mp_rate" : [30, 31]
+        },
+        "스태프 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "magic_power" : [30, 31],
+            "critical_damage" : [20, 21]
+        },
+        "스펠 부스트" : {
+            "final_damage" : 0.05,
+            "magic_power_rate" : 10,
+            "damage" : [10, 11],
+            "ignore_monster_armor" : [30, 31]
+        }
+    },
+    "와일드헌터" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.35
+        },
+        "서먼 재규어" : {
+            "critical_damage" : 8
+        },
+        "오토매틱 슈팅 디바이스" : {
+            "attack_power" : 20
+        },
+        "네이처스 리스" : {
+            "critical_rate" : 25
+        },
+        "소울 애로우 : 석궁" : {
+            "attack_power" : 20
+        },
+        "하울링" : {
+            "attack_power_rate" : 10,
+            "magic_power_rate" : 10
+        },
+        "크로스보우 액셀레이션" : {
+            "dex" : 20
+        },
+        "크로스보우 마스터리" : {
+            "proficiency" : 0.5,
+            "damage" : 10
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "재규어 마스터리" : {
+            "max_hp_rate" : 20
+        },
+        "비스트 폼" : {
+            "attack_power_rate" : 20,
+            "final_damage" : 0.1,
+            "max_hp_rate" : 50
+        },
+        "플러리" : {
+            "dex" : 40
+        },
+        "재규어 링크" : {
+            "critical_damage" : 12,
+            "critical_rate" : 18,
+            "attack_power" : 10
+        },
+        "샤프 아이즈" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [15, 16]
+        },
+        "익스텐드 매거진" : {
+            "final_damage" : 0.2,
+            "str" : [60, 62],
+            "dex" : [60, 62],
+            "int" : [60, 62],
+            "luk" : [60, 62]
+        },
+        "크로스보우 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 20
+        },
+        "와일드 인스팅트" : {
+            "ignore_monster_armor" : [0.3, 0.33]
+        },
+        "어드밴스드 파이널어택" : {
+            "attack_power" : [20, 21]
+        }
+    },
+    "메카닉" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.5
+        },
+        "메탈아머 : 휴먼" : {
+            "max_hp" : 1500,
+            "max_mp" : 1500
+        },
+        "메카닉 마스터리" : {
+            "attack_power" : 20,
+            "proficiency" : 0.5,
+            "critical_rate" : 15,
+            "critical_damage" : 5
+        },
+        "오버 튜닝" : {
+            "final_damage" : 0.39,
+            "critical_rate" : 20,
+            "ignore_monster_armor" : 0.3
+        },
+        "메카닉 디펜스 시스템" : {
+            "max_hp_rate" : 30,
+            "max_mp_rate" : 30
+        },
+        "서포트 웨이버" : {
+            "final_damage" : [0.07, 0.08]
+        },
+        "메탈아머 익스트림" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [55, 56]
+        },
+        "로봇 마스터리" : {
+            "damage" : [45, 46]
+        },
+        "메탈아머 합금 연구" : {
+            "max_hp_rate" : [40, 41],
+            "max_mp_rate" : 10
+        }
+    },
+    "데몬슬레이어" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.2
+        },
+        "데몬 액셀레이션" : {
+            "str" : 20
+        },
+        "HP증가" : {
+            "max_hp_rate" : 30
+        },
+        "웨폰 마스터리" : {
+            "final_damage" : 0.1,
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "아웃레이지" : {
+            "attack_power" : 50,
+            "critical_rate" : 20
+        },
+        "이블 토쳐" : {
+            "critical_rate" : 15
+        },
+        "컨센트레이션" : {
+            "final_damage" : 0.3
+        },
+        "다크 바인드" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "메타모포시스" : {
+            "damage" : [35, 36],
+            "max_hp_rate" : [20, 21]
+        },
+        "어드밴스드 웨폰 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [50, 51],
+            "critical_damage" : 15
+        }
+    },
+    "제논" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.5
+        },
+        "인클라인 파워" : {
+            "attack_power" : 30
+        },
+        "멀티래터럴 I" : {
+            "damage" : 3
+        },
+        "멀티래터럴 II" : {
+            "damage" : 5,
+            "max_hp_rate" : 5,
+            "max_mp_rate" : 5
+        },
+        "에피션시 파이프라인" : {
+            "max_hp_rate" : 30,
+            "max_mp_rate" : 30
+        },
+        "제논 부스트" : {
+            "max_hp" : 1000,
+            "max_mp" : 1000
+        },
+        "리니어 퍼스펙티브" : {
+            "critical_rate" : 40
+        },
+        "마이너리티 서포트" : {
+            "str" : 25, 
+            "dex" : 25,
+            "int" : 25,
+            "luk" : 25
+        },
+        "제논 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 20
+        },
+        "멀티래터럴 III" : {
+            "damage" : 7,
+            "max_hp_rate" : 5,
+            "max_mp_rate" : 5
+        },
+        "듀얼브리드 디펜시브" : {
+            "str" : 10, 
+            "dex" : 10,
+            "int" : 10,
+            "luk" : 10
+        },
+        "멀티래터럴 IV" : {
+            "damage" : 10,
+            "max_hp_rate" : 10,
+            "max_mp_rate" : 10
+        },
+        "오파츠 코드" : {
+            "final_damage" : 0.3,
+            "boss_damage" : [30, 31]
+        },
+        "제논 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 8
+        },
+        "오펜시브 매트릭스" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "멀티래터럴 V" : {
+            "damage" : 10,
+            "max_hp_rate" : 10,
+            "max_mp_rate" : 10
+        },
+        "멀티래터럴 VI" : {
+            "damage" : 5,
+            "final_damage" : 0.15
+        }
+    },
+    "데몬어벤져" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "릴리즈 오버로드" : {
+            "final_damage" : 0.25
+        },
+        "데모닉 샤프니스" : {
+            "critical_rate" : 15
+        },
+        "어비셜 레이지" : {
+            "attack_power" : 40,
+            "critical_rate" : 20
+        },
+        "데몬 액셀레이션" : {
+            "max_hp" : 400
+        },
+        "데스페라도 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "이너 스트렝스" : {
+            "max_hp" : 600
+        },
+        "디아볼릭 리커버리" : {
+            "max_hp_rate" : 25
+        },
+        "메이플 용사" : {
+            "max_hp_rate" : 15
+        },
+        "오버휄밍 파워" : {
+            "final_damage" : 0.15,
+            "damage" : [30, 31]
+        },
+        "디펜스 엑스퍼타이즈" : {
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "어드밴스드 데스페라도 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [50, 51],
+            "critical_damage" : 8
+        }
+    },
+    "아란" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.49
+        },
+        "페이브" : {
+            "attack_power" : 20,
+            "critical_rate" : 10
+        },
+        "폴암 액셀레이션" : {
+            "str" : 20
+        },
+        "콤보 어빌리티" : {
+            "critical_rate" : 20,
+            "attack_power" : 20
+        },
+        "드레인" : {
+            "max_hp_rate" : 10
+        },
+        "스노우 차지" : {
+            "damage" : 15
+        },
+        "폴암 마스터리" : {
+            "proficiency" : 0.5,
+            "final_damage" : 0.1
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "어드밴스드 콤보 마스터리" : {
+            "attack_power" : 10,
+            "critical_damage" : 10
+        },
+        "블레싱 마하" : {
+            "attack_power" : 30,
+            "magic_power" : 30
+        },
+        "마이트" : {
+            "attack_power" : 40,
+            "critical_rate" : 20,
+            "boss_damage" : 15
+        },
+        "하이 디펜스" : {
+            "max_hp_rate" : 20
+        },
+        "하이 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "final_damage" : [0.21, 0.22],
+            "critical_damage" : 10
+        },
+        "클리빙 어택" : {
+            "ignore_monster_armor" : [0.4, 0.41],
+            "damage" : [35, 36]
+        },
+        "어드밴스드 파이널어택" : {
+            "attack_power" : [30, 31]
+        }
+    },
+    "메르세데스" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.3
+        },
+        "포텐셜 파워" : {
+            "damage" : 20
+        },
+        "샤프 에이밍" : {
+            "critical_rate" : 40
+        },
+        "듀얼보우건 액셀레이션" : {
+            "dex" : 20
+        },
+        "스피릿 인퓨젼" : {
+            "damage" : 30,
+            "critical_rate" : 15
+        },
+        "듀얼보우건 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "str" : 30,
+            "dex" : 30
+        },
+        "이그니스 로어(패시브)" : {
+            "final_damage" : 0.25,
+            "attack_power" : 40
+        },
+        "이그니스 로어" : {
+            "final_damage" : 0.2
+        },
+        "앤시언트 스피릿" : {
+            "attack_power_rate" : [30, 31],
+            "max_hp" : [1500, 1550]
+        },
+        "듀얼보우건 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : [10, 11]
+        },
+        "디펜스 브레이크" : {
+            "ignore_monster_armor" : [0.25, 0.26],
+            "critical_damage" : 20,
+            "boss_damage" : 20,
+            "final_damage" : [0.2, 0.21]
+        },
+        "어드밴스드 파이널어택" : {
+            "attack_power" : [20, 21]
+        },
+        "엘비쉬 블레싱" : {
+            "attack_power" : 80,
+            "final_damage" : 0.05
+        }
+    },
+    "에반" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "링크드 매직" : {
+            "magic_power" : 20,
+            "max_mp_rate" : 20
+        },
+        "매직 액셀레이션" : {
+            "int" : 20
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "교감" : {
+            "damage" : 20
+        },
+        "스펠 마스터리" : {
+            "proficiency" : 0.5,
+            "critical_rate" : 15,
+            "magic_power" : 10
+        },
+        "엘리멘탈 리셋" : {
+            "insight" : 10,
+            "final_damage" : 0.17
+        },
+        "크리티컬 매직" : {
+            "critical_rate" : 30,
+            "critical_damage" : 20 
+        },
+        "매직 앰플리피케이션" : {
+            "final_damage" : 0.3
+        },
+        "드래곤 퍼텐셜" : {
+            "ignore_monster_armor" : 0.2
+        },
+        "오닉스의 축복" : {
+            "magic_power" : [55, 56]
+        },
+        "매직 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "magic_power" : [30, 31],
+            "critical_damage" : 20
+        },
+        "드래곤 퓨리" : {
+            "magic_power_rate" : [30, 31]
+        },
+        "하이 드래곤 포텐셜" : {
+            "boss_damage" : [20, 21]
+        }
+    },
+    "루미너스" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "익스텐드 마나" : {
+            "max_mp_rate" : 30
+        },
+        "블레스 오브 다크니스" : {
+            "magic_power" : 30
+        },
+        "매직 액셀레이션" : {
+            "int" : 20
+        },
+        "스펠 마스터리" : {
+            "proficiency" : 0.5,
+            "magic_power" : 10,
+            "damage" : 15,
+            "critical_rate" : 20
+        },
+        "하이 위즈덤" : {
+            "int" : 40
+        },
+        "포딕 메디테이션" : {
+            "magic_power" : 40
+        },
+        "모닝 스타폴" : {
+            "final_damage" : [0.4, 0.41],
+            "boss_damage" : 15
+        },
+        "다크니스 소서리" : {
+            "insight" : 10,
+            "final_damage" : [0.4, 0.41],
+            "ignore_monster_armor" : [0.4, 0.41]
+        },
+        "다크 크레센도" : {
+            "damage" : 40
+        },
+        "매직 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "magic_power" : [30, 31],
+            "critical_damage" : 18,
+            "critical_rate" : 15
+        }
+    },
+    "팬텀" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "케인 액셀레이션" : {
+            "luk" : 20
+        },
+        "케인 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "럭 모노폴리" : {
+            "luk" : 60
+        },
+        "럭 오브 팬텀시프" : {
+            "luk" : 60
+        },
+        "미스포츈 프로텍션" : {
+            "max_hp_rate" : 30,
+            "max_mp_rate" : 30
+        },
+        "문 라이트" : {
+            "attack_power" : 40
+        },
+        "어큐트 센스" : {
+            "critical_rate" : 35,
+            "final_damage" : 0.3
+        },
+        "프레이 오브 아리아" : {
+            "damage" : [45, 46],
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "케인 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [40, 41],
+            "critical_damage" : 15,
+            "final_damage" : 0.32
+        },
+        "파이널 컷" : {
+            "final_damage" : [0.4, 0.41]
+        },
+        "크로스 오버 체인" : {
+            "final_damage" : 0.2
+        },
+        "스피릿 블레이드" : {
+            "attack_power" : 30
+        }
+    },
+    "은월" : {
+        "기본" : {
+           "proficiency" : 0.2,
+           "weapon_multiplier" : 1.7 
+        },
+        "가호의 증표" : {
+            "attack_power" : 20,
+            "damage" : 10
+        },
+        "건곤 일체" : {
+            "max_hp_rate" : 20,
+            "max_mp_rate" : 20
+        },
+        "호기체현" : {
+            "damage" : 10,
+            "critical_rate" : 15
+        },
+        "너클 숙련" : {
+            "proficiency" : 0.5,
+            "critical_rate" : 10
+        },
+        "근력 단련" : {
+            "str" : 60
+        },
+        "정령 결속 3식" : {
+            "final_damage" : 0.15,
+            "boss_damage" : 20
+        },
+        "약화" : {
+            "ignore_monster_armor" : 0.2
+        },
+        "일치단결" : {
+            "attack_power" : 20,
+            "damage" : 20,
+            "critical_damage" : 10
+        },
+        "정령 결속 4식" : {
+            "ignore_monster_armor" : [0.3, 0.31],
+            "boss_damage" : [30, 31]
+        },
+        "고급 너클 숙련" : {
+            "proficiency" : 0.2,
+            "final_damage" : [0.16, 0.17]
+        },
+        "약점 간파" : {
+            "critical_damage" : [18, 20],
+            "critical_rate" : [10, 11],
+            "final_damage" : 0.1
+        }
+    },
+    "카이저" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.34
+        },
+        "공격모드" : {
+            "attack_power" : 5,
+            "critical_rate" : 3,
+            "boss_damage" : 3
+        },
+        "블레이즈 업" : {
+            "attack_power" : 20
+        },
+        "소드 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "이너 블레이즈" : {
+            "str" : 20,
+            "max_hp_rate" : 20
+        },
+        "공격모드 1차 강화" : {
+            "attack_power" : 10,
+            "critical_rate" : 2,
+            "boss_damage" : 5
+        },
+        "카탈라이즈" : {
+            "attack_power_rate" : 30,
+            "critical_rate" : 20,
+            "final_damage" : 0.32
+        },
+        "어드밴스드 이너 블레이즈" : {
+            "str" : 30,
+            "max_hp_rate" : 30
+        },
+        "공격모드 2차 강화" : {
+            "attack_power" : 15,
+            "critical_rate" : 5,
+            "boss_damage" : 5
+        },
+        "어드밴스드 윌 오브 소드" : {
+            "attack_power" : [20, 22]
+        },
+        "언플리칭 커리지" : {
+            "ignore_monster_armor" : [0.4, 0.41]
+        },
+        "어드밴스드 소드 마스터리" : {
+            "proficiency" : [0.2, 0.21],
+            "critical_damage" : 15,
+            "critical_rate" : 20,
+            "attack_power" : [30, 31]
+        },
+        "공격모드 3차 강화" : {
+            "attack_power" : 15,
+            "critical_rate" : 10,
+            "boss_damage" : 5
+        }
+    },
+    "엔젤릭버스터" : {
+        "기본" : {
+            "proficiency" : 0.15,
+            "weapon_multiplier" : 1.7
+        },
+        "리리컬 크로스" : {
+            "max_hp" : 2500,
+            "max_mp" : 2000
+        },
+        "소울슈터 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 20
+        },
+        "이너 파이어" : {
+            "dex" : 40,
+            "final_damage" : 0.05
+        },
+        "어피니티 II" : {
+            "damage" : 10,
+            "critical_rate" : 25
+        },
+        "샤이닝 로터스" : {
+            "dex" : 20,
+            "final_damage" : 0.14
+        },
+        "콜 오브 에인션트" : {
+            "attack_power" : 40,
+            "ignore_monster_armor" : 0.16,
+            "critical_damage" : 6
+        },
+        "이너 피스" : {
+            "max_hp" : 1000,
+            "max_mp" : 1000
+        },
+        "어피니티 III" : {
+            "dex" : 40,
+            "damage" : 10,
+            "final_damage" : 0.1
+        },
+        "어텐션" : {
+            "critical_damage" : 15,
+            "critical_rate" : 10
+        },
+        "소울 게이즈" : {
+            "critical_damage" : 20
+        },
+        "소울슈터 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "final_damage" : [0.21, 0.23]
+        },
+        "어피니티 IV" : {
+            "damage" : 25
+        }
+    },
+    "카인" : {
+        "기본" : {
+            "weapon_multiplier" : 1.3,
+            "proficiency" : 0.15
+        },
+        "히트맨" : {
+            "attack_power" : 40,
+            "critical_rate" : 35,
+            "max_hp_rate" : 15
+        },
+        "브레스 슈터 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 40
+        },
+        "피지컬 트레이닝" : {
+            "dex" : 60
+        },
+        "내츄럴 본 인스팅트" : {
+            "final_damage" : 0.24,
+            "attack_power" : 40,
+            "critical_rate" : 20,
+            "ignore_monster_armor" : 0.1
+        },
+        "그라인딩" : {
+            "max_mp_rate" : 20
+        },
+        "그라인딩 II" : {
+            "attack_power" : [30, 31]
+        },
+        "도그마" : {
+            "final_damage" : [0.25, 0.26],
+            "critical_damage" : [20, 21],
+            "ignore_monster_armor" : [0.3, 0.31]
+        },
+        "브레스 슈터 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "final_damage" : 0.3,
+            "attack_power" : [30, 31],
+            "critical_damage" : 20
+        },
+        "어댑트 투 데스" : {
+            "damage" : [13, 14],
+            "boss_damage" : 10,
+            "max_hp_rate" : [20, 21]
+        }
+    },
+    "카데나" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "콜렉팅 포리프" : {
+            "luk" : 50
+        },
+        "웨폰 마스터리" : {
+            "proficiency" : 0.5
+        },
+        "피지컬 트레이닝" : {
+            "dex" : 30,
+            "luk" : 30
+        },
+        "퀵서비스 마인드 I":{
+            "attack_power" : 10,
+            "critical_damage" : 5,
+            "critical_rate" : 10
+        },
+        "템퍼" : {
+            "max_hp_rate" : 20
+        },
+        "베이직 디텍션" : {
+            "ignore_monster_armor" : 0.2,
+            "damage" : 20
+        },
+        "위크포인트 컨버징 어택" : {
+            "normal_damage" : 10
+        },
+        "웨폰 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : 50,
+            "critical_damage" : 19,
+            "critical_rate" : [30, 31]
+        },
+        "퀵서비스 마인드 II":{
+            "attack_power" : [30, 31],
+            "critical_damage" : [10, 11],
+            "critical_rate" : [10, 11],
+            "boss_damage" : 20
+        },
+        "웨폰 버라이어티 III" : {
+            "final_damage" : 0.8
+        }
+    },
+    "아델" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "루디먼트" :{
+            "attack_power" : 30,
+            "max_hp" : 1000
+        },
+        "레조넌스" : {
+            "final_damage" : 0.1,
+            "ignore_monster_armor" : 0.1
+        },
+        "마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 30
+        },
+        "트레인" : {
+            "str" : 60
+        },
+        "어센트" : {
+            "attack_power" : 30,
+            "final_damage" : 0.17,
+            "critical_rate" : 20
+        },
+        "톨러런스" : {
+            "max_hp_rate" : 10
+        },
+        "엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "damage" : 20
+        },
+        "데몰리션" : {
+            "final_damage" : [0.3, 0.31],
+            "ignore_monster_armor" : [0.2, 0.21]
+        },
+        "어테인" : {
+            "max_hp_rate" : 15,
+            "critical_rate" : 20,
+            "attack_power" : [30, 31],
+            "damage" : [10, 11]
+        }
+    },
+    "일리움" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.2
+        },
+        "매직 건틀렛 마스터리" : {
+            "proficiency" : 0.4,
+            "critical_rate" : 20
+        },
+        "블레스 마크" : {
+            "attack_power" : 6,
+            "magic_power" : 6,
+            "damage" : 10,
+            "max_hp_rate" : 10,
+            "max_mp_rate" : 10
+        },
+        "끊임없는 연구" : {
+            "magic_power" : 50,
+            "critical_damage" : 30,
+            "critical_rate" : 20
+        },
+        "레프 마스터리" : {
+            "max_hp_rate" : 20,
+            "max_mp_rate" : 20,
+            "damage" : 15
+        },
+        "운명 개척" : {
+            "int" : 40,
+            "magic_power_rate" : 10
+        },
+        "블레스 마크 숙련" : {
+            "magic_power" : 12,
+            "attack_power" : 12
+        },
+        "블레스 마크 완성" : {
+            "magic_power" : 28,
+            "attack_power" : 28
+        },
+        "크리스탈의 비밀" : {
+            "proficiency" : [0.3, 0.31],
+            "boss_damage" : 30,
+            "ignore_monster_armor" : 0.25,
+            "final_damage" : [0.47, 0.48]
+        }
+    },
+    "칼리" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "플레어":{
+            "attack_power" : 30,
+            "max_hp" : 500,
+            "max_mp" : 500
+        },
+        "차크람 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 30
+        },
+        "임펄스" : {
+            "critical_damage" : 20,
+            "critical_rate" : 35
+        },
+        "피지컬 트레이닝" : {
+            "luk" : 60
+        },
+        "인투이션" : {
+            "final_damage" : 0.3,
+            "ignore_monster_armor" : 0.2,
+            "attack_power" : 30
+        },
+        "비질런스" : {
+            "max_hp_rate" : 15,
+            "max_mp_rate" : 15
+        },
+        "차크람 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : 20
+        },
+        "리뎀션" : {
+            "final_damage" : [0.4, 0.42],
+            "ignore_monster_armor" : [0.2, 0.21],
+            "boss_damage" : [30, 31]
+        }
+    },
+    "아크" : {
+        "기본" : {
+            "weapon_multiplier" : 1.7,
+            "proficiency" : 0.2
+        },
+        "미스틱 아츠 마스터리" : {
+            "attack_power" : 20
+        },
+        "너클 마스터리" : {
+            "proficiency" : 0.5,
+            "attack_power" : 20,
+            "final_damage" : 0.05
+        },
+        "스칼렛 차지드라이브" : {
+            "attack_power" : 30,
+            "critical_rate" : 20
+        },
+        "융합 개시" : {
+            "max_hp_rate" : 20,
+            "max_mp_rate" : 20,
+            "critical_rate" : 5
+        },
+        "피지컬 트레이닝" :{
+            "str" : 60
+        },
+        "융합 진행" : {
+            "final_damage" : 0.12,
+            "critical_rate" : 20
+        },
+        "너클 엑스퍼트" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [30, 31],
+            "critical_damage" : [30, 31]
+        },
+        "융합 완성" : {
+            "ignore_monster_armor" : [0.3, 0.31],
+            "attack_power" : [40, 41],
+            "boss_damage" : [30, 31],
+            "critical_rate" : [10, 11]
+        },
+        "전투 광란" : {
+            "final_damage" : [0.2, 0.21]
+        },
+        "어비스 차지 드라이브" : {
+            "damage" : 20,
+            "ignore_monster_armor" : 0.2,
+            "boss_damage" : [30, 31]
+        }
+    },
+    "라라" : {
+        "기본" : {
+            "proficiency" : 0.25,
+            "weapon_multiplier" : 1.2
+        },
+        "감응" : {
+            "max_hp_rate" : 20
+        },
+        "지팡이 숙련" : {
+            "proficiency" : 0.5,
+            "magic_power" : 35
+        },
+        "신체 단련" : {
+            "int" : 40
+        },
+        "용맥의 메아리" : {
+            "final_damage" : 0.05
+        },
+        "무구" : {
+            "damage" : 20,
+            "boss_damage" : 10,
+            "critical_rate" : 20,
+            "max_mp_rate" : 30
+        },
+        "고급 지팡이 숙련" : {
+            "proficiency" : [0.2, 0.21],
+            "magic_power" : [50, 51],
+            "final_damage" : 0.3
+        },
+        "혜안" : {
+            "critical_rate" : [20, 21],
+            "critical_damage" : [20, 21],
+            "ignore_monster_armor" : [0.4, 0.41],
+            "final_damage" : [0.45, 0.46]
+        },
+        "유유" : {
+            "magic_power" : [50, 52]
+        }
+    },
+    "호영" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.3
+        },
+        "부채 숙련" : {
+            "proficiency" : 0.5,
+            "attack_power" : 25
+        },
+        "심안" : {
+            "critical_rate" : 30,
+            "critical_damage" : 10
+        },
+        "신체 단련" : {
+            "luk" : 60,
+            "final_damage" : 0.05
+        },
+        "수라" : {
+            "attack_power" : 50,
+            "critical_rate" : 10,
+            "critical_damage" : 20,
+            "boss_damage" : 20,
+            "ignore_monster_armor" : 0.1,
+            "final_damage" : 0.09
+        },
+        "금강" : {
+            "max_hp_rate" : 20
+        },
+        "호접지몽" : {
+            "final_damage" : 0.1
+        },
+        "고급 부채 숙련" : {
+            "proficiency" : [0.2, 0.21],
+            "attack_power" : [40, 41],
+            "final_damage" : 0.29
+        },
+        "득도" : {
+            "damage" : [10, 11]
+        },
+        "점정" : {
+            "attack_power" : [10, 11],
+            "final_damage" : [0.1, 0.11],
+            "critical_damage" : [10, 11],
+            "critical_rate" : [10, 11],
+            "ignore_monster_armor" : [0.1, 0.11]
+        }
+    },
+    "제로" : {
+        "기본" : {
+            "weapon_multiplier" : 1.49,
+            "proficiency" : 0.2
+        },
+        "래피드 타임" : {
+            "damage" : 10
+        },
+        "디바인 오라" : {
+            "attack_power" : 20,
+            "magic_power" : 20
+        },
+        "대검 마스터리" : {
+            "proficiency" : 0.7,
+            "critical_rate" : 30,
+            "damage" : 50,
+            "boss_damage" : 30,
+            "attack_power" : 80,
+            "final_damage" : 0.23
+        }
+    },
+    "키네시스" : {
+        "기본" : {
+            "proficiency" : 0.2,
+            "weapon_multiplier" : 1.2
+        },
+        "싸이킥 포스" : {
+            "magic_power" : 10
+        },
+        "내재1" :{
+            "max_hp_rate" : 30,
+            "magic_power" : 10
+        },
+        "싸이킥 포스2" : {
+            "magic_power" : 10
+        },
+        "순수한 힘" : {
+            "damage" : 20
+        },
+        "내재2" :{
+            "max_hp_rate" : 20,
+            "magic_power" : 10
+        },
+        "ESP 마스터리" : {
+            "proficiency" : 0.5,
+            "critical_rate" : 10,
+            "int" : 40
+        },
+        "싸이킥 포스3" : {
+            "magic_power" : 10
+        },
+        "정신강화" : {
+            "magic_power_rate" : 10
+        },
+        "정교" : {
+            "critical_damage" : 20,
+            "critical_rate" : 20 
+        },
+        "싸이킥 차징" : {
+            "boss_damage" : [30, 31],
+            "final_damage" : [0.4, 0.41]
+        },
+        "ESP 배틀 오더" : {
+            "magic_power" : [50, 52],
+            "damage" : [20, 21],
+            "final_damage" : [0.2, 0.21]
+        },
+        "각성" : {
+            "final_damage" : 0.15
+        },
+        "정신집중-유지" : {
+            "buff" : [20, 21]
+        },
+        "숙달" : {
+            "proficiency" : [0.2, 0.22],
+            "critical_damage" : [10, 11]
+        },
+        "전달" : {
+            "ignore_monster_armor" : [0.25, 0.26]
+        }
+    }
+}

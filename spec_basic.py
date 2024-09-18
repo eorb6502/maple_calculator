@@ -1,7 +1,7 @@
 import requests
 import json_functions
 
-def make_spec_basic(basicData, headers):
+def make_spec_basic(basicData, headers, combat_flag):
     url="https://open.api.nexon.com"
     #basicData=json_functions.openjson("./assets/spec.json")
     id=basicData["ocid"]  #내꺼 f80bbe45dd55bbd3ceb099cf8da9398c
@@ -35,7 +35,9 @@ def make_spec_basic(basicData, headers):
             i="max_"+i
             specBasic[i]+=int(statValue)
         else:
-            specBasic[i]+=int(int(statValue)*1.15)
+            if characterClass=="제로":
+                combat_flag=0 #제로는 쓸컴뱃 메용 적용 X
+            specBasic[i]+=int(int(statValue)*(1.15+0.01*combat_flag))
     if characterClass=="데몬어벤져":
         specBasic["max_hp"]=90*characterLevel+545
     #print(specBasic)

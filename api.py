@@ -15,11 +15,11 @@ templates= Jinja2Templates(directory="templates")
 def get_index(request: Request):
     return templates.TemplateResponse("test_html.html", {"request": request})
 
-@api.get('/initialize/{characterName}')
-def return_spec_final(characterName: str):
+@api.get('/initialize/')
+def return_spec_final(characterName: str="츠데구", combat_flag: int=0):
     #main_function.make_spec_final(characterName)
     now=datetime.now()
-    return main_function.make_spec_final(characterName), now.strftime('%Y-%m-%d %H:%M:%S')
+    return main_function.make_spec_final(characterName, combat_flag), now.strftime('%Y-%m-%d %H:%M:%S')
 
 @api.get('/calculate/')
 def calculate_dmg(final: str=None, guild_doping: str=None, mode: str = "normal", doping: List[str] = Query(None), dmg: float=0, attack_count : int=1, hyper_damage : float=0, core_reinforce : float=0, map_type : str="arcane", map_region : str="소멸의 여로", map_name : str="풍화된 기쁨의 땅", core_igm : float = 0, skill_igm : float = 0, skill_final_damage : float = 0):
