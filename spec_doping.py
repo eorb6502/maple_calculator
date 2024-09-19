@@ -66,11 +66,6 @@ def calc_spec_w_doping(guild_doping, arr):
             spec_doping["magic_power"]+=30
             spec_doping["max_hp"]+=750
             spec_doping["max_mp"]+=750
-        elif i=="쓸어블":
-            spec_doping["attack_power"]+=20
-            spec_doping["magic_power"]+=20
-            spec_doping["max_hp"]+=475
-            spec_doping["max_mp"]+=475
         elif i=="찐샾":
             spec_doping["critical_rate"]+=20
             spec_doping["critical_damage"]+=15

@@ -112,6 +112,14 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     blessLevel=0
     namearr=["서플러스 서플라이", "히든 피스","여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
     namearr.append("고브의 선물") #마약버프 추가 (이벤트 시 마다 생긴)
+    
+    namearr.append("루나 드림 Lv.1") #임시 루나드림 처리
+    namearr.append("루나 드림 Lv.2")
+    namearr.append("루나 드림 Lv.3")
+    namearr.append("루나 스윗 Lv.1") #임시 루나스윗 처리
+    namearr.append("루나 스윗 Lv.2")
+    namearr.append("루나 스윗 Lv.3")
+
     for i in skill0:
         chk=0
         for j in i:
@@ -137,6 +145,26 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                 tmp=int(effect.split("%")[0][-2])*0.1
                 #print(tmp)
                 specSkill["attack_power"]+=int(min(0.2*equipmentData["weapon_basic_attack_power"], tmp*equipmentData["magic_power_wo_weapon"]))
+        
+        elif name=="루나 드림 Lv.1":
+            specSkill["attack_power"]+=7
+            specSkill["magic_power"]+=7
+        elif name=="루나 드림 Lv.2":
+            specSkill["attack_power"]+=9
+            specSkill["magic_power"]+=9
+        elif name=="루나 드림 Lv.3":
+            specSkill["attack_power"]+=11
+            specSkill["magic_power"]+=11
+        elif name=="루나 스윗 Lv.1":
+            specSkill["attack_power"]+=6
+            specSkill["magic_power"]+=6
+        elif name=="루나 스윗 Lv.2":
+            specSkill["attack_power"]+=8
+            specSkill["magic_power"]+=8
+        elif name=="루나 스윗 Lv.3":
+            specSkill["attack_power"]+=10
+            specSkill["magic_power"]+=10
+
         elif name=="여제의 외침": #미하일
             specSkill["max_hp_rate"]+=20
             specSkill["max_mp_rate"]+=20
@@ -242,10 +270,6 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
             specSkill["luk"]+=5
             specSkill["attack_power"]+=5
             specSkill["magic_power"]+=5
-        elif name == "무기 제련":
-            specSkill["critical_damage"]+=3
-        elif name == "고급 무기 제련":
-            specSkill["critical_damage"]+=5
         elif name == "파괴의 얄다바오트":
             specSkill["final_damage"]=(1+specSkill["final_damage"])*1.1-1
         elif name =="리부트":
@@ -318,6 +342,12 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     #5차
     for i in getVskill["character_skill"]:
         #print(i)
+        if i["skill_name"]=="쓸만한 어드밴스드 블레스" and characterClass!="비숍":
+            #print("쓸어블 들어왔다~")
+            specSkill["attack_power"]+=20
+            specSkill["magic_power"]+=20
+            specSkill["max_hp"]+=475
+            specSkill["max_mp"]+=475
         skillEffect=i['skill_effect']
         tmp=skillEffect.split("패시브 효과 : ")
         #print(skillEffect)
@@ -451,9 +481,9 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     #링크
     url="https://open.api.nexon.com/maplestory/v1/character/link-skill?ocid="+ocid
     get_link=requests.get(url, headers=headers).json()
-    links=get_link["character_link_skill"].copy()
+    links=get_link["character_link_skill_preset_1"].copy() #장착중인거 가져오는건 character_link_skill
     links.append(get_link["character_owned_link_skill"])
-    print(links)
+    #print(links)
     for i in links:
         skillName, skillLevel=i["skill_name"], i["skill_level"]
         #print(skillName, skillLevel)

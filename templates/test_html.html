@@ -113,7 +113,6 @@
         <label><input type="checkbox" name="doping" value="향상된 10단계 행운의 물약"> 향상된 10단계 행운의 물약</label><br>
         <label><input type="checkbox" name="doping" value="와헌"> 와헌</label><br>
         <label><input type="checkbox" name="doping" value="찐어블"> 찐어블</label><br>
-        <label><input type="checkbox" name="doping" value="쓸어블"> 쓸어블</label><br>
         <label><input type="checkbox" name="doping" value="찐샾"> 찐샾</label><br>
         <label><input type="checkbox" name="doping" value="쓸샾"> 쓸샾</label><br>
         <label><input type="checkbox" name="doping" value="영메"> 영메</label><br>
@@ -197,6 +196,8 @@
     </form>
     <button type="button" onclick="submitForm()">제출</button>
     <form id="headerForm">
+    <label>스공:</label>
+    <p id="sugong"></p>
     <label>한줄뎀:</label>
     <p id="old"></p>
     <label>전체 데미지:</label>
@@ -648,9 +649,11 @@
                 .then(response => response.json())
                 .then(data => {
                     // 결과를 HTML에 표시합니다
+                    const sugong = document.getElementById('sugong');
                     const old = document.getElementById('old');
                     const fd = document.getElementById('fd');
                     const mob_hp = document.getElementById('hp');
+                    sugong.innerHTML='';
                     old.innerHTML = '';
                     fd.innerHTML = '';
                     mob_hp.innerHTML = '';  // 기존 내용을 지웁니다
@@ -663,6 +666,10 @@
                     const p2 = document.createElement('p');
                     p2.textContent = data[2].toLocaleString('ko-KR');
                     mob_hp.appendChild(p2)
+                    const p4 = document.createElement('p');
+                    p4.textContent = data[4].toLocaleString('ko-KR');
+                    sugong.appendChild(p4)
+
                     localStorage.setItem('spec_w_doping', JSON.stringify(data[3]))
                 })
                 .catch(error => {

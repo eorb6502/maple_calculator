@@ -77,9 +77,10 @@ def make_spec_union(data, headers):
     url="https://open.api.nexon.com/maplestory/v1/user/union"
     #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
-    characterLevel=data["level"]
     urlString = url + "-raider" +ocid
     response_raider= requests.get(urlString, headers=headers).json()
+    response_raider=response_raider["union_raider_preset_"+str(response_raider["use_preset_no"])]
+    #print(response_raider)
     raider_effects=[]
     for i in response_raider["union_raider_stat"]: #+ response_raider["union_occupied_stat"]:
         raider_effects.append(i.lower())

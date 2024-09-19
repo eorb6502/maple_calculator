@@ -33,12 +33,12 @@ def calculate_dmg(final: str=None, guild_doping: str=None, mode: str = "normal",
     final = json.loads(final)
     guild_doping= json.loads(guild_doping)
     #print(mob_info, force, map_type, final, guild_doping)
-    old, fd, spec_final = calc_damage.calc_one_line_dmg(final, guild_doping, mode, doping, dmg, attack_count, hyper_damage, core_reinforce, {
+    old, fd, spec_final, sugong = calc_damage.calc_one_line_dmg(final, guild_doping, mode, doping, dmg, attack_count, hyper_damage, core_reinforce, {
         "level" : mob_info["level"],
         "armor" : mob_info["armor"],
         "property" : mob_info["property"]
     }, {"tag" : map_type, "force" : force}, core_igm, skill_igm, skill_final_damage, skill_normal_damage)
-    return old, fd, mob_info["hp"], spec_final
+    return old, fd, mob_info["hp"], spec_final, sugong
 
 
 if __name__ == "__main__":

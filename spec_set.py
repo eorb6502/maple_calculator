@@ -83,15 +83,17 @@ def make_spec_set(data, headers):
         #print(i)
         set_cnt=i["total_set_count"]
         for j in i["set_effect_info"]:
-            #print(j)
+            print(j)
             setOption=j["set_option"]
-            if setOption.find("스킬 사용 가능")!=-1:
+            if setOption.find("스킬 사용 가능")!=-1 and setOption.find("라이딩")==-1:
                 petSkill=setOption.split(" 스킬 사용 가능")[0][1:-1]
                 specSet["petSet"].append(petSkill)
                 continue
             setOption=setOption.lower().split(", ")
             #print(setOption)
             for k in setOption:
+                if k.find("라이딩")!=-1:
+                    continue
                 statName, statAmount = k.split(" : +")
                 #print(statName, statAmount)
                 if statName not in specSet:

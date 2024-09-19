@@ -19,9 +19,9 @@ def make_spec_symbol(data, headers):
     urlString = url + "symbol-equipment" +ocid
     response_symbol= requests.get(urlString, headers=headers).json()
     for i in response_symbol["symbol"]:
-        if i["symbol_name"].split(" : ")[0]=="아케인심볼":
+        if i["symbol_name"].split(" : ")[0].find("아케인심볼")!=-1:
             spec["arcane_force"]+=int(i["symbol_force"])
-        elif i["symbol_name"].split(" : ")[0]=="어센틱심볼":
+        elif i["symbol_name"].split(" : ")[0].find("어센틱심볼")!=-1:
             spec["authentic_force"]+=int(i["symbol_force"])
         else:
             print("this shouldn't happen")

@@ -108,7 +108,7 @@ def make_spec_HAP(data, headers):
     response_ability= requests.get(urlString, headers=headers).json()
     #print(response_ability["ability_info"])
     abilities=[]
-    for i in response_ability["ability_info"]:
+    for i in response_ability["ability_preset_1"]["ability_info"]: #현재 장착중인건 ability_info
         j=i["ability_value"].split(", ")
         for k in j:
             abilities.append(k.lower())

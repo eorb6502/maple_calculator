@@ -113,14 +113,14 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     critical = 1+min(specFinal["critical_rate"]/100, 1)*(0.35+specFinal["critical_damage"]/100) #계산용 크확 100퍼
 
     #print(specFinal["normal_damage"], stat, attk, damage, final_damage, weapon_multiplier, ignore_monster_armor, monster_armor_multiplier, proficiency, property, critical)
-    skill_percentage=skill_damage * skill_attack_count
+    
 
-    stat_attack_power=stat*attk*weapon_multiplier*damage*final_damage
+    stat_attack_power=int(stat*attk*weapon_multiplier*(1+specFinal["damage"]/100)*(1+specFinal["final_damage"]/100))
 
     #normal_damage = class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["normal_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     #boss_damage =  class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["boss_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode+"_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     #print(mode_damage)
     #print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
-    return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count), specFinal
+    return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count), specFinal, stat_attack_power
 #print(calc_one_line_dmg("normal",[], 2.9, 8, 0.2, 1.2, {"level" : 260,"armor" : 0.1, "property" : 0}, {"tag" : "authentic", "force" : 30}, 0.2,0))

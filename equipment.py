@@ -13,7 +13,7 @@ def make_equipment_data_and_title(data, headers):
     equipmentDict={}
     starforce=0
     #print(response_equip["item_equipment"]["무기"])
-    for i in response_equip["item_equipment"]:
+    for i in response_equip["item_equipment_preset_1"]: #프리셋 1번 장착정인건 item_equipment
         #print(i)
         if i["item_equipment_slot"]=="상의" and i["item_equipment_part"]=="한벌옷":
             starforce+=2*int(i["starforce"])

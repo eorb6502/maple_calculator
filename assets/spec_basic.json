@@ -1,12 +1,12 @@
 {
-	"name": "차뀨츄",
-	"class": "키네시스",
-	"level": 10,
+	"name": "츠데구",
+	"class": "칼리",
+	"level": 275,
 	"str": 4,
 	"dex": 4,
-	"luk": 4,
-	"int": 59,
-	"max_hp": 180,
-	"max_mp": 0,
+	"luk": 1601,
+	"int": 4,
+	"max_hp": 500,
+	"max_mp": 550,
 	"critical_rate": 5
 }

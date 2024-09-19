@@ -473,8 +473,11 @@ def make_spec_equipment(equipmentData, basic):
                 #print("소울옵션", optionName, optionAmount)
                 updateSpec(optionName, optionAmount, totalStat, ignore_monster_armor, characterLevel)
                 if i=="무기":
-                        updateSpec(optionName, optionAmount, tempStat, dumpignore_monster_armor, characterLevel)
-                totalStat["attack_power"]+=20 #소울 충전량
+                    updateSpec(optionName, optionAmount, tempStat, dumpignore_monster_armor, characterLevel)
+                if equipmentData["무기"]["기본"]["magic_power"]=="0":
+                    totalStat["attack_power"]+=20 #소울 충전량
+                else:
+                    totalStat["magic_power"]+=20
                 continue
             for k in equipment[j]:
                 if k=="base_equipment_level" or k=="equipment_level_decrease" or k=="exceptional_upgrade":

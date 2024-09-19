@@ -4,7 +4,7 @@ def updateDict(dict, arr):
     for j in arr:
         ot=j["option_type"].lower()
         ov=j["option_value"]
-        if ot=="이동속도" or ot=="점프력":
+        if ot=="이동속도" or ot=="점프력" or ot=="방어력":
             #print(ot)
             continue
         elif ot.find("최대")!=-1:
