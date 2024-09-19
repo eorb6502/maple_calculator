@@ -87,7 +87,7 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
     #print(specFinal)
     stat=calc_stats(specFinal)*0.01
     #print(stat)
-    attk=calc_stat(specFinal, "attack_power")
+    attk=max(calc_stat(specFinal, "attack_power"), calc_stat(specFinal, "magic_power"))
 
     damage=1+specFinal["damage"]/100+hyper_damage #하이퍼 스킬 보정
 
@@ -114,12 +114,13 @@ def calc_one_line_dmg(specFinal, guild_doping, mode, doping_arr, skill_damage, s
 
     #print(specFinal["normal_damage"], stat, attk, damage, final_damage, weapon_multiplier, ignore_monster_armor, monster_armor_multiplier, proficiency, property, critical)
     
-
+    print(stat, attk, weapon_multiplier, specFinal["damage"], specFinal["final_damage"])
     stat_attack_power=int(stat*attk*weapon_multiplier*(1+specFinal["damage"]/100)*(1+specFinal["final_damage"]/100))
 
     #normal_damage = class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["normal_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     #boss_damage =  class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal["boss_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
     mode_damage=class_multiplier*stat*attk*weapon_multiplier*(damage+specFinal[mode+"_damage"]/100)* final_damage*proficiency*monster_armor_multiplier*critical*property
+    specFinal["normal_damage"]-=100*skill_normal_monster_damage
     #print(mode_damage)
     #print(stat_attack_power, normal_damage * skill_damage, normal_damage * skill_percentage, boss_damage * skill_percentage)
     return int(mode_damage * skill_damage), int(mode_damage*skill_damage*skill_attack_count), specFinal, stat_attack_power
