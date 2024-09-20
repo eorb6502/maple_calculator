@@ -1,9 +1,9 @@
 {
-	"str_wo_rate": 0,
+	"str_wo_rate": 28200,
 	"dex_wo_rate": 0,
-	"int_wo_rate": 13000,
+	"int_wo_rate": 0,
 	"luk_wo_rate": 0,
 	"max_hp_wo_rate": 0,
-	"arcane_force": 1080,
-	"authentic_force": 80
+	"arcane_force": 1320,
+	"authentic_force": 660
 }

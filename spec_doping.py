@@ -43,13 +43,17 @@ def calc_spec_w_doping(guild_doping, arr):
     #print(guild_doping)
     for i in arr:
         if i=="보스 킬링 머신":
-            spec_doping["boss_damage"]+=2*guild_doping[i]
+            if i in guild_doping:
+                spec_doping["boss_damage"]+=2*guild_doping[i]
         elif i=="방어력은 숫자일 뿐":
-            spec_doping["ignore_monster_armor"]=1-(1-spec_doping["ignore_monster_armor"]) * (1-0.02*guild_doping[i])
+            if i in guild_doping:
+                spec_doping["ignore_monster_armor"]=1-(1-spec_doping["ignore_monster_armor"]) * (1-0.02*guild_doping[i])
         elif i=="길드의 이름으로":
-            spec_doping["damage"]+=2*guild_doping[i]
+            if i in guild_doping:
+                spec_doping["damage"]+=2*guild_doping[i]
         elif i=="크게 한방":
-            spec_doping["critical_damage"]+=2*guild_doping[i]
+            if i in guild_doping:
+                spec_doping["critical_damage"]+=2*guild_doping[i]
         elif i=="향상된 10단계 힘의 물약" or i=="향상된 10단계 힘의 알약":
             spec_doping["str"]+=30
         elif i=="향상된 10단계 민첩의 물약" or i=="향상된 10단계 민첩의 알약":

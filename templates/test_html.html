@@ -345,7 +345,7 @@
                 })
             }
             else if (force_type.value === 'authentic'){
-                const options= ['--select--', '세르니움', '호텔 아르크스', '오디움', '도원경', '아르테리아', '카르시온'];
+                const options= ['--select--', '세르니움', '호텔 아르크스', '오디움', '도원경', '아르테리아', '카르시온', '탈라하트'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
@@ -519,6 +519,15 @@
             }
             else if (map_region.value === '카르시온'){
                 const options=  ['거대 산호 군락 1', '거대 산호 군락 2', '거대 산호 군락 3', '잔잔한 해안가 1', '잔잔한 해안가 2', '잔잔한 해안가 3', '휘감기는 숲 1', '휘감기는 숲 2', '휘감기는 숲 3', '어둠이 내리는 나무줄기 1', '어둠이 내리는 나무줄기 2', '어둠이 내리는 나무줄기 3', '숨이 멎어드는 동굴 1', '숨이 멎어드는 동굴 2', '숨이 멎어드는 동굴 3', '숨이 멎어드는 동굴 4', '가라앉은 유적지 1', '가라앉은 유적지 2', '가라앉은 유적지 3', '가라앉은 유적지 4'];
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.textContent = option;
+                    map_name.appendChild(opt);
+                })
+            }
+            else if (map_region.value === '탈라하트'){
+                const options=  ['재와 침묵의 땅 1', '재와 침묵의 땅 2', '재와 침묵의 땅 3', '재와 침묵의 땅 4', '재와 침묵의 땅 5', '섭리와 운명의 전쟁터 1', '섭리와 운명의 전쟁터 2', '섭리와 운명의 전쟁터 3', '심판과 운명의 전쟁터 1', '심판과 운명의 전쟁터 2', '심판과 운명의 전쟁터 3', '영원과 운명의 전쟁터 1', '영원과 운명의 전쟁터 2', '영원과 운명의 전쟁터 3', '밤의 길 1', '밤의 길 2', '밤의 길 3', '밤의 길 4', '환영의 길 1', '환영의 길 2', '환영의 길 3', '환영의 길 4'];
                 options.forEach(option => {
                     const opt = document.createElement('option');
                     opt.value = option;
