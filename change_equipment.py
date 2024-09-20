@@ -192,7 +192,7 @@ def changeForce(specFinal, parts, amount, tag):
 spec_dict = json_functions.openjson("./assets/spec_final.json")
 equipmentDB = json_functions.openjson("./assets/equipment.json")
 print(spec_dict)
-
+print(changeStarforce(spec_dict, equipmentDB, "장갑", 23))
 print(changeJson(spec_dict, "장갑", "추옵", {"luk" : 1000000}))
 
 print(changeForce(spec_dict, "arcane_force", 100000, 1))

@@ -38,7 +38,6 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     petSet=petSet["petSet"]
     characterLevel=spec["level"]
     ocid=spec["ocid"]
-    passive=json_functions.openjson("passive_class.json")
     characterClass=spec["class"]
     #equipmentData=json_functions.openjson("./assets/spec_equipment.json")
     #equipmentRawdata=json_functions.openjson("./assets/equipment.json")
@@ -80,7 +79,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     }
     #1~4차 특이사항
     #basicSpec=passive[characterClass]
-    skillDB = json_functions.openjson("skillDB.json")
+    skillDB = json_functions.openjson("./db/skill_db.json")
     for i in skillDB[characterClass]:
         skill_effect_dict=skillDB[characterClass][i]
         for effect in skill_effect_dict:
@@ -389,7 +388,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     #6차
     url="https://open.api.nexon.com/maplestory/v1/character/hexamatrix-stat?ocid="+ocid
     get_hexa=requests.get(url, headers=headers).json()
-    hexaDict=json_functions.openjson("hexa.json")
+    hexaDict=json_functions.openjson("./db/hexa_db.json")
     #print("6차", get_hexa)
     characterIndex=0
 
