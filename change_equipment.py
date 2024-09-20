@@ -42,7 +42,7 @@ def conversion_starforce(characterClass, starforce):
 def changeStarforce(specFinal, equipmentDB, parts, starforce):
     characterClass = specFinal["class"]
     dict=equipmentDB[parts]
-    starforceDB=json_functions.openjson("./assets/starforce.json")
+    starforceDB=json_functions.openjson("./db/starforce.json")
     stat_flag={
         "str" : 0,
         "dex" : 0,
