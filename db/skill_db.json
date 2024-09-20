@@ -161,7 +161,8 @@
             "attack_power" : [20, 21]
         },
         "아머 피어싱" : {
-            "ignore_monster_armor" : 0.4
+            "ignore_monster_armor" : 0.4,
+            "final_damage" : 0.07
         },
         "일루전 스탭" : {
             "dex" : [80, 82]
@@ -265,7 +266,7 @@
         "에인션트 보우 엑스퍼트" : {
             "proficiency" : [0.2, 0.21],
             "attack_power" : [60, 62],
-            "critical_damage" : [10, 11]
+            "final_damage" : 0.1
         }
     },
     "비숍" : {
@@ -302,7 +303,8 @@
         },
         "마스터 매직" : {
             "magic_power" : [30, 33],
-            "buff" : [50, 55]
+            "buff" : [50, 55],
+            "final_damage" : 0.1
         },
         "아케인 에임" : {
             "ignore_monster_armor" : [0.2, 0.21],
@@ -331,7 +333,8 @@
             "int" : 40
         },
         "엘리멘탈 리셋" : {
-            "final_damage" : 0.4
+            "final_damage" : 0.4,
+            "insight" : 0.1
         },
         "매직 크리티컬" : {
             "critical_rate" : 30,
@@ -372,7 +375,8 @@
             "magic_power" : 30
         },
         "엘리멘탈 리셋" : {
-            "final_damage" : 0.4
+            "final_damage" : 0.4,
+            "insight" : 0.1
         },
         "엘리먼트 앰플리피케이션" : {
             "damage" : 50
@@ -431,7 +435,7 @@
         "다크 세레니티" : {
             "attack_power" : 20,
             "ignore_monster_armor" : [0.3, 0.31],
-            "final_damage" : 0.08
+            "final_damage" : 0.14
         },
         "자벨린 엑스퍼트" : {
             "proficiency" : [0.2, 0.21],
@@ -464,7 +468,8 @@
             "attack_power" : 30
         },
         "대거 마스터리" : {
-            "proficiency" : 0.5
+            "proficiency" : 0.5,
+            "final_damage" : 0.1
         },
         "피지컬 트레이닝" : {
             "dex" : 30,
@@ -501,6 +506,12 @@
         },
         "이도 액셀레이션" : {
             "luk" : 20
+        },
+        "베놈" : {
+            "final_damage" : 0.09
+        },
+        "섀도우 이베이젼" : {
+            "final_damage" : 0.06
         },
         "피지컬 트레이닝" : {
             "dex" : 30,
@@ -722,11 +733,11 @@
         "소드 엑스퍼트" : {
             "proficiency" : [0.2, 0.21],
             "attack_power" : [50, 51],
-            "critical_damage" : 12
+            "critical_damage" : 15
         },
         "언포시어블" : {
             "ignore_monster_armor" : [0.3, 0.32],
-            "boss_damage" : [15, 16]
+            "boss_damage" : [20, 21]
         },
         "라이징 선" : {
             "final_damage" : 0.25
@@ -765,7 +776,8 @@
         "알바트로스" : {
             "attack_power" : 20,
             "max_hp" : 1500,
-            "critical_rate" : 10
+            "critical_rate" : 10,
+            "final_damage" : 0.09
         },
         "세컨드 윈드" : {
             "attack_power" : 15
@@ -940,7 +952,7 @@
         "소드 마스터리" : {
             "proficiency" : 0.5,
             "attack_power" : 20,
-            "final_damage" : 0.15
+            "final_damage" : 0.2
         },
         "피지컬 트레이닝" : {
             "str" : 30,
@@ -956,6 +968,9 @@
         },
         "어드밴스드 소울 실드" : {
             "max_hp_rate" : [20, 22]
+        },
+        "소울 레이지":{
+            "final_damage" : [0.25, 0.26]
         },
         "어드밴스드 소드 마스터리" : {
             "proficiency" : [0.2, 0.21],

@@ -412,7 +412,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                 specSkill["boss_damage"]+=amount
             elif stat=="데미지 증가":
                 specSkill["damage"]+=amount
-            elif stat=="몬스터 방어율 무시":
+            elif stat=="방어율 무시 증가":
                 specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*(1-0.01*amount)
             elif stat=="공격력 증가":
                 specSkill["attack_power"]+=amount

@@ -1,12 +1,12 @@
 {
-	"name": "츠데구",
-	"class": "칼리",
-	"level": 275,
+	"name": "디지니",
+	"class": "비숍",
+	"level": 267,
 	"str": 4,
 	"dex": 4,
-	"luk": 1601,
-	"int": 4,
-	"max_hp": 500,
-	"max_mp": 550,
+	"luk": 4,
+	"int": 1555,
+	"max_hp": 0,
+	"max_mp": 0,
 	"critical_rate": 5
 }
