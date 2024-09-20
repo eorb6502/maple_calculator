@@ -835,7 +835,8 @@
             "ignore_monster_armor" : [0.3, 0.31]
         },
         "엘리멘트 : 플레임 IV" : {
-            "magic_power" : [40, 41]
+            "magic_power" : [40, 41],
+            "magic_power_rate" : 3
         },
         "마법의 진리" : {
             "magic_power" : [20, 21],
