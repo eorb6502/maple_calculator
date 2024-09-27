@@ -13,7 +13,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논마스터", "스트라이커", "은월", "아크", "예티"], \
         "dex":["보우마스터", "신궁", "패스파인더", "윈드브레이커", "와일드헌터", "메르세데스", "카인", "캡틴", "메카닉", "엔젤릭버스터"], \
         "int":["아크메이지(불,독)", "아크메이지(썬,콜)", "비숍", "플레임위자드", "배틀메이지", "에반", "루미너스", "일리움", "라라", "키네시스"], \
-        "luk":["나이트로드", "섀도어", "듀얼블레이드", "나이트워커", "팬텀", "카데나", "칼리", "호영"]
+        "luk":["나이트로드", "섀도어", "듀얼블레이더", "나이트워커", "팬텀", "카데나", "칼리", "호영"]
     }
     specDict={
         "공격력" : "attack_power",
@@ -535,7 +535,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         if i['skill_name']=="에르다 샤워":
             fountain_dict["skill_level"]=i['skill_level']
             break
-    if characterClass=="나이트로드" or characterClass=="섀도어" or characterClass=="듀얼블레이드" or characterClass=="나이트워커" or characterClass=="제논":
+    if characterClass=="나이트로드" or characterClass=="섀도어" or characterClass=="듀얼블레이더" or characterClass=="나이트워커" or characterClass=="제논":
         yanus_dict["skill_final_damage"]=70
         fountain_dict["skill_final_damage"]=70
     elif characterClass=="캐논마스터":
