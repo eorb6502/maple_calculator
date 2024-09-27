@@ -32,7 +32,7 @@
             "attack_power" : [30, 31]
         },
         "어드밴스드 콤보" : {
-            "final_damage" : [1.2, 1.3],
+            "final_damage" : [[1, 1.2], [1.1, 1.3]],
             "proficiency" : 0.2,
             "boss_damage" : 20
         }
@@ -680,9 +680,6 @@
         },
         "파이렛 스피릿" : {
             "boss_damage" : [40, 41]
-        },
-        "벅 샷" : {
-            "final_damage" : 0.35
         }
     },
     "소울마스터" : {
@@ -742,8 +739,7 @@
         "라이징 선" : {
             "final_damage" : 0.25
         },
-        "썬 문" : {
-            "final_damage" : 0.8,
+        "폴링 문" : {
             "critical_rate" : 35
         }
     },
@@ -1161,7 +1157,7 @@
             "max_mp_rate" : 30
         },
         "서포트 웨이버" : {
-            "final_damage" : [0.07, 0.08]
+            "final_damage" : [[0.07, 0.09], [0.08, 0.1]]
         },
         "메탈아머 익스트림" : {
             "proficiency" : [0.2, 0.21],

@@ -8,7 +8,7 @@ def is_float(input_string):
     except ValueError:
         return False
 
-def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, combat_flag):
+def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, combat_flag, link_flag):
     maple_class={
         "str":["히어로", "팔라딘", "다크나이트", "소울마스터", "미하일", "블래스터", "데몬슬레이어", "아란", "카이저", "아델", "제로", "핑크빈", "바이퍼", "캐논마스터", "스트라이커", "은월", "아크", "예티"], \
         "dex":["보우마스터", "신궁", "패스파인더", "윈드브레이커", "와일드헌터", "메르세데스", "카인", "캡틴", "메카닉", "엔젤릭버스터"], \
@@ -43,6 +43,11 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     #equipmentRawdata=json_functions.openjson("./assets/equipment.json")
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"5"
     getVskill=requests.get(url, headers=headers).json()
+    url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"6"
+    getVIskill=requests.get(url, headers=headers).json()
+    url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"hyperpassive"
+    getHyperskill=requests.get(url, headers=headers).json()
+    print(getHyperskill)
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"0"
     get0Skill=requests.get(url, headers=headers).json()
     #print(getVskill)
@@ -77,7 +82,32 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         "exp": 0,
         "starforce" : 0
     }
+    #하이퍼 특이사항
     #1~4차 특이사항
+    for i in getHyperskill["character_skill"]:
+        if i['skill_name']=="어드밴스드 콤보-리인포스" and i['skill_level']==1:
+            hyper_tag=1
+        elif i['skill_name']=="어드밴스드 콤보-리인포스" and i['skill_level']==1:
+            specSkill["boss_damage"]+=40
+        elif i['skill_name']=="샤프 아이즈-이그노어 가드" and i['skill_level']==1:
+            specSkill["ignore_monster_armor"]=1-(1-specSkill["ignore_monster_armor"])*0.95
+        elif i['skill_name']=="샤프 아이즈-크리티컬 레이트" and i['skill_level']==1:
+            specSkill["critical_rate"]+=5
+        elif i['skill_name']=="어드밴스드 블레스-보너스 데미지" and i['skill_level']==1:
+            specSkill["attack_power"]+=20
+            specSkill["magic_power"]+=20
+        elif i['skill_name']=="어드밴스드 블레스-보스 킬러" and i['skill_level']==1:
+            specSkill["boss_damage"]+=10
+        elif i['skill_name']=="어드밴스드 블레스-엑스트라 포인트" and i['skill_level']==1:
+            specSkill["max_hp"]+=1000
+            specSkill["max_mp"]+=1000
+        elif i['skill_name']=="비스트 폼-리인포스" and i['skill_level']==1:
+            specSkill["attack_power_rate"]+=5
+        elif i['skill_name']=="비스트 폼-엑스트라 하트 포인트" and i['skill_level']==1:
+            specSkill["max_hp_rate"]+=10
+        elif i['skill_name']=="서포트 웨이버:H-EX-파티 리인포스" and i['skill_level']==1:
+            hyper_tag=1
+        
     #basicSpec=passive[characterClass]
     skillDB = json_functions.openjson("./db/skill_db.json")
     for i in skillDB[characterClass]:
@@ -85,7 +115,11 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         for effect in skill_effect_dict:
             effect_val=skill_effect_dict[effect]
             if type(skill_effect_dict[effect])==list:
-                effect_val=skill_effect_dict[effect][combat_flag]
+                if type(skill_effect_dict[effect][combat_flag])==list:
+                    effect_val=skill_effect_dict[effect][combat_flag][hyper_tag]
+                    print("yaho", effect_val)
+                else:
+                    effect_val=skill_effect_dict[effect][combat_flag]
             #print(effect)
             if effect in specSkill:
                 if effect=="ignore_monster_armor":
@@ -386,6 +420,12 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                 specSkill["max_hp"]+=int(amount)
     #print(specSkill)
     #6차
+    if characterClass=="미하일":
+        for i in getVIskill['character_skill']:
+            if i['skill_name']=="로얄 가드 VI":
+                specSkill["attack_power"]+=55
+                break
+    #헥사스텟
     url="https://open.api.nexon.com/maplestory/v1/character/hexamatrix-stat?ocid="+ocid
     get_hexa=requests.get(url, headers=headers).json()
     hexaDict=json_functions.openjson("./db/hexa_db.json")
@@ -474,14 +514,51 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
                     specSkill[mainStat]+=amount
             else:
                 print("this naver shouldn't happen")
+    #파운틴 야누스 데이터 셋 제작
+    fountain_dict={
+        "skill_level" : 0,
+        "skill_final_damage" : 0,
+        "skill_normal_damage" : 0
+    }
+    yanus_dict={
+        "skill_level" : 0,
+        "skill_final_damage" : 0,
+        "skill_normal_damage" : 0
+    }
+    for i in getVIskill['character_skill']:
+        if i['skill_name']=="솔 야누스":
+            yanus_dict["skill_level"]=i['skill_level']
+            if i['skill_level']==30:
+                yanus_dict["skill_normal_damage"]=30
+            break
+    for i in getVskill['character_skill']:
+        if i['skill_name']=="에르다 샤워":
+            fountain_dict["skill_level"]=i['skill_level']
+            break
+    if characterClass=="나이트로드" or characterClass=="섀도어" or characterClass=="듀얼블레이드" or characterClass=="나이트워커" or characterClass=="제논":
+        yanus_dict["skill_final_damage"]=70
+        fountain_dict["skill_final_damage"]=70
+    elif characterClass=="캐논마스터":
+        yanus_dict["skill_final_damage"]=35
+        fountain_dict["skill_final_damage"]=35
+    elif characterClass=="소울마스터":
+        yanus_dict["skill_final_damage"]=80
+        fountain_dict["skill_final_damage"]=80
+    elif characterClass=="데몬슬레이어":
+        yanus_dict["skill_final_damage"]=90
+        fountain_dict["skill_final_damage"]=90
     #print(specSkill)
     #stat=
     #amount=hexaDict["main"][hexaStat["main_stat_name"]][hexaStat["main_stat_level"]-1]
     #링크
     url="https://open.api.nexon.com/maplestory/v1/character/link-skill?ocid="+ocid
     get_link=requests.get(url, headers=headers).json()
-    links=get_link["character_link_skill_preset_1"].copy() #장착중인거 가져오는건 character_link_skill
-    links.append(get_link["character_owned_link_skill"])
+    if link_flag==0:
+        linkstr=("character_link_skill", "character_owned_link_skill")
+    else:
+        linkstr=("character_link_skill_preset_"+str(link_flag), "character_owned_link_skill_preset_"+str(link_flag))
+    links=get_link[linkstr[0]].copy() #장착중인거 가져오는건 character_link_skill
+    links.append(get_link[linkstr[1]])
     #print(links)
     for i in links:
         skillName, skillLevel=i["skill_name"], i["skill_level"]
@@ -582,4 +659,4 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
         json_functions.makejson(guild_doping, "./assets/guild_dopings.json")
     print(specSkill)
     json_functions.makejson(specSkill, "./assets/spec_skills.json")
-    return guild_doping, specSkill
+    return guild_doping, specSkill, yanus_dict, fountain_dict

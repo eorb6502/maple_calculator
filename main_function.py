@@ -14,7 +14,9 @@ import os
 load_dotenv()
 api_key = os.getenv("API_KEY")
 
-def make_spec_final(str, combat_flag):
+def make_spec_final(str, combat_flag, preset_flags):
+    equipment_flag, hyperstat_flag, ability_flag, union_flag, link_flag = preset_flags
+    print(equipment_flag, hyperstat_flag, ability_flag, union_flag, link_flag)
     headers = {
         "x-nxopen-api-key": api_key
         }
@@ -27,20 +29,20 @@ def make_spec_final(str, combat_flag):
     else:
         print("------basic------")
         specBasic=spec_basic.make_spec_basic(spec, headers, combat_flag)
-        equipmentDict, specTitle = equipment.make_equipment_data_and_title(spec, headers)
+        equipmentDict, specTitle = equipment.make_equipment_data_and_title(spec, headers, equipment_flag)
         specEquipment=spec_equipment.make_spec_equipment(equipmentDict, spec)
-        specHAP = spec_hyper_ability_propensity.make_spec_HAP(spec, headers)
+        specHAP = spec_hyper_ability_propensity.make_spec_HAP(spec, headers, hyperstat_flag, ability_flag)
         print("------set------")
         specSet= spec_set.make_spec_set(spec, headers)
         print("------skill------")
-        guild_doping, specSkill = spec_skills.make_spec_skill(spec, specSet, specEquipment, equipmentDict, headers, combat_flag)
+        guild_doping, specSkill, yanus_dict, fountain_dict = spec_skills.make_spec_skill(spec, specSet, specEquipment, equipmentDict, headers, combat_flag, link_flag)
         print("------symbol------")
         specSymbol = spec_symbol.make_spec_symbol(spec, headers)
         print("------union------")
-        specUnion = spec_union.make_spec_union(spec, headers)
+        specUnion = spec_union.make_spec_union(spec, headers, union_flag)
         print("------cash------")
         specCash = spec_cash.make_spec_cash(spec, headers)
         specFinal = spec_combine.make_spec_final(spec, specBasic, specEquipment, specHAP, specSkill, specSymbol, specUnion, specTitle, specSet, specCash, equipmentDict)
-        return guild_doping, specFinal, ""
+        return guild_doping, specFinal, yanus_dict, fountain_dict, ""
 
 #make_spec_final("츠데구")

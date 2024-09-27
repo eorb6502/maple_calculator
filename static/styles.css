@@ -1,0 +1,347 @@
+/* 전역 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* 카드 스타일 */
+.card {
+    width: 90%;
+    background-color: #fff;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-right {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+select {
+    font-size: 16px;
+}
+.checkbox-right input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* 제출 버튼 및 선택된 숫자 표시 */
+.submit-button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #27ae60;
+}
+/* 캐릭터 이름 입력칸 및 숫자 선택 섹션 */
+.input--group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+input[type="text"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+.amuguna {
+    display: flex;
+    flex-direction: column;
+}
+.number-buttons {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 숫자 버튼 스타일 */
+.number-button {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db; /* 기본 색상 */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.number-button.selected {
+    background-color: #2ecc71; /* 선택된 상태에서의 색상 */
+}
+
+/* 각 줄 라벨 스타일 */
+.row-label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+#selectedNumberText {
+    margin-top: 5px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* 폼 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"], select {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* 체크박스 및 라벨 */
+.checkbox-group, .dropdown-group, .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label, .dropdown-group label, .input-group label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* 도핑 선택 체크박스 그리드 */
+#checkboxForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#checkboxForm label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* 데이터 컨테이너 */
+#data-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 변경 */
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#data-container .item {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+#skill-check {
+    margin-left: 1000px;
+}
+.input-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap : 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* 헤더 폼 */
+#headerForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#headerForm label {
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+#headerForm p {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+/* 푸터 스타일 */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #headerForm {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #headerForm p {
+        margin-bottom: 10px;
+    }
+
+    .checkbox-group, .dropdown-group, .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        align-self: stretch;
+    }
+
+    /* 데이터 컨테이너 모바일 조정 */
+    #data-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* 도핑 선택 모바일 조정 */
+    #checkboxForm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* 아이폰 12 대응 - 390px 이하의 너비 */
+@media (max-width: 390px) {
+    h2 {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+
+    input[type="text"], select {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .number-button {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .button-row {
+        gap: 3px;
+    }
+
+    .submit-button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .footer {
+        padding: 15px 0;
+        font-size: 0.85rem;
+    }
+}

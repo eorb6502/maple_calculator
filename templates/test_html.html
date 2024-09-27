@@ -6,233 +6,76 @@
     <title>메이플 한줄뎀 계산기</title>
     <link rel="icon" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        /* 전역 스타일 */
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-
-        /* 카드 스타일 */
-        .card {
-            background-color: #fff;
-            padding: 20px 30px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .card h2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .checkbox-right {
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-        }
-
-        .checkbox-right input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        /* 폼 스타일 */
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 5px;
-            font-weight: 500;
-        }
-
-        input[type="text"], select {
-            padding: 10px 15px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-
-        input[type="text"]:focus, select:focus {
-            border-color: #3498db;
-            outline: none;
-        }
-
-        /* 체크박스 및 라벨 */
-        .checkbox-group, .dropdown-group, .input-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-
-        .checkbox-group label, .dropdown-group label, .input-group label {
-            margin-right: 10px;
-            font-weight: 500;
-        }
-
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-        }
-
-        /* 도핑 선택 체크박스 그리드 */
-        #checkboxForm {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-
-        #checkboxForm label {
-            display: flex;
-            align-items: center;
-            font-weight: 400;
-        }
-
-        /* 버튼 스타일 */
-        button {
-            padding: 12px 20px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s, transform 0.2s;
-            align-self: flex-start;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-            transform: translateY(-2px);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        /* 데이터 컨테이너 */
-        #data-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3열로 변경 */
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        #data-container .item {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 6px;
-            box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
-        }
-
-        /* 헤더 폼 */
-        #headerForm {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        #headerForm label {
-            font-size: 1.1rem;
-            margin-right: 5px;
-        }
-
-        #headerForm p {
-            font-size: 1.1rem;
-            margin-right: 20px;
-            font-weight: 600;
-        }
-
-        /* 푸터 스타일 */
-        .footer {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            margin-top: 40px;
-        }
-
-        .footer p {
-            margin: 5px 0;
-            font-size: 0.95rem;
-        }
-
-        /* 반응형 디자인 */
-        @media (max-width: 768px) {
-            #headerForm {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            #headerForm p {
-                margin-bottom: 10px;
-            }
-
-            .checkbox-group, .dropdown-group, .input-group {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            button {
-                align-self: stretch;
-            }
-
-            /* 데이터 컨테이너 모바일 조정 */
-            #data-container {
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            /* 도핑 선택 모바일 조정 */
-            #checkboxForm {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
         <!-- 캐릭터 이름 입력 섹션 -->
         <div class="card">
-            <h2>캐릭터 이름 입력</h2>
-            <form>
-                <label for="nameInput">캐릭터 이름:</label>
-                <input type="text" id="nameInput" name="nameInput" placeholder="캐릭터 이름을 입력하세요">
-                
-                <div class="checkbox-group">
-                    <input type="checkbox" id="combatOrders" name="combatOrders">
-                    <label for="combatOrders"> 쓸컴뱃 사용 체크 (사용시 체크)</label>
+            <h2>
+                캐릭터 정보 입력
+                <div class="checkbox-right">
+                    <label id="label-doping"> ※프리셋 0번은 현재 장착중인 장비를 의미합니다.</label>
                 </div>
-                
-                <button type="button" onclick="submitCharactername()">제출</button>
+            </h2>
+            <form>
+                <div class="input--group">
+                    <!-- 캐릭터 이름 입력 -->
+                    <div class="amuguna">
+                        <input type="text" id="nameInput" placeholder="캐릭터 이름을 입력하세요">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="combatOrders" name="combatOrders">
+                            <label for="combatOrders">쓸컴뱃 사용 (사용 시 체크)</label>
+                        </div>
+                        <!-- 제출 버튼 -->
+                        <button id="submit" class="submit" type="button" onclick="submitCharactername()">제출</button>
+                    </div>
+                    <!-- 숫자 버튼 그룹 -->
+                    <div class="number-buttons">
+                        <div class="button-row" id="row1">
+                            <span class="row-label">장비 프리셋</span>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row1')">0</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row1')">1</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row1')">2</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row1')">3</button>
+                        </div>
+
+                        <div class="button-row" id="row2">
+                            <span class="row-label">하이퍼 프리셋</span>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row2')">0</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row2')">1</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row2')">2</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row2')">3</button>
+                        </div>
+
+                        <div class="button-row" id="row3">
+                            <span class="row-label">어빌리티 프리셋</span>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row3')">0</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row3')">1</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row3')">2</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row3')">3</button>
+                        </div>
+
+                        <div class="button-row" id="row4">
+                            <span class="row-label">유니온 프리셋</span>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row4')">0</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row4')">1</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row4')">2</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row4')">3</button>
+                        </div>
+
+                        <div class="button-row" id="row5">
+                            <span class="row-label">링크 프리셋</span>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row5')">0</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row5')">1</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row5')">2</button>
+                            <button class="number-button" type="button" onclick="toggleButton(this, 'row5')">3</button>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
             </form>
         </div>
 
@@ -250,7 +93,7 @@
         도핑 선택
         <div class="checkbox-right">
             <input type="checkbox" id="dopingcheck" name="dopingcheck" onchange="update_spec()">
-            <label for="dopingcheck"> 도핑 적용된 스펙으로 보기 (사용시 체크)</label>
+            <label id="label-doping"> 도핑 적용된 스펙으로 보기 (사용시 체크)</label>
         </div>
     </h2>
     <form id="checkboxForm">
@@ -310,12 +153,49 @@
                 <div class="dropdown-group">
                     <label for="map_region">지역:</label>
                     <select id="map_region" name="map_region" onchange="update_map_name()">
+                        <option value="소멸의 여로">소멸의 여로</option>
+                        <option value="리버스 시티">리버스 시티</option>
+                        <option value="츄츄 아일랜드">츄츄 아일랜드</option>
+                        <option value="얌얌 아일랜드">얌얌 아일랜드</option>
+                        <option value="레헬른">레헬른</option>
+                        <option value="아르카나">아르카나</option>
+                        <option value="모라스">모라스</option>
+                        <option value="에스페라">에스페라</option>
+                        <option value="셀라스">셀라스</option>
+                        <option value="문브릿지">문브릿지</option>
+                        <option value="고통의 미궁">고통의 미궁</option>
+                        <option value="리멘">리멘</option>
                         <!-- 옵션이 동적으로 추가됩니다 -->
                     </select>
                 </div>
                 <div class="dropdown-group">
                     <label for="map_name">맵 이름:</label>
-                    <select id="map_name" name="map_name" disabled>
+                    <select id="map_name" name="map_name">
+                        <option value="풍화된 기쁨의 땅">풍화된 기쁨의 땅</option>
+                        <option value="풍화된 기쁨과 분노의 땅">풍화된 기쁨과 분노의 땅</option>
+                        <option value="풍화된 분노의 땅">풍화된 분노의 땅</option>
+                        <option value="풍화된 분노와 슬픔의 땅">풍화된 분노와 슬픔의 땅</option>
+                        <option value="풍화된 슬픔의 땅">풍화된 슬픔의 땅</option>
+                        <option value="풍화된 슬픔과 즐거움의 땅">풍화된 슬픔과 즐거움의 땅</option>
+                        <option value="풍화된 즐거움의 땅">풍화된 즐거움의 땅</option>
+                        <option value="숨겨진 호숫가">숨겨진 호숫가</option>
+                        <option value="암석의 영토">암석의 영토</option>
+                        <option value="암석과 화염의 영토">암석과 화염의 영토</option>
+                        <option value="화염의 영토">화염의 영토</option>
+                        <option value="화염과 영혼의 영토">화염과 영혼의 영토</option>
+                        <option value="영혼의 영토">영혼의 영토</option>
+                        <option value="숨겨진 화염지대">숨겨진 화염지대</option>
+                        <option value="세 갈래길1">세 갈래길1</option>
+                        <option value="동굴의 서쪽길1">동굴의 서쪽길1</option>
+                        <option value="동굴의 서쪽길2">동굴의 서쪽길2</option>
+                        <option value="동굴의 동쪽길1">동굴의 동쪽길1</option>
+                        <option value="동굴의 동쪽길2">동굴의 동쪽길2</option>
+                        <option value="세 갈래길2">세 갈래길2</option>
+                        <option value="동굴 위쪽">동굴 위쪽</option>
+                        <option value="동굴 아래쪽">동굴 아래쪽</option>
+                        <option value="동굴의 깊숙한 곳">동굴의 깊숙한 곳</option>
+                        <option value="아르마의 은신처">아르마의 은신처</option>
+                        <option value="숨겨진 동굴">숨겨진 동굴</option>
                         <!-- 옵션이 동적으로 추가됩니다 -->
                     </select>
                 </div>
@@ -324,39 +204,50 @@
 
         <!-- 스킬 스펙 입력 섹션 -->
         <div class="card">
-            <h2>스킬 스펙 입력 (모든 기본값은 0)</h2>
+            <h2>
+                스킬 스펙 입력 (모든 기본값은 0)
+                <div class="checkbox-right">
+                    <label id="label-doping">스킬 프리셋 적용 : </label>
+                    <select id="skill_check" name="skill_check" onchange="update_skill()">
+                        <option value="jikjup">직접 입력</option>
+                        <option value="dawn">솔 야누스 : 새벽</option>
+                        <option value="twilight">솔 야누스 : 황혼</option>
+                        <option value="fountain">에르다 파운틴</option>
+                    </select>
+                </div>
+            </h2>
             <form id="inputForm">
                 <div class="input-group">
-                    <label for="skill_damage">뎀퍼%p/100 (패시브, 하이퍼 등 효과 포함):</label>
-                    <input type="text" id="skill_damage" name="skill_damage" placeholder="예: 4.9">
+                    <label for="skill_damage">뎀퍼%p (패시브, 하이퍼 등 효과 포함):</label>
+                    <input type="text" id="skill_damage" name="skill_damage" placeholder="예: 490">
                 </div>
                 <div class="input-group">
                     <label for="attack_count">공격 횟수 (하이퍼 포함):</label>
                     <input type="text" id="attack_count" name="attack_count" placeholder="예: 3">
                 </div>
                 <div class="input-group">
-                    <label for="hyper_damage">스킬 데미지 증가:</label>
-                    <input type="text" id="hyper_damage" name="hyper_damage" placeholder="예: 0.7">
+                    <label for="hyper_damage">스킬 데미지 증가(%):</label>
+                    <input type="text" id="hyper_damage" name="hyper_damage" placeholder="예: 70">
                 </div>
                 <div class="input-group">
                     <label for="core_reinforce">코어 강화:</label>
-                    <input type="text" id="core_reinforce" name="core_reinforce" placeholder="예: 1.2">
+                    <input type="text" id="core_reinforce" name="core_reinforce" placeholder="예: 120">
                 </div>
                 <div class="input-group">
                     <label for="core_ignore_monster_armor">코강 방무:</label>
-                    <input type="text" id="core_ignore_monster_armor" name="core_ignore_monster_armor" placeholder="예: 0.2">
+                    <input type="text" id="core_ignore_monster_armor" name="core_ignore_monster_armor" placeholder="예: 20">
                 </div>
                 <div class="input-group">
                     <label for="skill_ignore_monster_armor">스킬 방무:</label>
-                    <input type="text" id="skill_ignore_monster_armor" name="skill_ignore_monster_armor" placeholder="예: 0.2">
+                    <input type="text" id="skill_ignore_monster_armor" name="skill_ignore_monster_armor" placeholder="예: 20">
                 </div>
                 <div class="input-group">
-                    <label for="skill_final_damage">스킬 최종뎀 (ex 쉐파 0.7):</label>
-                    <input type="text" id="skill_final_damage" name="skill_final_damage" placeholder="예: 0.7">
+                    <label for="skill_final_damage">스킬 최종뎀 (ex 쉐파 70):</label>
+                    <input type="text" id="skill_final_damage" name="skill_final_damage" placeholder="예: 70">
                 </div>
                 <div class="input-group">
-                    <label for="skill_normal_damage">스킬 일몹뎀 (ex 솔야누스 만렙 0.3):</label>
-                    <input type="text" id="skill_normal_damage" name="skill_normal_damage" placeholder="예: 0.3">
+                    <label for="skill_normal_damage">스킬 일몹뎀 (ex 솔야누스 만렙 30):</label>
+                    <input type="text" id="skill_normal_damage" name="skill_normal_damage" placeholder="예: 30">
                 </div>
             </form>
         </div>
@@ -373,7 +264,7 @@
                     </select>
                 </div>
             </form>
-            <button type="button" onclick="submitForm()">제출</button>
+            <button id= "submit" type="button" onclick="submitForm()">제출</button>
         </div>
 
         <!-- 결과 표시 섹션 -->
@@ -397,494 +288,7 @@
         <p>Data based on NEXON Open API</p>
     </div>
 
-    <script>
-        let formCounter = 0;
-
-        function addInputField(){
-            formCounter++;
-            const newInputBox = document.createElement('div');
-            newInputBox.classList.add('input-box');
-            newInputBox.innerHTML=`
-                <div id="spec-container${formCounter}">
-                    <label for="input${formCounter}"> 옵션 선택 :</label>
-                    <select id="option-type${formCounter}" name="option-type${formCounter}" onchange="load_optionform(${formCounter})">
-                        <option value="none">---select---</option>
-                        <option value="starforce">스타포스</option>
-                        <option value="chuu">추옵</option>
-                    </select>
-                </div>
-            `;
-            document.getElementById('equipment-container').appendChild(newInputBox)
-        }
-
-        function load_optionform(cnt){
-            const option_name = document.getElementById("option-type" + cnt.toString()).value
-            const existingForm = document.getElementById(`extra-options${cnt}`);
-            if (existingForm) {
-                existingForm.remove(); // 기존 폼 삭제
-            }
-            if (option_name === "starforce"){
-                const addHTML = `
-                <div id="extra-options${cnt}">
-                    <label>부위:</label>
-                    <select id="equipment-type${formCounter}" name="equipment-type${formCounter}">
-                        <option value="none">---select---</option>
-                        <option value="모자">모자</option>
-                        <option value="얼굴장식">얼굴장식</option>
-                        <option value="눈장식">눈장식</option>
-                        <option value="귀고리">귀고리</option>
-                        <option value="상의">상의</option>
-                        <option value="하의">하의</option>
-                        <option value="신발">신발</option>
-                        <option value="장갑">장갑</option>
-                        <option value="망토">망토</option>
-                        <option value="보조무기">보조무기</option>
-                        <option value="무기">무기</option>
-                        <option value="반지1">반지1</option>
-                        <option value="반지2">반지2</option>
-                        <option value="반지3">반지3</option>
-                        <option value="반지4">반지4</option>
-                        <option value="펜던트1">펜던트1</option>
-                        <option value="펜던트2">펜던트2</option>
-                        <option value="벨트">벨트</option>
-                        <option value="어깨장식">어깨장식</option>
-                        <option value="포켓 아이템">포켓 아이템</option>
-                        <option value="기계 심장">기계 심장</option>
-                    </select>
-                    <label for="starforce_amt${cnt}">스타포스:</label>
-                    <input type="text" id="starforce_amt${cnt}" name="starforce_amt${cnt}" placeholder="예: 15">
-                </div>
-                `;
-                document.getElementById('spec-container' + cnt.toString()).insertAdjacentHTML('beforeend', addHTML)
-            }
-            else if (option_name === "chuu"){
-                console.log(cnt + 1)
-                // 추가 로직 필요
-            }
-        }
-
-        function update_spec(){
-            const json_dict = {
-                "str" : "STR",
-                "str_wo_rate" : "STR(% 미적용)",
-                "str_rate" : "STR%",
-                "dex" : "DEX",
-                "dex_wo_rate" : "DEX(% 미적용)",
-                "dex_rate" : "DEX%",
-                "int" : "INT",
-                "int_wo_rate" : "INT(% 미적용)",
-                "int_rate" : "INT%",
-                "luk" : "LUK",
-                "luk_wo_rate" : "LUK(% 미적용)",
-                "luk_rate" : "LUK%",
-                "max_hp" : "최대 HP",
-                "max_hp_wo_rate" : "최대 HP(% 미적용)",
-                "max_hp_rate" : "최대 HP%",
-                "attack_power" : "공격력",
-                "attack_power_wo_rate" : "공격력(% 미적용)",
-                "attack_power_rate" : "공격력%",
-                "magic_power" : "마력",
-                "magic_power_wo_rate" : "마력(% 미적용)",
-                "magic_power_rate" : "마력%",
-                "ignore_monster_armor" : "방무(%)",
-                "boss_damage" : "보공(%)",
-                "damage" : "데미지(%)",
-                "normal_damage" : "일몹뎀(%)",
-                "critical_rate" : "크확(%)",
-                "critical_damage" : "크뎀(%)",
-                "final_damage" : "최종뎀(%)",
-                "buff" : "벞지(%)",
-                "insight" : "내성 무시(%)",
-                "starforce" : "스타포스",
-                "arcane_force" : "아케인포스",
-                "authentic_force" : "어센틱포스"  
-            };
-            const dopingcheck = document.getElementById('dopingcheck').checked ? 'spec_w_doping' : 'spec_final';
-            const storedData = JSON.parse(localStorage.getItem(dopingcheck))
-            if(dopingcheck === "spec_w_doping" && storedData === null){
-                alert("도핑을 클릭하고 한줄데미지를 먼저 계산해주세요.")
-                document.getElementById('dopingcheck').checked = false;
-            }
-            else{
-                const name = document.getElementById('name');
-                name.innerHTML = `이름 : ${storedData["name"]}`;
-                const container = document.getElementById('data-container');
-                container.innerHTML = '';
-                for (const key in json_dict){
-                    const value = storedData[key];
-                    const itemDiv = document.createElement('div');
-                    itemDiv.classList.add('item');
-                    itemDiv.innerHTML = `<strong>${json_dict[key]}:</strong> ${value}`;
-                    container.appendChild(itemDiv);
-                }
-                const time = document.getElementById("time");
-                time.innerHTML = `최종 업데이트 시간 : ${localStorage.getItem('time')}`
-            }
-        }
-
-        update_spec()
-
-        function update_map_region(){
-            const force_type = document.getElementById('force_type');
-            const map_region = document.getElementById('map_region');
-            map_region.innerHTML = '';
-            if (force_type.value === 'arcane'){
-                const options = ['소멸의 여로', '리버스 시티', '츄츄 아일랜드', '얌얌 아일랜드', '레헬른', '아르카나', '모라스', '에스페라', '셀라스', '문브릿지', '고통의 미궁', '리멘'];
-                options.forEach(option => {
-                    const opt = document.createElement('option');
-                    opt.value = option;
-                    opt.textContent = option;
-                    map_region.appendChild(opt);
-                })
-            }
-            else if (force_type.value === 'authentic'){
-                const options = ['세르니움', '호텔 아르크스', '오디움', '도원경', '아르테리아', '카르시온', '탈라하트'];
-                options.forEach(option => {
-                    const opt = document.createElement('option');
-                    opt.value = option;
-                    opt.textContent = option;
-                    map_region.appendChild(opt);
-                })
-            }
-            map_region.disabled = false;
-            const map_name = document.getElementById('map_name');
-            map_name.innerHTML = '';
-            map_name.disabled = true;
-        }
-
-        function update_map_name(){
-            const map_region = document.getElementById('map_region');
-            const map_name = document.getElementById('map_name');
-            map_name.innerHTML = '';
-
-            const maps = {
-                '소멸의 여로': [
-                    '풍화된 기쁨의 땅', '풍화된 기쁨과 분노의 땅', '풍화된 분노의 땅', '풍화된 분노와 슬픔의 땅', 
-                    '풍화된 슬픔의 땅', '풍화된 슬픔과 즐거움의 땅', '풍화된 즐거움의 땅', '숨겨진 호숫가', 
-                    '암석의 영토', '암석과 화염의 영토', '화염의 영토', '화염과 영혼의 영토', '영혼의 영토', 
-                    '숨겨진 화염지대', '세 갈래길1', '동굴의 서쪽길1', '동굴의 서쪽길2', '동굴의 동쪽길1', 
-                    '동굴의 동쪽길2', '세 갈래길2', '동굴 위쪽', '동굴 아래쪽', '동굴의 깊숙한 곳', 
-                    '아르마의 은신처', '숨겨진 동굴'
-                ],
-                '리버스 시티': [
-                    '지하선로1', '지하선로2', '지하선로3', '지하선로4', '지하선로5', '지하선로6', 
-                    'T-boy의 연구열차1', 'T-boy의 연구열차2', 'T-boy의 연구열차3', '숨겨진 연구열차', 
-                    '지하열차1', '지하열차2', '지하열차3', '지상열차1', '지상열차2', '지상열차3', 
-                    '숨겨진 지하열차', 'M타워2', 'M타워3', 'M타워4', '숨겨진 M타워'
-                ],
-                '츄츄 아일랜드': [
-                    '폭포 아래', '격류지대 3', '격류지대 2', '격류지대 1', '츄츄빌리지 입구', '동산 입구', 
-                    '알록달록 숲지대1', '알록달록 숲지대2', '알록달록 숲지대3', '오색동산 깊은 곳', 
-                    '길쭉 동글숲1', '길쭉 동글숲2', '몽땅 동글숲1', '몽땅 동글숲2', 
-                    '츄릅포레스트 깊은 곳', '고래산 초입', '고래산 중턱1', '고래산 정상', 
-                    '고래산 중턱2', '거대한 꼬리'
-                ],
-                '얌얌 아일랜드': [
-                    '머쉬버드 숲1', '머쉬버드 숲2', '머쉬버드 숲3', '머쉬버드 숲4', '머쉬버드 숲5', 
-                    '머쉬버드 숲6', '일리야드 들판1', '일리야드 들판2', '일리야드 들판3', '일리야드 들판4', 
-                    '일리야드 들판5', '일리야드 들판6', '펑고스 숲1', '펑고스 숲2', '펑고스 숲3', 
-                    '펑고스 숲4', '펑고스 숲5', '펑고스 숲6', '숨겨진 머쉬버드 숲', 
-                    '숨겨진 일리야드 들판', '숨겨진 펑고스 숲'
-                ],
-                '레헬른': [
-                    '무법자들의 거리1', '무법자들의 거리2', '무법자들의 거리3', '닭이 뛰노는 곳1', 
-                    '닭이 뛰노는 곳2', '닭이 뛰노는 곳3', '우승 접시의 거리1', '우승 접시의 거리2', 
-                    '본색을 드러내는 곳1', '본색을 드러내는 곳2', '본색을 드러내는 곳3', 
-                    '춤추는 구두 점령지1', '춤추는 구두 점령지2', '악몽의 시계탑 1층', 
-                    '악몽의 시계탑 2층', '악몽의 시계탑 3층', '악몽의 시계탑 4층', 
-                    '악몽의 시계탑 5층'
-                ],
-                '아르카나': [
-                    '물의 숲', '햇살의 숲', '물과 햇살의 숲', '흙의 숲', '햇살과 흙의 숲', 
-                    '서리구름의 숲', '번개구름의 숲', '서리와 번개의 숲1', '서리와 번개의 숲2', 
-                    '맹독의 숲', '폭발의 숲', '맹독과 폭발의 숲1', '맹독과 폭발의 숲2', 
-                    '동굴 윗길', '동굴 윗길 깊은 곳 1', '동굴 윗길 깊은 곳 2', 
-                    '동굴 윗길 깊디 깊은 곳', '동굴 아랫길', '동굴 아랫길 깊은 곳 1', 
-                    '동굴 아랫길 깊은 곳 2', '동굴 아랫길 깊디 깊은 곳', 
-                    '다섯 갈래 동굴', '다섯 갈래 동굴 윗길', '다섯 갈래 동굴 사잇길', 
-                    '다섯 갈래 동굴 아랫길', '정령의 나무 밑 동굴'
-                ],
-                '모라스': [
-                    '산호 숲으로 가는 길2', '산호 숲으로 가는 길3', '산호 숲으로 가는 길4', 
-                    '도둑고양이 출몰지', '도둑고양이 출몰지2', '형님들 구역', '형님들 구역2', 
-                    '형님들 구역3', '그림자가 춤추는 곳2', '그림자가 춤추는 곳3', 
-                    '그림자가 춤추는 곳4', '폐쇄구역', '폐쇄구역2', '폐쇄구역3', 
-                    '그날의 트뤼에페2', '그날의 트뤼에페3', '그날의 트뤼에페4'
-                ],
-                '에스페라': [
-                    '생명이 시작되는 곳2', '생명이 시작되는 곳3', '생명이 시작되는 곳4', 
-                    '생명이 시작되는 곳5', '생명이 시작되는 곳6', '생명이 시작되는 곳7', 
-                    '거울빛에 물든 바다2', '거울빛에 물든 바다3', '거울빛에 물든 바다4', 
-                    '거울빛에 물든 바다5', '거울빛에 물든 바다6', '거울빛에 물든 바다7', 
-                    '거울에 비친 빛의 신전2', '거울에 비친 빛의 신전3', '거울에 비친 빛의 신전4'
-                ],
-                '셀라스': [
-                    '빛이 마지막으로 닿는 곳 1', '빛이 마지막으로 닿는 곳 2', '빛이 마지막으로 닿는 곳 3', 
-                    '빛이 마지막으로 닿는 곳 4', '빛이 마지막으로 닿는 곳 5', '빛이 마지막으로 닿는 곳 6', 
-                    '빛이 마지막으로 닿는 곳 7', '빛이 마지막으로 닿는 곳 8', '빛이 마지막으로 닿는 곳 9', 
-                    '끝없이 추락하는 심해 1', '끝없이 추락하는 심해 2', '끝없이 추락하는 심해 3', 
-                    '끝없이 추락하는 심해 4', '끝없이 추락하는 심해 5', '끝없이 추락하는 심해 6', 
-                    '별이 삼켜진 심해 1', '별이 삼켜진 심해 2', '별이 삼켜진 심해 3', 
-                    '별이 삼켜진 심해 4', '별이 삼켜진 심해 5', '별이 삼켜진 심해 6'
-                ],
-                '문브릿지': [
-                    '사상의 경계1', '사상의 경계2', '사상의 경계3', '사상의 경계4', 
-                    '사상의 경계5', '사상의 경계6', '미지의 안개1', '미지의 안개2', 
-                    '미지의 안개3', '미지의 안개4', '미지의 안개5', '미지의 안개6', 
-                    '공허의 파도1', '공허의 파도2', '공허의 파도3', '공허의 파도4', 
-                    '공허의 파도5', '공허의 파도6'
-                ],
-                '고통의 미궁': [
-                    '고통의 미궁 내부1', '고통의 미궁 내부2', '고통의 미궁 내부3', 
-                    '고통의 미궁 내부4', '고통의 미궁 내부5', '고통의 미궁 내부6', 
-                    '고통의 미궁 중심부1', '고통의 미궁 중심부2', '고통의 미궁 중심부3', 
-                    '고통의 미궁 중심부4', '고통의 미궁 중심부5', '고통의 미궁 중심부6', 
-                    '고통의 미궁 중심부7', '고통의 미궁 최심부1', '고통의 미궁 최심부2', 
-                    '고통의 미궁 최심부3', '고통의 미궁 최심부4', '고통의 미궁 최심부5', 
-                    '고통의 미궁 최심부6'
-                ],
-                '리멘': [
-                    '세계의 눈물 하단1', '세계의 눈물 하단2', '세계의 눈물 하단3', 
-                    '세계의 눈물 중단1', '세계의 눈물 중단2', '세계의 눈물 중단3', 
-                    '세계의 눈물 중단4', '세계가 끝나는 곳 1-4', '세계가 끝나는 곳 1-5', 
-                    '세계가 끝나는 곳 1-6', '세계가 끝나는 곳 1-7', '세계가 끝나는 곳 1-8', 
-                    '세계가 끝나는 곳 1-9', '세계가 끝나는 곳 2-2', '세계가 끝나는 곳 2-3', 
-                    '세계가 끝나는 곳 2-4', '세계가 끝나는 곳 2-5', '세계가 끝나는 곳 2-6', 
-                    '세계가 끝나는 곳 2-7', '세계가 끝나는 곳 2-8'
-                ],
-                '세르니움': [
-                    '해변 암석지대 1', '해변 암석지대 2', '해변 암석지대 3', 
-                    '해변 암석지대 4', '세르니움 서쪽 성벽 1', '세르니움 서쪽 성벽 2', 
-                    '세르니움 서쪽 성벽 3', '왕립 도서관 제1구역', '왕립 도서관 제2구역', 
-                    '왕립 도서관 제3구역', '왕립 도서관 제4구역', '왕립 도서관 제5구역', 
-                    '왕립 도서관 제6구역', '세르니움 동쪽 성벽 1', '세르니움 동쪽 성벽 2', 
-                    '세르니움 동쪽 성벽 3', '불타는 왕립 도서관 제1구역', 
-                    '불타는 왕립 도서관 제2구역', '불타는 왕립 도서관 제3구역', 
-                    '불타는 왕립 도서관 제4구역', '불타는 왕립 도서관 제5구역', 
-                    '불타는 왕립 도서관 제6구역', '격전의 서쪽 성벽 1', '격전의 서쪽 성벽 2', 
-                    '격전의 서쪽 성벽 3', '격전의 서쪽 성벽 4', '격전의 동쪽 성벽 1', 
-                    '격전의 동쪽 성벽 2', '격전의 동쪽 성벽 3', '격전의 동쪽 성벽 4', 
-                    '격전의 동쪽 성벽 5', '격전의 동쪽 성벽 6'
-                ],
-                '호텔 아르크스': [
-                    '무법자들이 지배하는 황야1', '무법자들이 지배하는 황야2', 
-                    '무법자들이 지배하는 황야3', '무법자들이 지배하는 황야4', 
-                    '낭만이 저무는 자동차 극장1', '낭만이 저무는 자동차 극장2', 
-                    '낭만이 저무는 자동차 극장3', '낭만이 저무는 자동차 극장4', 
-                    '낭만이 저무는 자동차 극장5', '낭만이 저무는 자동차 극장6', 
-                    '종착지 없는 횡단열차1', '종착지 없는 횡단열차2', '종착지 없는 횡단열차3', 
-                    '종착지 없는 횡단열차4', '종착지 없는 횡단열차5', '종착지 없는 횡단열차6'
-                ],
-                '오디움': [
-                    '성문으로 가는 길 1', '성문으로 가는 길 2', '성문으로 가는 길 3', 
-                    '성문으로 가는 길 4', '성문으로 가는 길 5', '점령당한 골목 1', 
-                    '점령당한 골목 2', '점령당한 골목 3', '점령당한 골목 4', 
-                    '볕 드는 실험실 1', '볕 드는 실험실 2', '볕 드는 실험실 3', 
-                    '잠긴 문 뒤 실험실 1', '잠긴 문 뒤 실험실 2', '잠긴 문 뒤 실험실 3', 
-                    '잠긴 문 뒤 실험실 4'
-                ],
-                '도원경': [
-                    '생기가 돌아오는 봄 1', '생기가 돌아오는 봄 2', '생기가 돌아오는 봄 3', 
-                    '생기가 돌아오는 봄 4', '생기가 돌아오는 봄 5', '빛이 약한 여름 1', 
-                    '빛이 약한 여름 2', '빛이 약한 여름 3', '빛이 약한 여름 4', 
-                    '빛이 약한 여름 5', '색깔이 옅은 가을 1', '색깔이 옅은 가을 2', 
-                    '색깔이 옅은 가을 3', '색깔이 옅은 가을 4', '색깔이 옅은 가을 5', 
-                    '참혹한 흔적의 겨울 1', '참혹한 흔적의 겨울 2', 
-                    '참혹한 흔적의 겨울 3', '참혹한 흔적의 겨울 4', 
-                    '참혹한 흔적의 겨울 5'
-                ],
-                '아르테리아': [
-                    '북쪽 외곽지역', '외곽 전투지역 1', '서쪽 외곽지역', 
-                    '남쪽 외곽지역', '외곽 전투지역 2', '동쪽 외곽지역', 
-                    '최하층 통로 1', '최하층 통로 2', '최하층 통로 3', 
-                    '최하층 통로 4', '최하층 통로 5', '최하층 통로 6', 
-                    '최상층 통로 1', '최상층 통로 2', '최상층 통로 3', 
-                    '최상층 통로 4', '최상층 통로 5', '최상층 통로 6', 
-                    '최상층 통로 7', '최상층 통로 8'
-                ],
-                '카르시온': [
-                    '거대 산호 군락 1', '거대 산호 군락 2', '거대 산호 군락 3', 
-                    '잔잔한 해안가 1', '잔잔한 해안가 2', '잔잔한 해안가 3', 
-                    '휘감기는 숲 1', '휘감기는 숲 2', '휘감기는 숲 3', 
-                    '어둠이 내리는 나무줄기 1', '어둠이 내리는 나무줄기 2', 
-                    '어둠이 내리는 나무줄기 3', '숨이 멎어드는 동굴 1', 
-                    '숨이 멎어드는 동굴 2', '숨이 멎어드는 동굴 3', 
-                    '숨이 멎어드는 동굴 4', '가라앉은 유적지 1', 
-                    '가라앉은 유적지 2', '가라앉은 유적지 3', '가라앉은 유적지 4'
-                ],
-                '탈라하트': [
-                    '재와 침묵의 땅 1', '재와 침묵의 땅 2', '재와 침묵의 땅 3', 
-                    '재와 침묵의 땅 4', '재와 침묵의 땅 5', 
-                    '섭리와 운명의 전쟁터 1', '섭리와 운명의 전쟁터 2', 
-                    '섭리와 운명의 전쟁터 3', 
-                    '심판과 운명의 전쟁터 1', '심판과 운명의 전쟁터 2', 
-                    '심판과 운명의 전쟁터 3', 
-                    '영원과 운명의 전쟁터 1', '영원과 운명의 전쟁터 2', 
-                    '영원과 운명의 전쟁터 3', 
-                    '밤의 길 1', '밤의 길 2', '밤의 길 3', '밤의 길 4', 
-                    '환영의 길 1', '환영의 길 2', '환영의 길 3', '환영의 길 4'
-                ]
-            };
-
-            if (maps[map_region.value]) {
-                maps[map_region.value].forEach(option => {
-                    const opt = document.createElement('option');
-                    opt.value = option;
-                    opt.textContent = option;
-                    map_name.appendChild(opt);
-                })
-            }
-
-            map_name.disabled = false;
-        }
-
-        function submitCharactername(){
-            let selectedItems = [];
-            const characterName = document.getElementById('nameInput').value;
-            const isChecked = document.getElementById('combatOrders').checked ? 1 : 0;
-            if(characterName){
-                selectedItems.push(`characterName=${encodeURIComponent(characterName)}`);
-            }
-            if(isChecked){
-                selectedItems.push(`combat_flag=${isChecked}`);
-            }
-            const queryString = selectedItems.join('&')
-            if (characterName){
-                fetch(`/initialize/?${queryString}`)
-                    .then(response => response.json())
-                    .then(data =>{
-                        if (data[0].length === 3){
-                            if(data[0][2].length === 0){
-                                localStorage.setItem('guild_doping', JSON.stringify(data[0][0]))
-                                localStorage.setItem('spec_final', JSON.stringify(data[0][1]))
-                                localStorage.setItem('time', data[1])
-                                if(localStorage.getItem("spec_w_doping") !== null){
-                                    localStorage.removeItem("spec_w_doping");
-                                    document.getElementById('dopingcheck').checked = false;
-                                }
-                                alert('데이터 불러오기가 완료되었습니다.')
-                                document.getElementById('nameInput').value = "";
-                                update_spec()
-                                const old = document.getElementById('old');
-                                const fd = document.getElementById('fd');
-                                old.innerHTML = '';
-                                fd.innerHTML = '';
-                            }
-                            else{
-                                alert(data[0][2])
-                                console.log(data[0][2])
-                            }
-                        }
-                        else{
-                            console.error('expected 3 elements.')
-                        }
-                    })
-                    .catch(error =>{
-                        console.error('error:', error);
-                    });
-            }
-        }
-
-        function submitForm() {
-            if (localStorage.getItem("spec_final") === null){
-                alert("스펙을 가져와주세요.")
-                return
-            }
-            // 체크된 항목을 가져옵니다
-            const mode = document.getElementById('mode').value
-            const dopings = document.querySelectorAll('input[name="doping"]:checked');
-            const skill_damage = document.getElementById('skill_damage').value
-            const attack_count = document.getElementById('attack_count').value
-            const hyper_damage = document.getElementById('hyper_damage').value
-            const core_reinforce = document.getElementById('core_reinforce').value
-            const core_ignore_monster_armor = document.getElementById('core_ignore_monster_armor').value
-            const skill_ignore_monster_armor = document.getElementById('skill_ignore_monster_armor').value
-            const skill_final_damage = document.getElementById('skill_final_damage').value
-            const skill_normal_damage = document.getElementById('skill_normal_damage').value
-            const force_type = document.getElementById('force_type').value
-            const map_region = document.getElementById('map_region').value
-            const map_name = document.getElementById('map_name').value
-            const specFinal = localStorage.getItem('spec_final');
-            const guild_doping = localStorage.getItem('guild_doping');
-            let selectedItems = [];
-            dopings.forEach((doping) => {
-                selectedItems.push(`doping=${encodeURIComponent(doping.value)}`);
-            });
-            if (mode){
-                selectedItems.push(`mode=${encodeURIComponent(mode)}`);
-            }
-            if (skill_damage){
-                selectedItems.push(`dmg=${encodeURIComponent(skill_damage)}`);
-            }
-            if (attack_count){
-                selectedItems.push(`attack_count=${encodeURIComponent(attack_count)}`);
-            }
-            if (hyper_damage){
-                selectedItems.push(`hyper_damage=${encodeURIComponent(hyper_damage)}`);
-            }
-            if(core_reinforce){
-                selectedItems.push(`core_reinforce=${encodeURIComponent(core_reinforce)}`);
-            }
-            if(core_ignore_monster_armor){
-                selectedItems.push(`core_igm=${encodeURIComponent(core_ignore_monster_armor)}`);
-            }
-            if(skill_ignore_monster_armor){
-                selectedItems.push(`skill_igm=${encodeURIComponent(skill_ignore_monster_armor)}`);
-            }
-            if(skill_final_damage){
-                selectedItems.push(`skill_final_damage=${encodeURIComponent(skill_final_damage)}`);
-            }
-            if(skill_normal_damage){
-                selectedItems.push(`skill_normal_damage=${encodeURIComponent(skill_normal_damage)}`);
-            }
-            if(force_type){
-                selectedItems.push(`map_type=${encodeURIComponent(force_type)}`);
-            }
-            if(map_region){
-                selectedItems.push(`map_region=${encodeURIComponent(map_region)}`);
-            }
-            if(map_name){
-                selectedItems.push(`map_name=${encodeURIComponent(map_name)}`);
-            }
-            if(specFinal){
-                selectedItems.push(`final=${encodeURIComponent(specFinal)}`);
-            }
-            if(guild_doping){
-                selectedItems.push(`guild_doping=${encodeURIComponent(guild_doping)}`);
-            }
-            const queryString = selectedItems.join('&');
-            // GET 요청을 보냅니다
-            fetch(`/calculate/?${queryString}`)
-                .then(response => response.json())
-                .then(data => {
-                    // 결과를 HTML에 표시합니다
-                    const sugong = document.getElementById('sugong');
-                    const old = document.getElementById('old');
-                    const fd = document.getElementById('fd');
-                    const mob_hp = document.getElementById('hp');
-                    sugong.innerHTML = '';
-                    old.innerHTML = '';
-                    fd.innerHTML = '';
-                    mob_hp.innerHTML = '';
-                    const p0 = document.createElement('p');
-                    p0.textContent = data[0].toLocaleString('ko-KR');
-                    old.appendChild(p0)
-                    const p1 = document.createElement('p');
-                    p1.textContent = data[1].toLocaleString('ko-KR');
-                    fd.appendChild(p1)
-                    const p2 = document.createElement('p');
-                    p2.textContent = data[2].toLocaleString('ko-KR');
-                    mob_hp.appendChild(p2)
-                    const p4 = document.createElement('p');
-                    p4.textContent = data[4].toLocaleString('ko-KR');
-                    sugong.appendChild(p4)
-
-                    localStorage.setItem('spec_w_doping', JSON.stringify(data[3]))
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
+    <script src = "/static/scripts.js">    
     </script>
 </body>
 </html>

@@ -2,7 +2,7 @@ import json
 import json_functions
 import requests
 
-def make_spec_union(data, headers):
+def make_spec_union(data, headers, union_preset):
     #print("------------------union start------------------")
     specDict={
         "공격력" : "attack_power",
@@ -79,7 +79,9 @@ def make_spec_union(data, headers):
     ocid="?ocid=" + data["ocid"]
     urlString = url + "-raider" +ocid
     response_raider= requests.get(urlString, headers=headers).json()
-    response_raider=response_raider["union_raider_preset_"+str(response_raider["use_preset_no"])]
+    if union_preset==0:
+        union_preset=response_raider["use_preset_no"]
+    response_raider=response_raider["union_raider_preset_"+str(union_preset)]
     #print(response_raider)
     raider_effects=[]
     for i in response_raider["union_raider_stat"]: #+ response_raider["union_occupied_stat"]:

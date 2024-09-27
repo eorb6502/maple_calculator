@@ -1,7 +1,7 @@
 import json
 import requests
 import json_functions
-def make_spec_HAP(data, headers):
+def make_spec_HAP(data, headers, hyperstat_flag, ability_flag):
     specDict={
         "공격력" : "attack_power",
         "마력" : "magic_power",
@@ -77,8 +77,11 @@ def make_spec_HAP(data, headers):
     #하이퍼
     urlString = url + "hyper-stat" +ocid
     response_hyper= requests.get(urlString, headers=headers).json()
-    recentPreset=response_hyper["use_preset_no"]
-    recentHyper=response_hyper["hyper_stat_preset_"+recentPreset]
+    if hyperstat_flag==0:
+        recentPreset=response_hyper["use_preset_no"]
+    else:
+        recentPreset=hyperstat_flag
+    recentHyper=response_hyper["hyper_stat_preset_"+str(recentPreset)]
     #print(recentHyper)
     for i in recentHyper:
         #print(i)
@@ -106,9 +109,12 @@ def make_spec_HAP(data, headers):
     #어빌리티
     urlString = url + "ability" +ocid
     response_ability= requests.get(urlString, headers=headers).json()
-    #print(response_ability["ability_info"])
+    print(response_ability)
+    if ability_flag==0:
+        ability_flag=response_ability["preset_no"]
+    ability_preset=response_ability["ability_preset_"+str(ability_flag)]["ability_info"]
     abilities=[]
-    for i in response_ability["ability_preset_1"]["ability_info"]: #현재 장착중인건 ability_info
+    for i in ability_preset:
         j=i["ability_value"].split(", ")
         for k in j:
             abilities.append(k.lower())

@@ -1,5 +1,10 @@
 import requests
 import json_functions
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("API_KEY")
+
 def make_spec_set(data, headers):
     specDict={
             "공격력" : "attack_power",
@@ -78,6 +83,7 @@ def make_spec_set(data, headers):
     ocid="?ocid=" + data["ocid"]
     urlString = url + ocid
     response_set = requests.get(urlString, headers=headers).json()
+    print(response_set)
     characterClass=data["class"]
     for i in response_set["set_effect"]:
         #print(i)
@@ -120,6 +126,7 @@ def make_spec_set(data, headers):
     json_functions.makejson(specSet, "./assets/spec_set.json")
     print(specSet)
     return specSet
-"""make_spec_set(headers = {
-    "x-nxopen-api-key": "API-KEY"
+"""
+make_spec_set(json_functions.openjson("./assets/spec.json"), headers = {
+    "x-nxopen-api-key": api_key
     })"""

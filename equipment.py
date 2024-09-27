@@ -2,18 +2,22 @@ import json
 import requests
 import json_functions
 
-def make_equipment_data_and_title(data, headers):
+def make_equipment_data_and_title(data, headers, equipment_flag):
     url="https://open.api.nexon.com/maplestory/v1/character/item-equipment"
     #data=json_functions.openjson("./assets/spec.json")
     ocid="?ocid=" + data["ocid"]
     urlString = url + ocid
     response_equip = requests.get(urlString, headers=headers).json()
-    """for i in response_equip:
-        print(i, response_equip)"""
+    #print(response_equip["dragon_equipment"])
+    #print(response_equip["mechanic_equipment"])
     equipmentDict={}
     starforce=0
+    if equipment_flag==0:
+        preset_string="item_equipment"
+    else:
+        preset_string="item_equipment_preset_"+str(equipment_flag)
     #print(response_equip["item_equipment"]["무기"])
-    for i in response_equip["item_equipment_preset_1"]: #프리셋 1번 장착정인건 item_equipment
+    for i in response_equip[preset_string]: #프리셋 1번 장착정인건 item_equipment
         #print(i)
         if i["item_equipment_slot"]=="상의" and i["item_equipment_part"]=="한벌옷":
             starforce+=2*int(i["starforce"])
@@ -33,6 +37,18 @@ def make_equipment_data_and_title(data, headers):
             "잠재옵션" : [i["potential_option_1"], i["potential_option_2"], i["potential_option_3"]], \
             "에디등급" : i["additional_potential_option_grade"], \
             "에디옵션" : [i["additional_potential_option_1"], i["additional_potential_option_2"], i["additional_potential_option_3"]], \
+            "소울옵션" : i["soul_option"]
+            }
+    for i in response_equip["dragon_equipment"]+response_equip["mechanic_equipment"]:
+        equipmentDict[i["item_equipment_slot"]]={
+            "종류" : i["item_equipment_part"],
+            "이름" : i["item_name"], 
+            "스타포스 수치" : int(i["starforce"]),
+            "기본" : i["item_base_option"], \
+            "추옵" : i["item_add_option"], \
+            "강화" : i["item_etc_option"], \
+            "스타포스" : i["item_starforce_option"], \
+            "익셉셔널" : i["item_exceptional_option"], \
             "소울옵션" : i["soul_option"]
             }
     equipmentDict["starforce"]=starforce

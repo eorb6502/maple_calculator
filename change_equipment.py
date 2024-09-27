@@ -86,7 +86,7 @@ def changeStarforce(specFinal, equipmentDB, parts, starforce):
         else:
             currentStarforce_stat[i]=starforceDB[equipmentTag][equipment_level]["stat"][starforce]
     #print(stat_flag)
-    if parts!="얼굴장식" and parts!="눈장식" and parts!="귀고리" and parts!="신발" and parts!="장갑" and parts!="기계심장":
+    if parts!="얼굴장식" and parts!="눈장식" and parts!="귀고리" and parts!="신발" and parts!="장갑" and parts!="기계 심장":
         starforce_hp=hp_arr[min(starforce, 15)]
         currentStarforce_stat["max_hp"]=starforce_hp
         currentStarforce_stat["max_mp"]=starforce_hp
