@@ -213,8 +213,36 @@ function update_map_region(){
     }
     map_region.disabled = false;
     const map_name = document.getElementById('map_name');
-    map_name.innerHTML = '';
-    map_name.disabled = true;
+    if(force_type.value === 'arcane'){
+    map_name.innerHTML = `<option value="풍화된 기쁨의 땅">풍화된 기쁨의 땅</option>
+                        <option value="풍화된 기쁨과 분노의 땅">풍화된 기쁨과 분노의 땅</option>
+                        <option value="풍화된 분노의 땅">풍화된 분노의 땅</option>
+                        <option value="풍화된 분노와 슬픔의 땅">풍화된 분노와 슬픔의 땅</option>
+                        <option value="풍화된 슬픔의 땅">풍화된 슬픔의 땅</option>
+                        <option value="풍화된 슬픔과 즐거움의 땅">풍화된 슬픔과 즐거움의 땅</option>
+                        <option value="풍화된 즐거움의 땅">풍화된 즐거움의 땅</option>
+                        <option value="숨겨진 호숫가">숨겨진 호숫가</option>
+                        <option value="암석의 영토">암석의 영토</option>
+                        <option value="암석과 화염의 영토">암석과 화염의 영토</option>
+                        <option value="화염의 영토">화염의 영토</option>
+                        <option value="화염과 영혼의 영토">화염과 영혼의 영토</option>
+                        <option value="영혼의 영토">영혼의 영토</option>
+                        <option value="숨겨진 화염지대">숨겨진 화염지대</option>
+                        <option value="세 갈래길1">세 갈래길1</option>
+                        <option value="동굴의 서쪽길1">동굴의 서쪽길1</option>
+                        <option value="동굴의 서쪽길2">동굴의 서쪽길2</option>
+                        <option value="동굴의 동쪽길1">동굴의 동쪽길1</option>
+                        <option value="동굴의 동쪽길2">동굴의 동쪽길2</option>
+                        <option value="세 갈래길2">세 갈래길2</option>
+                        <option value="동굴 위쪽">동굴 위쪽</option>
+                        <option value="동굴 아래쪽">동굴 아래쪽</option>
+                        <option value="동굴의 깊숙한 곳">동굴의 깊숙한 곳</option>
+                        <option value="아르마의 은신처">아르마의 은신처</option>
+                        <option value="숨겨진 동굴">숨겨진 동굴</option>`;
+    }
+    else if(force_type.value === 'authentic'){
+        map_name.innerHTML = `<option value="해변 암석지대 1">해변 암석지대 1</option><option value="해변 암석지대 2">해변 암석지대 2</option><option value="해변 암석지대 3">해변 암석지대 3</option><option value="해변 암석지대 4">해변 암석지대 4</option><option value="세르니움 서쪽 성벽 1">세르니움 서쪽 성벽 1</option><option value="세르니움 서쪽 성벽 2">세르니움 서쪽 성벽 2</option><option value="세르니움 서쪽 성벽 3">세르니움 서쪽 성벽 3</option><option value="왕립 도서관 제1구역">왕립 도서관 제1구역</option><option value="왕립 도서관 제2구역">왕립 도서관 제2구역</option><option value="왕립 도서관 제3구역">왕립 도서관 제3구역</option><option value="왕립 도서관 제4구역">왕립 도서관 제4구역</option><option value="왕립 도서관 제5구역">왕립 도서관 제5구역</option><option value="왕립 도서관 제6구역">왕립 도서관 제6구역</option><option value="세르니움 동쪽 성벽 1">세르니움 동쪽 성벽 1</option><option value="세르니움 동쪽 성벽 2">세르니움 동쪽 성벽 2</option><option value="세르니움 동쪽 성벽 3">세르니움 동쪽 성벽 3</option><option value="불타는 왕립 도서관 제1구역">불타는 왕립 도서관 제1구역</option><option value="불타는 왕립 도서관 제2구역">불타는 왕립 도서관 제2구역</option><option value="불타는 왕립 도서관 제3구역">불타는 왕립 도서관 제3구역</option><option value="불타는 왕립 도서관 제4구역">불타는 왕립 도서관 제4구역</option><option value="불타는 왕립 도서관 제5구역">불타는 왕립 도서관 제5구역</option><option value="불타는 왕립 도서관 제6구역">불타는 왕립 도서관 제6구역</option><option value="격전의 서쪽 성벽 1">격전의 서쪽 성벽 1</option><option value="격전의 서쪽 성벽 2">격전의 서쪽 성벽 2</option><option value="격전의 서쪽 성벽 3">격전의 서쪽 성벽 3</option><option value="격전의 서쪽 성벽 4">격전의 서쪽 성벽 4</option><option value="격전의 동쪽 성벽 1">격전의 동쪽 성벽 1</option><option value="격전의 동쪽 성벽 2">격전의 동쪽 성벽 2</option><option value="격전의 동쪽 성벽 3">격전의 동쪽 성벽 3</option><option value="격전의 동쪽 성벽 4">격전의 동쪽 성벽 4</option><option value="격전의 동쪽 성벽 5">격전의 동쪽 성벽 5</option><option value="격전의 동쪽 성벽 6">격전의 동쪽 성벽 6</option>`;
+    }
 }
 
 function update_map_name(){

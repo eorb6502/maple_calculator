@@ -1,12 +1,12 @@
 {
-	"name": "도적",
-	"class": "듀얼블레이더",
-	"level": 287,
+	"name": "츠데구",
+	"class": "칼리",
+	"level": 276,
 	"str": 4,
 	"dex": 4,
-	"luk": 1685,
+	"luk": 1607,
 	"int": 4,
-	"max_hp": 350,
-	"max_mp": 15,
+	"max_hp": 500,
+	"max_mp": 550,
 	"critical_rate": 5
 }
