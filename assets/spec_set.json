@@ -38,9 +38,5 @@
 	"meso_drop": 0,
 	"insight": 0,
 	"cooldown_rate": 0,
-	"petSet": [
-		"블루밍 플로라 Lv.1",
-		"숲속의 전설 Lv.1",
-		"숲속의 전설 Lv.2"
-	]
+	"petSet": []
 }

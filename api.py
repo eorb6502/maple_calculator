@@ -24,6 +24,7 @@ def return_spec_final(characterName: str="츠데구", combat_flag: int=0, preset
     preset_flags=[0, 0, 0, 0, 0]
     for idx, i in enumerate(presets):
         preset_flags[idx]=i
+    print(preset_flags)
     now=datetime.now(pytz.utc)
     kr_timezone=pytz.timezone('Asia/Seoul')
     kr_time=now.astimezone(kr_timezone)
