@@ -109,7 +109,7 @@ def make_spec_HAP(data, headers, hyperstat_flag, ability_flag):
     #어빌리티
     urlString = url + "ability" +ocid
     response_ability= requests.get(urlString, headers=headers).json()
-    print(response_ability)
+    #print(response_ability)
     if ability_flag==0:
         ability_flag=response_ability["preset_no"]
     ability_preset=response_ability["ability_preset_"+str(ability_flag)]["ability_info"]

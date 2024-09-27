@@ -47,7 +47,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     getVIskill=requests.get(url, headers=headers).json()
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"hyperpassive"
     getHyperskill=requests.get(url, headers=headers).json()
-    print(getHyperskill)
+    #print(getHyperskill)
     url="https://open.api.nexon.com/maplestory/v1/character/skill?ocid="+ocid+"&character_skill_grade="+"0"
     get0Skill=requests.get(url, headers=headers).json()
     #print(getVskill)

@@ -83,7 +83,7 @@ def make_spec_set(data, headers):
     ocid="?ocid=" + data["ocid"]
     urlString = url + ocid
     response_set = requests.get(urlString, headers=headers).json()
-    print(response_set)
+    #print(response_set)
     characterClass=data["class"]
     for i in response_set["set_effect"]:
         #print(i)
