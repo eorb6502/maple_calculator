@@ -46,4 +46,4 @@ def getocid(name, headers):
 """headers = {
     "x-nxopen-api-key": api_key
     }
-getocid("따랑햄", headers)"""
+getocid("츠데구", headers)"""
