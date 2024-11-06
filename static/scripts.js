@@ -527,7 +527,6 @@ function submitForm() {
         return
     }
     // 체크된 항목을 가져옵니다
-    const mode = document.getElementById('mode').value
     const dopings = document.querySelectorAll('input[name="doping"]:checked');
     const skill_damage = document.getElementById('skill_damage').value
     const attack_count = document.getElementById('attack_count').value
@@ -546,9 +545,6 @@ function submitForm() {
     dopings.forEach((doping) => {
         selectedItems.push(`doping=${encodeURIComponent(doping.value)}`);
     });
-    if (mode){
-        selectedItems.push(`mode=${encodeURIComponent(mode)}`);
-    }
     if (skill_damage){
         selectedItems.push(`dmg=${encodeURIComponent(skill_damage)}`);
     }

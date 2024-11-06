@@ -188,7 +188,7 @@ def changeForce(specFinal, parts, amount, tag):
 
 
 #아이템 자체를 바꾸게 된다면 세트효과가 변경 될 것이고 그렇다면 어떻게 이를 반영 할 것인가?
-
+#장비아이템 및 세트 효과 DB 제작
 spec_dict = json_functions.openjson("./assets/spec_final.json")
 equipmentDB = json_functions.openjson("./assets/equipment.json")
 print(spec_dict)

@@ -144,7 +144,7 @@ def make_spec_skill(spec, petSet, equipmentData, equipmentRawdata, headers, comb
     skill0=get0Skill["character_skill"]
     blessLevel=0
     namearr=["서플러스 서플라이", "히든 피스","여제의 외침", "초감각", "파워 오브 라이트", "계승된 의지", "왕의 자격", "되찾은 기억", "매직 서킷", "엘리멘탈 하모니", "엘리멘탈 엑스퍼트","컨버전 스타포스", "트루 석세서", "패이스", "괴이봉인", "리졸브 타임", "정령의 축복", "여제의 축복", "연합의 의지", "무기 제련", "고급 무기 제련", "파괴의 얄다바오트", "리부트", "하이 덱스터러티", "고브의 선물"]
-    namearr.append("고브의 선물") #마약버프 추가 (이벤트 시 마다 생긴)
+    namearr.append("차원 너머의 힘") #마약버프 추가 (이벤트 시 마다 생긴)
     
     namearr.append("루나 드림 Lv.1") #임시 루나드림 처리
     namearr.append("루나 드림 Lv.2")
